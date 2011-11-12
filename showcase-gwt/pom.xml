@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-
+	<parent>
+	        <groupId>com.googlecode.gwtphonegap.showcase</groupId>
+	        <artifactId>showcase</artifactId>
+	        <version>1.2.0.0-SNAPSHOT</version>
+	    </parent>
 
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.googlecode.gwtphonegap</groupId>
-	<artifactId>gwtphonegap-showcase</artifactId>
-	<version>1.1.0.0-SNAPSHOT</version>
+	<artifactId>showcase-gwt</artifactId>
+	<version>1.2.0.0-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>GWT PhoneGap</name>
+	<name>Showcase GWT</name>
 
 	
 	<properties>
@@ -30,7 +34,7 @@
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>gwt-maven-plugin</artifactId>
-				<version>2.3.0-1</version>
+				<version>2.4.0</version>
 				<executions>
 
 					<execution>
@@ -48,45 +52,26 @@
 						<artifactId>gwt-user</artifactId>
 						<version>2.4.0</version>
 					</dependency>
-					<dependency>
-						<groupId>com.google.gwt</groupId>
-						<artifactId>gwt-dev</artifactId>
-						<version>2.4.0</version>
-					</dependency>
 				</dependencies>
 			</plugin>
-
 			<plugin>
-				<artifactId>maven-antrun-plugin</artifactId>
-				<executions>
+							<artifactId>maven-assembly-plugin</artifactId>
+							<executions>
+								<execution>
+									<id>assemble</id>
+									<phase>package</phase>
+									<goals>
+										<goal>single</goal>
+									</goals>
+								</execution>
+							</executions>
+							<configuration>
+								<descriptors>
+									<descriptor>src/main/assembly/clientcode.xml</descriptor>
+								</descriptors>
+							</configuration>
+						</plugin>
 
-
-					<execution>
-						<id>copy compiled GWT JavaScript direct to target folder</id>
-						<phase>test</phase>
-						<configuration>
-							<tasks>
-								<copy todir="target/${project.artifactId}-${project.version}">
-									<fileset dir="war/">
-										<exclude name="WEB-INF/" />
-									</fileset>
-								</copy>
-
-								<copy
-									todir="target/${project.artifactId}-${project.version}-phonebuild">
-									<fileset dir="target/${project.artifactId}-${project.version}/">
-									</fileset>
-								</copy>
-
-							</tasks>
-						</configuration>
-						<goals>
-							<goal>run</goal>
-						</goals>
-					</execution>
-
-				</executions>
-			</plugin>
 
 
 			<plugin>
@@ -149,7 +134,7 @@
 		<dependency>
 			<groupId>com.googlecode.gwtphonegap</groupId>
 			<artifactId>gwtphonegap</artifactId>
-			<version>1.1.0.0-SNAPSHOT</version>
+			<version>1.2.0.0</version>
 
 		</dependency>
 
@@ -163,12 +148,6 @@
 		<dependency>
 			<groupId>com.google.gwt</groupId>
 			<artifactId>gwt-user</artifactId>
-			<version>${gwtversion}</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.google.gwt</groupId>
-			<artifactId>gwt-dev</artifactId>
 			<version>${gwtversion}</version>
 			<scope>provided</scope>
 		</dependency>
