@@ -11,7 +11,7 @@
     <name>GWT Phonegap Showcase</name>
 
     <modules>
-        <module>showcase-gwt</module>
+        <module>gwtphonegap.showcase.gwt</module>
     </modules>
 
     <dependencies>
