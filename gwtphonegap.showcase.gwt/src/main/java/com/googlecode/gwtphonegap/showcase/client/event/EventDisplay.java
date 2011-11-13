@@ -1,41 +1,19 @@
 package com.googlecode.gwtphonegap.showcase.client.event;
 
-import com.google.gwt.user.client.ui.DisclosurePanel;
-import com.google.gwt.user.client.ui.FlowPanel;
-import com.google.gwt.user.client.ui.HTML;
-import com.google.gwt.user.client.ui.HasHTML;
-import com.google.gwt.user.client.ui.Widget;
+import java.util.LinkedList;
 
-public class EventDisplay implements EventPresenter.Display {
+import com.google.gwt.user.client.ui.IsWidget;
+import com.googlecode.gwtphonegap.showcase.client.model.EventDemo;
 
-	private DisclosurePanel main;
-	private FlowPanel content;
+public interface EventDisplay extends IsWidget {
+	public void render(LinkedList<EventDemo> list);
 
-	private HTML result;
+	public void setPresenter(Presenter presenter);
 
-	public EventDisplay() {
-		main = new DisclosurePanel("Event");
+	public interface Presenter {
 
-		content = new FlowPanel();
+		public void onBackButtonPressed();
 
-		HTML label = new HTML("Make some events by pressing buttons or resume <br/>");
-		content.add(label);
-
-		result = new HTML();
-		content.add(result);
-
-		main.add(content);
-
-	}
-
-	@Override
-	public Widget asWidget() {
-		return main;
-	}
-
-	@Override
-	public HasHTML getHTML() {
-		return result;
 	}
 
 }

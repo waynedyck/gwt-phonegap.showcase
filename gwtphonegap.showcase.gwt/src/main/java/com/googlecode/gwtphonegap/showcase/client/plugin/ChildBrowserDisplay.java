@@ -1,35 +1,16 @@
 package com.googlecode.gwtphonegap.showcase.client.plugin;
 
-import com.google.gwt.event.dom.client.HasClickHandlers;
-import com.google.gwt.user.client.ui.Button;
-import com.google.gwt.user.client.ui.DisclosurePanel;
-import com.google.gwt.user.client.ui.FlowPanel;
-import com.google.gwt.user.client.ui.Widget;
+import com.google.gwt.user.client.ui.IsWidget;
 
-public class ChildBrowserDisplay implements ChildBrowserPresenter.Display {
+public interface ChildBrowserDisplay extends IsWidget {
+	public void setPresenter(Presenter presenter);
 
-	private DisclosurePanel main;
-	private FlowPanel content;
-	private Button button;
+	public interface Presenter {
 
-	public ChildBrowserDisplay() {
-		main = new DisclosurePanel("ChildBrowser Plugin");
+		public void onBackButtonPressed();
 
-		content = new FlowPanel();
-		main.add(content);
+		public void onOpenButtonPressed();
 
-		button = new Button("browser");
-		content.add(button);
-	}
-
-	@Override
-	public Widget asWidget() {
-		return main;
-	}
-
-	@Override
-	public HasClickHandlers getShowButton() {
-		return button;
 	}
 
 }

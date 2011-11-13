@@ -1,62 +1,96 @@
 package com.googlecode.gwtphonegap.showcase.client.file;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 
-import com.google.gwt.event.dom.client.HasClickHandlers;
+import com.google.gwt.core.client.GWT;
+import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.Window;
-import com.google.gwt.user.client.ui.Button;
-import com.google.gwt.user.client.ui.DisclosurePanel;
-import com.google.gwt.user.client.ui.FlowPanel;
+import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.HasHTML;
 import com.google.gwt.user.client.ui.HasText;
-import com.google.gwt.user.client.ui.TextArea;
 import com.google.gwt.user.client.ui.Widget;
-import com.googlecode.gwtphonegap.showcase.client.file.FilePresenter.FileDisplay;
+import com.googlecode.gwtphonegap.showcase.client.BasicCell;
+import com.googlecode.gwtphonegap.showcase.client.model.FileDemo;
+import com.googlecode.mgwt.dom.client.event.tap.TapEvent;
+import com.googlecode.mgwt.ui.client.MGWT;
+import com.googlecode.mgwt.ui.client.MGWTStyle;
+import com.googlecode.mgwt.ui.client.dialog.Dialogs;
+import com.googlecode.mgwt.ui.client.dialog.Dialogs.ButtonType;
+import com.googlecode.mgwt.ui.client.dialog.Dialogs.OptionCallback;
+import com.googlecode.mgwt.ui.client.dialog.Dialogs.OptionsDialogOption;
+import com.googlecode.mgwt.ui.client.widget.CellList;
+import com.googlecode.mgwt.ui.client.widget.HeaderButton;
+import com.googlecode.mgwt.ui.client.widget.MTextArea;
+import com.googlecode.mgwt.ui.client.widget.base.ButtonBase;
+import com.googlecode.mgwt.ui.client.widget.celllist.CellSelectedEvent;
 
+public class FileDisplayGwtImpl extends Composite implements FileDisplay {
 
-public class FileDisplayGwtImpl implements FileDisplay {
+	private static FileDisplayGwtImplUiBinder uiBinder = GWT.create(FileDisplayGwtImplUiBinder.class);
 
-	private DisclosurePanel main;
-	private FlowPanel content;
-	private HTML status;
-	private FlowPanel listing;
-	private Button goUpButton;
-	private TextArea fileContent;
-	private Button fileChangeButton;
-	private Button createFileButton;
+	interface FileDisplayGwtImplUiBinder extends UiBinder<Widget, FileDisplayGwtImpl> {
+	}
+
+	@UiField(provided = true)
+	CellList<FileDemo> cellList;
+	private Presenter presenter;
+
+	@UiField
+	HeaderButton backButton;
+
+	@UiField
+	ButtonBase plusButton;
+
+	@UiField
+	ButtonBase actionButton;
+
+	@UiField
+	HTML status;
+
+	@UiField
+	MTextArea content;
 
 	public FileDisplayGwtImpl() {
-		main = new DisclosurePanel("File");
 
-		content = new FlowPanel();
+		BasicCell<FileDemo> cell = new BasicCell<FileDemo>() {
 
-		status = new HTML();
-		content.add(status);
+			@Override
+			public String getDisplayString(FileDemo model) {
+				return model.getName();
+			}
 
-		goUpButton = new Button("go up");
-		content.add(goUpButton);
+			@Override
+			public boolean canBeSelected(FileDemo model) {
+				return true;
+			}
+		};
 
-		main.add(content);
+		cellList = new CellList<FileDemo>(cell);
 
-		listing = new FlowPanel();
-		content.add(listing);
+		initWidget(uiBinder.createAndBindUi(this));
 
-		content.add(new HTML("File Content"));
-
-		fileContent = new TextArea();
-		content.add(fileContent);
-		fileChangeButton = new Button("overwrite file!");
-		content.add(fileChangeButton);
-
-		createFileButton = new Button("createFile");
-		content.add(createFileButton);
+		if (MGWT.getOsDetection().isTablet()) {
+			backButton.setBackButton(false);
+			backButton.setText("Modules");
+			backButton.addStyleName(MGWTStyle.getTheme().getMGWTClientBundle().getUtilCss().portraitonly());
+		}
 
 	}
 
 	@Override
-	public Widget asWidget() {
-		return main;
+	public void render(LinkedList<FileDemo> list) {
+		cellList.render(list);
+
+	}
+
+	@Override
+	public void setPresenter(Presenter presenter) {
+		this.presenter = presenter;
+
 	}
 
 	@Override
@@ -64,43 +98,56 @@ public class FileDisplayGwtImpl implements FileDisplay {
 		return status;
 	}
 
-	@Override
-	public void clearEntries() {
-		listing.clear();
-		entries.clear();
+	@UiHandler("backButton")
+	protected void oBackButtonPressed(TapEvent event) {
+		if (presenter != null) {
+			presenter.onBackButtonPressed();
+		}
 	}
 
-	private ArrayList<HTML> entries = new ArrayList<HTML>();
+	@UiHandler("plusButton")
+	protected void onPlusButtonTapped(TapEvent event) {
+		if (presenter != null) {
+			String fileName = Window.prompt("filename", "");
 
-	@Override
-	public void addEntry(String name, boolean isDir) {
-		HTML entry = new HTML();
-
-		entry.setHTML("<a href=''>" + name + "</a>");
-
-		entries.add(entry);
-		listing.add(entry);
-
+			presenter.createFile(fileName);
+		}
 	}
 
-	@Override
-	public HasClickHandlers getEntry(int index) {
-		return entries.get(index);
+	@UiHandler("actionButton")
+	protected void onActionButtonPressed(TapEvent event) {
+		if (presenter != null) {
+			presenter.onActionButtonPressed();
+		}
 	}
 
-	@Override
-	public HasClickHandlers goUpButton() {
-		return goUpButton;
-	}
-
-	@Override
-	public HasText getFileContent() {
-		return fileContent;
+	@UiHandler("cellList")
+	protected void onCellSelected(CellSelectedEvent event) {
+		if (presenter != null) {
+			presenter.onEntrySelected(event.getIndex());
+		}
 	}
 
 	@Override
-	public HasClickHandlers getFileUpdateButton() {
-		return fileChangeButton;
+	public void showSelectMenu() {
+		ArrayList<OptionsDialogOption> list = new ArrayList<OptionsDialogOption>();
+
+		list.add(new OptionsDialogOption("Overwrite", ButtonType.IMPORTANT));
+		list.add(new OptionsDialogOption("Cancel", ButtonType.NORMAL));
+
+		Dialogs.options(list, new OptionCallback() {
+
+			@Override
+			public void onOptionSelected(int index) {
+				if (presenter != null) {
+					if (index == 0) {
+						presenter.overWriteFile();
+					}
+				}
+
+			}
+		});
+
 	}
 
 	@Override
@@ -109,25 +156,13 @@ public class FileDisplayGwtImpl implements FileDisplay {
 	}
 
 	@Override
-	public HasClickHandlers getFileCreateButton() {
-		return createFileButton;
+	public HasText getFileContent() {
+		return content;
 	}
 
 	@Override
-	public HasText getFileName() {
-		return new HasText() {
-
-			@Override
-			public void setText(String text) {
-
-			}
-
-			@Override
-			public String getText() {
-				return Window.prompt("Filename", "");
-			}
-		};
+	public void setSelected(int index) {
+		cellList.setSelectedIndex(index, true);
 
 	}
-
 }

@@ -18,40 +18,31 @@ package com.googlecode.gwtphonegap.showcase.client;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import com.google.gwt.activity.shared.ActivityMapper;
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
+import com.google.gwt.dom.client.StyleInjector;
+import com.google.gwt.place.shared.PlaceHistoryHandler;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.RootPanel;
+import com.google.gwt.user.client.ui.SimplePanel;
 import com.googlecode.gwtphonegap.client.PhoneGap;
 import com.googlecode.gwtphonegap.client.PhoneGapAvailableEvent;
 import com.googlecode.gwtphonegap.client.PhoneGapAvailableHandler;
 import com.googlecode.gwtphonegap.client.PhoneGapTimeoutEvent;
 import com.googlecode.gwtphonegap.client.PhoneGapTimeoutHandler;
 import com.googlecode.gwtphonegap.client.plugins.childbrowser.ChildBrowser;
-import com.googlecode.gwtphonegap.showcase.client.accelerometer.AccelerometerDisplay;
-import com.googlecode.gwtphonegap.showcase.client.accelerometer.AccelerometerPresenter;
-import com.googlecode.gwtphonegap.showcase.client.camera.CameraDisplay;
-import com.googlecode.gwtphonegap.showcase.client.camera.CameraPresenter;
-import com.googlecode.gwtphonegap.showcase.client.compass.CompassDisplay;
-import com.googlecode.gwtphonegap.showcase.client.compass.CompassPresenter;
-import com.googlecode.gwtphonegap.showcase.client.connection.ConnectionDisplay;
-import com.googlecode.gwtphonegap.showcase.client.connection.ConnectionPresenter;
-import com.googlecode.gwtphonegap.showcase.client.contact.ContactDisplay;
-import com.googlecode.gwtphonegap.showcase.client.contact.ContactPresenter;
-import com.googlecode.gwtphonegap.showcase.client.device.DeviceDisplay;
-import com.googlecode.gwtphonegap.showcase.client.device.DevicePresenter;
-import com.googlecode.gwtphonegap.showcase.client.event.EventDisplay;
-import com.googlecode.gwtphonegap.showcase.client.event.EventPresenter;
-import com.googlecode.gwtphonegap.showcase.client.file.FileDisplayGwtImpl;
-import com.googlecode.gwtphonegap.showcase.client.file.FilePresenter;
-import com.googlecode.gwtphonegap.showcase.client.geolocation.GeolocationDisplay;
-import com.googlecode.gwtphonegap.showcase.client.geolocation.GeolocationPresenter;
-import com.googlecode.gwtphonegap.showcase.client.media.MediaDisplay;
-import com.googlecode.gwtphonegap.showcase.client.media.MediaPresenter;
-import com.googlecode.gwtphonegap.showcase.client.notification.NotificationDisplay;
-import com.googlecode.gwtphonegap.showcase.client.notification.NotificationPresenter;
-import com.googlecode.gwtphonegap.showcase.client.plugin.ChildBrowserDisplay;
-import com.googlecode.gwtphonegap.showcase.client.plugin.ChildBrowserPresenter;
+import com.googlecode.gwtphonegap.showcase.client.css.AppBundle;
+import com.googlecode.mgwt.mvp.client.AnimatableDisplay;
+import com.googlecode.mgwt.mvp.client.AnimatingActivityManager;
+import com.googlecode.mgwt.mvp.client.AnimationMapper;
+import com.googlecode.mgwt.ui.client.MGWT;
+import com.googlecode.mgwt.ui.client.MGWTSettings;
+import com.googlecode.mgwt.ui.client.MGWTSettings.ViewPort;
+import com.googlecode.mgwt.ui.client.MGWTSettings.ViewPort.DENSITY;
+import com.googlecode.mgwt.ui.client.dialog.TabletPortraitOverlay;
+import com.googlecode.mgwt.ui.client.layout.MasterRegionHandler;
+import com.googlecode.mgwt.ui.client.layout.OrientationRegionHandler;
 
 public class ShowCaseEntryPoint implements EntryPoint {
 	private Logger log = Logger.getLogger(getClass().getName());
@@ -99,25 +90,101 @@ public class ShowCaseEntryPoint implements EntryPoint {
 		cb.initialize();
 		phoneGap.loadPlugin("childBrowser", cb);
 
-		DevicePresenter devicePresenter = new DevicePresenter(new DeviceDisplay(), phoneGap);
-		GeolocationPresenter geolocationPresenter = new GeolocationPresenter(new GeolocationDisplay(), phoneGap);
-		NotificationPresenter notificationPresenter = new NotificationPresenter(new NotificationDisplay(), phoneGap);
-		AboutPresenter aboutPresenter = new AboutPresenter(new AboutDisplay());
-		CameraPresenter cameraPresenter = new CameraPresenter(new CameraDisplay(), phoneGap);
-		ConnectionPresenter connectionPresenter = new ConnectionPresenter(new ConnectionDisplay(), phoneGap);
-		ContactPresenter contactPresenter = new ContactPresenter(new ContactDisplay(), phoneGap);
-		EventPresenter eventPresenter = new EventPresenter(new EventDisplay(), phoneGap);
-		MediaPresenter mediaPresenter = new MediaPresenter(new MediaDisplay(), phoneGap);
-		CompassPresenter compassPresenter = new CompassPresenter(new CompassDisplay(), phoneGap);
-		FilePresenter filePresenter = new FilePresenter(new FileDisplayGwtImpl(), phoneGap);
-		ChildBrowserPresenter childBrowserPresenter = new ChildBrowserPresenter(new ChildBrowserDisplay(), phoneGap);
+		final ClientFactoryGwtImpl clientFactory = new ClientFactoryGwtImpl();
+		clientFactory.setPhoneGap(phoneGap);
 
-		MainPresenter mainPresenter = new MainPresenter(new MainDisplay(), phoneGap, new AccelerometerPresenter(new AccelerometerDisplay(), phoneGap), devicePresenter, geolocationPresenter,
-				notificationPresenter, aboutPresenter, cameraPresenter, connectionPresenter, contactPresenter, eventPresenter, mediaPresenter, compassPresenter, filePresenter, childBrowserPresenter);
+		buildDisplay(clientFactory);
 
-		RootPanel.get().add(mainPresenter.getDisplay().asWidget());
+	}
 
-		mainPresenter.start();
+	private void buildDisplay(ClientFactory clientFactory) {
+
+		ViewPort viewPort = new MGWTSettings.ViewPort();
+		viewPort.setTargetDensity(DENSITY.MEDIUM);
+		viewPort.setUserScaleAble(false).setMinimumScale(1.0).setMinimumScale(1.0).setMaximumScale(1.0);
+
+		MGWTSettings settings = new MGWTSettings();
+		settings.setViewPort(viewPort);
+		settings.setIconUrl("logo.png");
+		settings.setAddGlosToIcon(true);
+		settings.setFullscreen(true);
+		settings.setPreventScrolling(true);
+
+		MGWT.applySettings(settings);
+
+		// Start PlaceHistoryHandler with our PlaceHistoryMapper
+		AppPlaceHistoryMapper historyMapper = GWT.create(AppPlaceHistoryMapper.class);
+		final PlaceHistoryHandler historyHandler = new PlaceHistoryHandler(historyMapper);
+
+		historyHandler.register(clientFactory.getPlaceController(), clientFactory.getEventBus(), new OverviewPlace());
+
+		if (MGWT.getOsDetection().isTablet()) {
+
+			// very nasty workaround because GWT does not corretly support
+			// @media
+			StyleInjector.inject(AppBundle.INSTANCE.css().getText());
+
+			createTabletDisplay(clientFactory);
+		} else {
+
+			createPhoneDisplay(clientFactory);
+
+		}
+		historyHandler.handleCurrentHistory();
+
+	}
+
+	private void createPhoneDisplay(ClientFactory clientFactory) {
+		AnimatableDisplay display = GWT.create(AnimatableDisplay.class);
+
+		PhoneActivityMapper appActivityMapper = new PhoneActivityMapper(clientFactory);
+
+		PhoneAnimationMapper appAnimationMapper = new PhoneAnimationMapper();
+
+		AnimatingActivityManager activityManager = new AnimatingActivityManager(appActivityMapper, appAnimationMapper, clientFactory.getEventBus());
+
+		activityManager.setDisplay(display);
+
+		RootPanel.get().add(display);
+
+	}
+
+	private void createTabletDisplay(ClientFactory clientFactory) {
+		SimplePanel navContainer = new SimplePanel();
+		navContainer.getElement().setId("nav");
+		navContainer.getElement().addClassName("landscapeonly");
+		AnimatableDisplay navDisplay = GWT.create(AnimatableDisplay.class);
+
+		final TabletPortraitOverlay tabletPortraitOverlay = new TabletPortraitOverlay();
+
+		new OrientationRegionHandler(navContainer, tabletPortraitOverlay, navDisplay);
+		new MasterRegionHandler(clientFactory.getEventBus(), "nav", tabletPortraitOverlay);
+
+		ActivityMapper navActivityMapper = new TabletNavActivityMapper(clientFactory);
+
+		AnimationMapper navAnimationMapper = new TabletNavAnimationMapper();
+
+		AnimatingActivityManager navActivityManager = new AnimatingActivityManager(navActivityMapper, navAnimationMapper, clientFactory.getEventBus());
+
+		navActivityManager.setDisplay(navDisplay);
+
+		RootPanel.get().add(navContainer);
+
+		SimplePanel mainContainer = new SimplePanel();
+		mainContainer.getElement().setId("main");
+		AnimatableDisplay mainDisplay = GWT.create(AnimatableDisplay.class);
+
+		TabletMainActivityMapper tabletMainActivityMapper = new TabletMainActivityMapper(clientFactory);
+
+		AnimationMapper tabletMainAnimationMapper = new TabletMainAnimationMapper();
+
+		AnimatingActivityManager mainActivityManager = new AnimatingActivityManager(tabletMainActivityMapper, tabletMainAnimationMapper, clientFactory.getEventBus());
+
+		mainActivityManager.setDisplay(mainDisplay);
+		mainContainer.setWidget(mainDisplay);
+
+		RootPanel.get().add(mainContainer);
+
 	}
 
 }

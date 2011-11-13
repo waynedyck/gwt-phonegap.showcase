@@ -1,55 +1,24 @@
 package com.googlecode.gwtphonegap.showcase.client.media;
 
-import com.google.gwt.event.dom.client.HasClickHandlers;
-import com.google.gwt.user.client.ui.Button;
-import com.google.gwt.user.client.ui.DisclosurePanel;
-import com.google.gwt.user.client.ui.FlowPanel;
-import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.HasHTML;
-import com.google.gwt.user.client.ui.HasText;
-import com.google.gwt.user.client.ui.Widget;
+import com.google.gwt.user.client.ui.IsWidget;
 
-public class MediaDisplay implements MediaPresenter.Display {
+public interface MediaDisplay extends IsWidget {
+	public void setPresenter(Presenter presenter);
 
-	private DisclosurePanel main;
-	private FlowPanel content;
+	public HasHTML getPosition();
 
-	private Button result;
-	private HTML position;
+	public interface Presenter {
 
-	public MediaDisplay() {
-		main = new DisclosurePanel("Media");
+		public void onBackButtonPressed();
 
-		content = new FlowPanel();
+		public void onPlayButtonPressed();
 
-		position = new HTML("Make some events by pressing buttons or resume <br/>");
-		content.add(position);
-
-		result = new Button();
-		content.add(result);
-
-		main.add(content);
+		public void onPauseButtonPressed();
 
 	}
 
-	@Override
-	public Widget asWidget() {
-		return main;
-	}
+	public void showPlayButton(boolean show);
 
-	@Override
-	public HasHTML getPosition() {
-		return position;
-	}
-
-	@Override
-	public HasClickHandlers getPlayPauseButton() {
-		return result;
-	}
-
-	@Override
-	public HasText getPlayPauseButtonText() {
-		return result;
-	}
-
+	public void showPauseButton(boolean show);
 }

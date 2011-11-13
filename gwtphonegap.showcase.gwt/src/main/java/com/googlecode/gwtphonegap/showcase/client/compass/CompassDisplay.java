@@ -1,52 +1,29 @@
 package com.googlecode.gwtphonegap.showcase.client.compass;
 
-import com.google.gwt.event.dom.client.HasClickHandlers;
-import com.google.gwt.user.client.ui.Button;
-import com.google.gwt.user.client.ui.DisclosurePanel;
-import com.google.gwt.user.client.ui.FlowPanel;
-import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.HasHTML;
 import com.google.gwt.user.client.ui.HasText;
-import com.google.gwt.user.client.ui.Widget;
+import com.google.gwt.user.client.ui.IsWidget;
 
-public class CompassDisplay implements CompassPresenter.Display {
+public interface CompassDisplay extends IsWidget {
 
-	private DisclosurePanel main;
-	private FlowPanel content;
-	private Button button;
-	private HTML value;
+	public void setPresenter(Presenter presenter);
 
-	public CompassDisplay() {
-		main = new DisclosurePanel("Compass");
+	public HasHTML getMagneticHeading();
 
-		content = new FlowPanel();
+	public HasHTML getTrueHeading();
 
-		button = new Button();
-		content.add(button);
+	public HasHTML getHeadingAccuracy();
 
-		value = new HTML();
-		content.add(value);
-		main.add(content);
-	}
+	public HasHTML getTimeStamp();
 
-	@Override
-	public Widget asWidget() {
-		return main;
-	}
+	public HasText getStartStopButton();
 
-	@Override
-	public HasClickHandlers getStartStopButton() {
-		return button;
-	}
+	public interface Presenter {
 
-	@Override
-	public HasText getStartStopText() {
-		return button;
-	}
+		public void onBackButtonPressed();
 
-	@Override
-	public HasHTML compassValue() {
-		return value;
+		public void onStartStopButtonPressed();
+
 	}
 
 }
