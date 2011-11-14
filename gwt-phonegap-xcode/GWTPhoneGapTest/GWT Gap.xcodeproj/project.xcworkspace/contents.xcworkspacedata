@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:GWTPhonegapTest.xcodeproj">
+      location = "self:GWT Gap.xcodeproj">
    </FileRef>
 </Workspace>
