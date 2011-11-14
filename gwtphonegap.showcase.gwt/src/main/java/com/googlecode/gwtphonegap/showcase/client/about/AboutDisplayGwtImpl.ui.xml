@@ -12,9 +12,21 @@
 			<mgwt:RoundPanel>
 			
 				<g:HTMLPanel>
-					<p>GWT-PhoneGap is a GWT wrapper for the PhoneGap Javascript API. It lets you write mobile applications in GWT</p>
-				more info see <a href='http://code.google.com/p/gwt-phonegap/'>http://code.google.com/p/gwt-phonegap/</a> <br />
-				written by Daniel Kurka <a href='http://www.daniel-kurka.de'>www.daniel-kurka.de</a>
+				This is the demo application of the GWT Phonegap open source project.
+				<br />
+				<br />
+				
+				GWT PhoneGap is a GWT wrapper for the Phonegap javascript API. It lets you write mobile applications in GWT.
+				<br/> 
+				<br/>
+				See <a ui:field="mgwt" href='http://www.m-gwt.com'>m-gwt.com</a> <br />
+				<br />
+				<br />
+				
+				written by <a href='http://www.daniel-kurka.de'>Daniel Kurka</a>
+				
+				<br/>
+				 Twitter: <a href='http://www.twitter.com/dankurka'>@dankurka</a>
 				</g:HTMLPanel>
 			</mgwt:RoundPanel>
 		</mgwt:ScrollPanel>

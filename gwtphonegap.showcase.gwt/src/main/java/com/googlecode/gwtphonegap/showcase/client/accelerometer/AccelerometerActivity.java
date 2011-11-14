@@ -131,6 +131,10 @@ public class AccelerometerActivity extends NavBaseActivity implements Presenter 
 			phoneGap.getAccelerometer().clearWatch(watcher);
 			watcher = null;
 			display.getStartStopButton().setText("Start");
+			display.getXValue().setText("");
+			display.getYValue().setText("");
+			display.getZValue().setText("");
+			display.getTimeStamp().setText("");
 		}
 
 	}

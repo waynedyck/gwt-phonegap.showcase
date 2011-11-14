@@ -27,12 +27,13 @@
 		
 		
 		
-		
 		<mgwt:RoundPanel>
 			<g:HTML ui:field="status"></g:HTML>
-			<g:HTML>Content</g:HTML>
+		</mgwt:RoundPanel>
+		
+		
+		<mgwt:RoundPanel>
 			<mgwt:MTextArea ui:field="content"></mgwt:MTextArea>
-			
 		</mgwt:RoundPanel>
 		
 		<mgwtb:ButtonBar>

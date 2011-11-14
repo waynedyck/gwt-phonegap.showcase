@@ -14,7 +14,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "453A6B16143CD1D00038B093"
-               BuildableName = "GWTPhonegapTest.app"
+               BuildableName = "GWT Gap.app"
                BlueprintName = "GWT Gap"
                ReferencedContainer = "container:GWT Gap.xcodeproj">
             </BuildableReference>
@@ -32,7 +32,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "453A6B16143CD1D00038B093"
-            BuildableName = "GWTPhonegapTest.app"
+            BuildableName = "GWT Gap.app"
             BlueprintName = "GWT Gap"
             ReferencedContainer = "container:GWT Gap.xcodeproj">
          </BuildableReference>
@@ -50,7 +50,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "453A6B16143CD1D00038B093"
-            BuildableName = "GWTPhonegapTest.app"
+            BuildableName = "GWT Gap.app"
             BlueprintName = "GWT Gap"
             ReferencedContainer = "container:GWT Gap.xcodeproj">
          </BuildableReference>
@@ -68,7 +68,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "453A6B16143CD1D00038B093"
-            BuildableName = "GWTPhonegapTest.app"
+            BuildableName = "GWT Gap.app"
             BlueprintName = "GWT Gap"
             ReferencedContainer = "container:GWT Gap.xcodeproj">
          </BuildableReference>

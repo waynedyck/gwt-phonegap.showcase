@@ -94,6 +94,7 @@ public class GeolocationActivity extends NavBaseActivity implements Presenter {
 			display.getLatidute().setText("");
 			display.getLongitude().setText("");
 			display.getTimeStamp().setText("");
+			display.getSpeed().setText("");
 
 		}
 

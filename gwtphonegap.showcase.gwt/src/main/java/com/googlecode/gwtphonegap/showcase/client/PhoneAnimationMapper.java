@@ -138,7 +138,7 @@ public class PhoneAnimationMapper implements AnimationMapper {
 		}
 
 		if (oldPlace instanceof AboutPlace && newPlace instanceof OverviewPlace) {
-			return Animation.SLIDE_UP_REVERSE;
+			return Animation.SLIDE_REVERSE;
 		}
 
 		if (oldPlace instanceof OverviewPlace && newPlace instanceof FilePlace) {

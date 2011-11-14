@@ -52,7 +52,7 @@ public class ContactDisplayGwtImpl extends Composite implements ContactDisplay {
 
 			@Override
 			public boolean canBeSelected(DemoContact model) {
-				return true;
+				return false;
 			}
 		};
 

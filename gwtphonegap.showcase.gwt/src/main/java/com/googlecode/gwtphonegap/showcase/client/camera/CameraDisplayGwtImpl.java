@@ -1,6 +1,9 @@
 package com.googlecode.gwtphonegap.showcase.client.camera;
 
 import com.google.gwt.core.client.GWT;
+import com.google.gwt.event.dom.client.LoadEvent;
+import com.google.gwt.event.dom.client.LoadHandler;
+import com.google.gwt.event.shared.HandlerRegistration;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
@@ -33,6 +36,7 @@ public class CameraDisplayGwtImpl extends Composite implements CameraDisplay {
 
 	@UiField
 	Image image;
+	private HandlerRegistration addLoadHandler;
 
 	public CameraDisplayGwtImpl() {
 
@@ -52,8 +56,19 @@ public class CameraDisplayGwtImpl extends Composite implements CameraDisplay {
 
 	@Override
 	public void displayFoto(String data) {
+
+		addLoadHandler = image.addLoadHandler(new LoadHandler() {
+
+			@Override
+			public void onLoad(LoadEvent event) {
+
+				addLoadHandler.removeHandler();
+				scrollPanel.refresh();
+
+			}
+		});
+
 		image.setUrl(data);
-		scrollPanel.refresh();
 
 	}
 

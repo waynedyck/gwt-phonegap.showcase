@@ -10,11 +10,11 @@
 		</mgwt:HeaderPanel>
 		
 		<mgwt:ScrollPanel ui:field="scrollPanel">
-			<g:FlowPanel>
+			
 				
 				<g:Image ui:field="image"></g:Image>
 				
-			</g:FlowPanel>
+			
 		</mgwt:ScrollPanel>
 		
 		<mgwtb:ButtonBar>
