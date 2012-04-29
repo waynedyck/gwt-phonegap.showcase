@@ -107,13 +107,7 @@
 						<exclude>com.google.gwt:gwt-dev</exclude>
 						<exclude>javax.validation:validation-api</exclude>
 					</excludes>
-					<linkedResources>
-						<linkedResource>
-							<name>war</name>
-							<type>2</type>
-							<location>PROJECT_LOC/target/${project.artifactId}-${project.version}</location>
-						</linkedResource>
-					</linkedResources>
+					
 
 				</configuration>
 			</plugin>
@@ -134,7 +128,7 @@
 		<dependency>
 			<groupId>com.googlecode.gwtphonegap</groupId>
 			<artifactId>gwtphonegap</artifactId>
-			<version>1.4.0.1-SNAPSHOT</version>
+			<version>1.4.0.1</version>
 
 		</dependency>
 
