@@ -5,6 +5,7 @@ import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import com.googlecode.gwtphonegap.client.PhoneGap;
 import com.googlecode.gwtphonegap.client.compass.CompassCallback;
+import com.googlecode.gwtphonegap.client.compass.CompassError;
 import com.googlecode.gwtphonegap.client.compass.CompassHeading;
 import com.googlecode.gwtphonegap.client.compass.CompassOptions;
 import com.googlecode.gwtphonegap.client.compass.CompassWatcher;
@@ -84,7 +85,7 @@ public class CompassActivity extends NavBaseActivity implements Presenter {
 				}
 
 				@Override
-				public void onError() {
+				public void onError(CompassError error) {
 					// TODO better error display
 					Window.alert("error with compass");
 

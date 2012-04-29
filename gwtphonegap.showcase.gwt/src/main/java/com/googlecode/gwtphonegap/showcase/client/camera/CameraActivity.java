@@ -60,7 +60,7 @@ public class CameraActivity extends NavBaseActivity implements CameraDisplay.Pre
 			}
 
 			@Override
-			public void onFailure() {
+			public void onFailure(String message) {
 				// TODO better error display
 				Window.alert("failure");
 
