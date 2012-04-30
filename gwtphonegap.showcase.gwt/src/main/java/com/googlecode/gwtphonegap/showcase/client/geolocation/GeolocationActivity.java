@@ -105,7 +105,7 @@ public class GeolocationActivity extends NavBaseActivity implements Presenter {
 		@Override
 		public void onSuccess(Position position) {
 
-			display.getAccuracy().setText("" + position.getCoordinates().getHorizontalAccuracy());
+			display.getAccuracy().setText("" + position.getCoordinates().getAccuracy());
 			display.getAltitude().setText("" + position.getCoordinates().getAltitude());
 			display.getAltitudeAccuracy().setText("" + position.getCoordinates().getAltitudeAccuracy());
 			display.getHeading().setText("" + position.getCoordinates().getHeading());
