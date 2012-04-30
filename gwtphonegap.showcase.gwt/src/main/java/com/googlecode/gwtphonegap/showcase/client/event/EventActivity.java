@@ -8,6 +8,8 @@ import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import com.googlecode.gwtphonegap.client.PhoneGap;
 import com.googlecode.gwtphonegap.client.event.BackButtonPressedEvent;
 import com.googlecode.gwtphonegap.client.event.BackButtonPressedHandler;
+import com.googlecode.gwtphonegap.client.event.MenuButtonPressedEvent;
+import com.googlecode.gwtphonegap.client.event.MenuButtonPressedHandler;
 import com.googlecode.gwtphonegap.client.event.OffLineEvent;
 import com.googlecode.gwtphonegap.client.event.OffLineHandler;
 import com.googlecode.gwtphonegap.client.event.OnlineEvent;
@@ -87,6 +89,16 @@ public class EventActivity extends NavBaseActivity implements EventDisplay.Prese
 			@Override
 			public void onSearchButtonPressed(SearchButtonPressedEvent event) {
 				String res = "Search Button Pressed Event: " + new Date();
+				addText(res);
+
+			}
+		});
+
+		phoneGap.getEvent().getMenuButton().addMenuButtonPressedHandler(new MenuButtonPressedHandler() {
+
+			@Override
+			public void onMenuButtonPressed(MenuButtonPressedEvent event) {
+				String res = "Menu Button Pressed Event: " + new Date();
 				addText(res);
 
 			}
