@@ -49,7 +49,7 @@ public class ShowCaseEntryPoint implements EntryPoint {
 
 	@Override
 	public void onModuleLoad() {
-		Window.alert("asdfasdf");
+
 		GWT.setUncaughtExceptionHandler(new GWT.UncaughtExceptionHandler() {
 
 			@Override
