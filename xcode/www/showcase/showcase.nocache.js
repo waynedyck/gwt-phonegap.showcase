@@ -1,5 +1,5 @@
 function showcase(){
-  var $intern_23 = '', $intern_32 = '" for "gwt:onLoadErrorFn"', $intern_30 = '" for "gwt:onPropertyErrorFn"', $intern_33 = '#', $intern_88 = '.cache.js', $intern_35 = '/', $intern_59 = '059322EACDBDA369FE91125EED19DF30', $intern_60 = '0E67136807CC62DB4646F9073335DFA7', $intern_61 = '0EBA1EAD558B2E0FD3ADBDEE32C1EFFB', $intern_62 = '12BC1FA3C775364BD03A79EE1B9AD258', $intern_63 = '143CC5117D485F4FF24AE34A5BDF7C32', $intern_64 = '1AE0B4F5C5D9C0F95C0F531A7B98E6F9', $intern_65 = '28434AEA0334A3788AE5791605D8D1E5', $intern_66 = '42D77F67AEC293BA89D102178183B8BA', $intern_67 = '48B016B72218F7DC290BFFBC157CD12C', $intern_68 = '4BC5118DD08E005EA68FCB5F05D4AD1E', $intern_69 = '5BE3A417E5897FB6012E0C8ABD820332', $intern_70 = '6335D05E4D426CA6A6ADEF1750A7E0E3', $intern_71 = '63AFAA0C0778B48ED21E812956411FB8', $intern_72 = '76D9BCF3B47F2FD62C68B51710F09AC4', $intern_73 = '809719F268CF051D9E7D9BC918CB8D7D', $intern_74 = '84299138A261D0E74DC2B43AD05038A2', $intern_75 = '9D1D5E09CC1B288FF22BF2FE820139FE', $intern_87 = ':', $intern_24 = '::', $intern_11 = '<html><head><\/head><body><\/body><\/html>', $intern_27 = '=', $intern_34 = '?', $intern_76 = 'A1FAFE310F52671432CE4E47F0AED109', $intern_77 = 'A499CB7188CF92D70956FB7B3E02EA61', $intern_29 = 'Bad handler "', $intern_78 = 'C5ADD626EBA8AD7B907E1F3A73ED9073', $intern_79 = 'D07E56495A7861B03FDB34AB285F76B9', $intern_80 = 'D8FB11E44F7CC8406298B51A89DCB578', $intern_16 = 'DOMContentLoaded', $intern_6 = 'DUMMY', $intern_81 = 'EB9DA336FE49C74E5DF2FC26F15FC04B', $intern_82 = 'F1D442F3D04C6672FC8CD8566E32450B', $intern_83 = 'F2CA2CA4F575B9D258D01EA31ECFA8F0', $intern_84 = 'F5B30F99F001E54EE9AD251687491BE6', $intern_85 = 'F66AA6C59663427CE42CD13459B6A893', $intern_86 = 'F85153AAE4094C17D073D992A66E3171', $intern_42 = 'android', $intern_44 = 'android_tablet', $intern_40 = 'base', $intern_38 = 'baseUrl', $intern_1 = 'begin', $intern_48 = 'blackberry', $intern_7 = 'body', $intern_0 = 'bootstrap', $intern_37 = 'clear.cache.gif', $intern_26 = 'content', $intern_49 = 'desktop', $intern_90 = 'end', $intern_54 = 'file://', $intern_2 = 'gwt.codesvr.showcase=', $intern_3 = 'gwt.codesvr=', $intern_31 = 'gwt:onLoadErrorFn', $intern_28 = 'gwt:onPropertyErrorFn', $intern_25 = 'gwt:property', $intern_19 = 'head', $intern_8 = 'iframe', $intern_36 = 'img', $intern_45 = 'ipad', $intern_46 = 'iphone', $intern_13 = 'javascript', $intern_9 = 'javascript:""', $intern_89 = 'loadExternalRefs', $intern_20 = 'meta', $intern_41 = 'mgwt.os', $intern_43 = 'mobile', $intern_50 = 'mobile.user.agent', $intern_51 = 'mobilesafari', $intern_18 = 'moduleRequested', $intern_17 = 'moduleStartup', $intern_21 = 'name', $intern_56 = 'no', $intern_52 = 'not_mobile', $intern_53 = 'phonegap.env', $intern_10 = 'position:absolute; width:0; height:0; border:none; left: -1000px; top: -1000px; !important', $intern_47 = 'retina', $intern_12 = 'script', $intern_57 = 'selectingPermutation', $intern_4 = 'showcase', $intern_58 = 'showcase.devmode.js', $intern_39 = 'showcase.nocache.js', $intern_22 = 'showcase::', $intern_5 = 'startup', $intern_15 = 'undefined', $intern_14 = 'var $wnd = window.parent;', $intern_55 = 'yes';
+  var $intern_23 = '', $intern_32 = '" for "gwt:onLoadErrorFn"', $intern_30 = '" for "gwt:onPropertyErrorFn"', $intern_33 = '#', $intern_94 = '.cache.js', $intern_35 = '/', $intern_61 = '0DA001B70F209DD8AC70A6FCCD5C88CA', $intern_62 = '14EB4FAAB8979B37D024EF73E17869EC', $intern_63 = '1B335DFB0C13332FCAC225F0E5772E81', $intern_64 = '26865D7E93C1020B02F2B165F4B16AF9', $intern_65 = '2B4EF17C20F7AD10EC7C89021D9731D5', $intern_66 = '37D37645A35DFE4D22164E4E78A71173', $intern_67 = '3B41AFA9918A75C7E85DBE3357258BFD', $intern_68 = '4042281BEB3AB2D74C158B5F22333031', $intern_69 = '45644BDE3F8A737A49DCC0301F145FAD', $intern_70 = '56E91B85966DA293A62362D69F4C3D04', $intern_71 = '585BD750133FB022F47375E8D3155AC6', $intern_72 = '58980EBF33C0410B8705A756534003D1', $intern_73 = '62BCDA6EFFDBEF23187418208D79C3D5', $intern_74 = '680AD2777846308D8D96A2878E4D85F4', $intern_75 = '6C03D096B33925D7A3F40A215ED04585', $intern_76 = '732EED346B5574563549D8EBC0E66B81', $intern_77 = '7BACD60703812407B4A93E23D068F784', $intern_78 = '7D8F75713C489617025F8B8F5BA1BA58', $intern_79 = '8EF8688BB8C78AA8BA8AD87EA283718E', $intern_80 = '94A0518E89EDF69B943248EBB05A2820', $intern_93 = ':', $intern_24 = '::', $intern_11 = '<html><head><\/head><body><\/body><\/html>', $intern_27 = '=', $intern_34 = '?', $intern_81 = 'AB05C3EF7A9F57AD91A3278DAD75BD46', $intern_82 = 'B891263B669B9E33424A108D97DEFE72', $intern_83 = 'BA7AEF53249E4F150184F1001CA9FD90', $intern_84 = 'BBBBE1C480268B2B5D571FBF6BC6170B', $intern_29 = 'Bad handler "', $intern_85 = 'C03A969008BF1371C2C212F99017AE06', $intern_86 = 'C22FCDD05E2E9F492D5E41AF7D13B73E', $intern_87 = 'CA8158E0D6B920BC4A974DC372B8ED71', $intern_88 = 'DB4B784E216B65D9995F1E53FC1C69AE', $intern_89 = 'DF0A150279B554765016761DA538EDAC', $intern_16 = 'DOMContentLoaded', $intern_6 = 'DUMMY', $intern_90 = 'E78C6FB0507B9080F690D5F416F79A5C', $intern_91 = 'F880662C5EA581DD85BE30CAFB931662', $intern_92 = 'FA06B1156F0976E2E5D562E468163BC1', $intern_42 = 'android', $intern_44 = 'android_tablet', $intern_40 = 'base', $intern_38 = 'baseUrl', $intern_1 = 'begin', $intern_50 = 'blackberry', $intern_7 = 'body', $intern_0 = 'bootstrap', $intern_37 = 'clear.cache.gif', $intern_26 = 'content', $intern_51 = 'desktop', $intern_96 = 'end', $intern_56 = 'file://', $intern_2 = 'gwt.codesvr.showcase=', $intern_3 = 'gwt.codesvr=', $intern_31 = 'gwt:onLoadErrorFn', $intern_28 = 'gwt:onPropertyErrorFn', $intern_25 = 'gwt:property', $intern_19 = 'head', $intern_8 = 'iframe', $intern_36 = 'img', $intern_45 = 'ipad', $intern_46 = 'ipad_retina', $intern_47 = 'iphone', $intern_48 = 'ipod', $intern_13 = 'javascript', $intern_9 = 'javascript:""', $intern_95 = 'loadExternalRefs', $intern_20 = 'meta', $intern_41 = 'mgwt.os', $intern_43 = 'mobile', $intern_52 = 'mobile.user.agent', $intern_53 = 'mobilesafari', $intern_18 = 'moduleRequested', $intern_17 = 'moduleStartup', $intern_21 = 'name', $intern_58 = 'no', $intern_54 = 'not_mobile', $intern_55 = 'phonegap.env', $intern_10 = 'position:absolute; width:0; height:0; border:none; left: -1000px; top: -1000px; !important', $intern_49 = 'retina', $intern_12 = 'script', $intern_59 = 'selectingPermutation', $intern_4 = 'showcase', $intern_60 = 'showcase.devmode.js', $intern_39 = 'showcase.nocache.js', $intern_22 = 'showcase::', $intern_5 = 'startup', $intern_15 = 'undefined', $intern_14 = 'var $wnd = window.parent;', $intern_57 = 'yes';
   var $wnd = window;
   var $doc = document;
   sendStats($intern_0, $intern_1);
@@ -304,104 +304,114 @@ function showcase(){
             }
           }
           if (ua.indexOf($intern_45) != -1) {
+            if (window.devicePixelRatio >= 2) {
+              return $intern_46;
+            }
             return $intern_45;
           }
-          if (ua.indexOf($intern_46) != -1) {
+          if (ua.indexOf($intern_47) != -1 || ua.indexOf($intern_48) != -1) {
             if (window.devicePixelRatio >= 2) {
-              return $intern_47;
+              return $intern_49;
             }
-            return $intern_46;
+            return $intern_47;
           }
-          if (ua.indexOf($intern_48) != -1) {
-            return $intern_48;
+          if (ua.indexOf($intern_50) != -1) {
+            return $intern_50;
           }
-          return $intern_49;
+          return $intern_51;
         }
         ();
         return mgwt_os;
       }
     }
     ;
-    values[$intern_41] = {android:0, android_tablet:1, blackberry:2, desktop:3, ipad:4, iphone:5, retina:6};
-    providers[$intern_50] = function(){
+    values[$intern_41] = {android:0, android_tablet:1, blackberry:2, desktop:3, ipad:4, ipad_retina:5, iphone:6, retina:7};
+    providers[$intern_52] = function(){
       {
         var user_agent = function(){
           var ua = window.navigator.userAgent.toLowerCase();
           if (ua.indexOf($intern_42) != -1) {
-            return $intern_51;
+            return $intern_53;
           }
-          if (ua.indexOf($intern_46) != -1) {
-            return $intern_51;
-          }
-          if (ua.indexOf($intern_45) != -1) {
-            return $intern_51;
+          if (ua.indexOf($intern_47) != -1) {
+            return $intern_53;
           }
           if (ua.indexOf($intern_48) != -1) {
-            return $intern_52;
+            return $intern_53;
           }
-          return $intern_52;
+          if (ua.indexOf($intern_45) != -1) {
+            return $intern_53;
+          }
+          if (ua.indexOf($intern_50) != -1) {
+            return $intern_54;
+          }
+          return $intern_54;
         }
         ();
         return user_agent;
       }
     }
     ;
-    values[$intern_50] = {mobilesafari:0, not_mobile:1};
-    providers[$intern_53] = function(){
+    values[$intern_52] = {mobilesafari:0, not_mobile:1};
+    providers[$intern_55] = function(){
       {
         var ua = window.navigator.userAgent.toLowerCase();
-        if (ua.indexOf($intern_42) != -1 || (ua.indexOf($intern_45) != -1 || (ua.indexOf($intern_46) != -1 || ua.indexOf($intern_48) != -1))) {
+        if (ua.indexOf($intern_42) != -1 || (ua.indexOf($intern_45) != -1 || (ua.indexOf($intern_48) != -1 || (ua.indexOf($intern_47) != -1 || ua.indexOf($intern_50) != -1)))) {
           var url = document.location.href;
-          if (url.indexOf($intern_54) === 0) {
-            return $intern_55;
+          if (url.indexOf($intern_56) === 0) {
+            return $intern_57;
           }
         }
-        return $intern_56;
+        return $intern_58;
       }
     }
     ;
-    values[$intern_53] = {no:0, yes:1};
+    values[$intern_55] = {no:0, yes:1};
     __gwt_isKnownPropertyValue = function(propName, propValue){
       return propValue in values[propName];
     }
     ;
     showcase.__computePropValue = computePropValue;
-    sendStats($intern_0, $intern_57);
+    sendStats($intern_0, $intern_59);
     if (isHostedMode()) {
-      return computeUrlForResource($intern_58);
+      return computeUrlForResource($intern_60);
     }
     var strongName;
     try {
-      unflattenKeylistIntoAnswers([$intern_48, $intern_52, $intern_55], $intern_59);
-      unflattenKeylistIntoAnswers([$intern_48, $intern_52, $intern_56], $intern_60);
-      unflattenKeylistIntoAnswers([$intern_44, $intern_51, $intern_55], $intern_61);
-      unflattenKeylistIntoAnswers([$intern_46, $intern_52, $intern_56], $intern_62);
-      unflattenKeylistIntoAnswers([$intern_44, $intern_51, $intern_56], $intern_63);
-      unflattenKeylistIntoAnswers([$intern_49, $intern_51, $intern_55], $intern_64);
-      unflattenKeylistIntoAnswers([$intern_45, $intern_51, $intern_56], $intern_65);
-      unflattenKeylistIntoAnswers([$intern_47, $intern_52, $intern_55], $intern_66);
-      unflattenKeylistIntoAnswers([$intern_47, $intern_51, $intern_55], $intern_67);
-      unflattenKeylistIntoAnswers([$intern_48, $intern_51, $intern_55], $intern_68);
-      unflattenKeylistIntoAnswers([$intern_46, $intern_51, $intern_56], $intern_69);
-      unflattenKeylistIntoAnswers([$intern_49, $intern_52, $intern_55], $intern_70);
-      unflattenKeylistIntoAnswers([$intern_47, $intern_51, $intern_56], $intern_71);
-      unflattenKeylistIntoAnswers([$intern_42, $intern_51, $intern_56], $intern_72);
-      unflattenKeylistIntoAnswers([$intern_45, $intern_51, $intern_55], $intern_73);
-      unflattenKeylistIntoAnswers([$intern_49, $intern_51, $intern_56], $intern_74);
-      unflattenKeylistIntoAnswers([$intern_46, $intern_52, $intern_55], $intern_75);
-      unflattenKeylistIntoAnswers([$intern_42, $intern_52, $intern_55], $intern_76);
-      unflattenKeylistIntoAnswers([$intern_49, $intern_52, $intern_56], $intern_77);
-      unflattenKeylistIntoAnswers([$intern_42, $intern_51, $intern_55], $intern_78);
-      unflattenKeylistIntoAnswers([$intern_46, $intern_51, $intern_55], $intern_79);
-      unflattenKeylistIntoAnswers([$intern_47, $intern_52, $intern_56], $intern_80);
-      unflattenKeylistIntoAnswers([$intern_45, $intern_52, $intern_55], $intern_81);
-      unflattenKeylistIntoAnswers([$intern_42, $intern_52, $intern_56], $intern_82);
-      unflattenKeylistIntoAnswers([$intern_44, $intern_52, $intern_55], $intern_83);
-      unflattenKeylistIntoAnswers([$intern_48, $intern_51, $intern_56], $intern_84);
-      unflattenKeylistIntoAnswers([$intern_45, $intern_52, $intern_56], $intern_85);
-      unflattenKeylistIntoAnswers([$intern_44, $intern_52, $intern_56], $intern_86);
-      strongName = answers[computePropValue($intern_41)][computePropValue($intern_50)][computePropValue($intern_53)];
-      var idx = strongName.indexOf($intern_87);
+      unflattenKeylistIntoAnswers([$intern_44, $intern_53, $intern_58], $intern_61);
+      unflattenKeylistIntoAnswers([$intern_44, $intern_53, $intern_57], $intern_62);
+      unflattenKeylistIntoAnswers([$intern_50, $intern_54, $intern_57], $intern_63);
+      unflattenKeylistIntoAnswers([$intern_50, $intern_54, $intern_58], $intern_64);
+      unflattenKeylistIntoAnswers([$intern_46, $intern_54, $intern_58], $intern_65);
+      unflattenKeylistIntoAnswers([$intern_46, $intern_53, $intern_57], $intern_66);
+      unflattenKeylistIntoAnswers([$intern_49, $intern_54, $intern_57], $intern_67);
+      unflattenKeylistIntoAnswers([$intern_42, $intern_53, $intern_58], $intern_68);
+      unflattenKeylistIntoAnswers([$intern_50, $intern_53, $intern_57], $intern_69);
+      unflattenKeylistIntoAnswers([$intern_45, $intern_53, $intern_57], $intern_70);
+      unflattenKeylistIntoAnswers([$intern_45, $intern_54, $intern_58], $intern_71);
+      unflattenKeylistIntoAnswers([$intern_42, $intern_54, $intern_57], $intern_72);
+      unflattenKeylistIntoAnswers([$intern_49, $intern_54, $intern_58], $intern_73);
+      unflattenKeylistIntoAnswers([$intern_51, $intern_54, $intern_57], $intern_74);
+      unflattenKeylistIntoAnswers([$intern_42, $intern_54, $intern_58], $intern_75);
+      unflattenKeylistIntoAnswers([$intern_47, $intern_54, $intern_58], $intern_76);
+      unflattenKeylistIntoAnswers([$intern_45, $intern_53, $intern_58], $intern_77);
+      unflattenKeylistIntoAnswers([$intern_44, $intern_54, $intern_58], $intern_78);
+      unflattenKeylistIntoAnswers([$intern_47, $intern_54, $intern_57], $intern_79);
+      unflattenKeylistIntoAnswers([$intern_42, $intern_53, $intern_57], $intern_80);
+      unflattenKeylistIntoAnswers([$intern_49, $intern_53, $intern_58], $intern_81);
+      unflattenKeylistIntoAnswers([$intern_46, $intern_53, $intern_58], $intern_82);
+      unflattenKeylistIntoAnswers([$intern_51, $intern_53, $intern_57], $intern_83);
+      unflattenKeylistIntoAnswers([$intern_47, $intern_53, $intern_58], $intern_84);
+      unflattenKeylistIntoAnswers([$intern_46, $intern_54, $intern_57], $intern_85);
+      unflattenKeylistIntoAnswers([$intern_47, $intern_53, $intern_57], $intern_86);
+      unflattenKeylistIntoAnswers([$intern_51, $intern_53, $intern_58], $intern_87);
+      unflattenKeylistIntoAnswers([$intern_45, $intern_54, $intern_57], $intern_88);
+      unflattenKeylistIntoAnswers([$intern_51, $intern_54, $intern_58], $intern_89);
+      unflattenKeylistIntoAnswers([$intern_50, $intern_53, $intern_58], $intern_90);
+      unflattenKeylistIntoAnswers([$intern_44, $intern_54, $intern_57], $intern_91);
+      unflattenKeylistIntoAnswers([$intern_49, $intern_53, $intern_57], $intern_92);
+      strongName = answers[computePropValue($intern_41)][computePropValue($intern_52)][computePropValue($intern_55)];
+      var idx = strongName.indexOf($intern_93);
       if (idx != -1) {
         softPermutationId = strongName.substring(idx + 1);
         strongName = strongName.substring(0, idx);
@@ -410,22 +420,22 @@ function showcase(){
      catch (e) {
     }
     showcase.__softPermutationId = softPermutationId;
-    return computeUrlForResource(strongName + $intern_88);
+    return computeUrlForResource(strongName + $intern_94);
   }
 
   function loadExternalStylesheets(){
     if (!$wnd.__gwt_stylesLoaded) {
       $wnd.__gwt_stylesLoaded = {};
     }
-    sendStats($intern_89, $intern_1);
-    sendStats($intern_89, $intern_90);
+    sendStats($intern_95, $intern_1);
+    sendStats($intern_95, $intern_96);
   }
 
   processMetas();
   showcase.__moduleBase = computeScriptBase();
   var filename = getCompiledCodeFilename();
   loadExternalStylesheets();
-  sendStats($intern_0, $intern_90);
+  sendStats($intern_0, $intern_96);
   installScript(filename);
 }
 
