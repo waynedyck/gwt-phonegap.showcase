@@ -21,7 +21,7 @@ import com.googlecode.mgwt.ui.client.MGWTStyle;
 import com.googlecode.mgwt.ui.client.dialog.Dialogs;
 import com.googlecode.mgwt.ui.client.dialog.Dialogs.ButtonType;
 import com.googlecode.mgwt.ui.client.dialog.Dialogs.OptionCallback;
-import com.googlecode.mgwt.ui.client.dialog.Dialogs.OptionsDialogOption;
+import com.googlecode.mgwt.ui.client.dialog.Dialogs.OptionsDialogEntry;
 import com.googlecode.mgwt.ui.client.widget.CellList;
 import com.googlecode.mgwt.ui.client.widget.HeaderButton;
 import com.googlecode.mgwt.ui.client.widget.MTextArea;
@@ -130,10 +130,10 @@ public class FileDisplayGwtImpl extends Composite implements FileDisplay {
 
 	@Override
 	public void showSelectMenu() {
-		ArrayList<OptionsDialogOption> list = new ArrayList<OptionsDialogOption>();
+		ArrayList<OptionsDialogEntry> list = new ArrayList<OptionsDialogEntry>();
 
-		list.add(new OptionsDialogOption("Overwrite", ButtonType.IMPORTANT));
-		list.add(new OptionsDialogOption("Cancel", ButtonType.NORMAL));
+		list.add(new OptionsDialogEntry("Overwrite", ButtonType.IMPORTANT));
+		list.add(new OptionsDialogEntry("Cancel", ButtonType.NORMAL));
 
 		Dialogs.options(list, new OptionCallback() {
 
