@@ -94,7 +94,7 @@ public class AccelerometerActivity extends NavBaseActivity implements Presenter 
 
 		display.getStartStopButton().setText("Start");
 
-		if (phoneGap.isDevMode()) {
+		if (phoneGap.isPhoneGapDevice()) {
 			AccelermeterMock mock = ((AccelermeterMock) phoneGap.getAccelerometer());
 
 			ArrayList<Acceleration> list = new ArrayList<Acceleration>();
