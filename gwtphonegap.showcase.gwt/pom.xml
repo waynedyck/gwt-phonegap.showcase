@@ -20,6 +20,14 @@
 		<gwtversion>2.4.0</gwtversion>
 	</properties>
 	
+	
+	<repositories>
+	   <repository>
+	      <id>sonatype snapshots</id>
+	      <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+	   </repository>
+	</repositories>
+	
 	<build>
 		<plugins>
 			<plugin>
