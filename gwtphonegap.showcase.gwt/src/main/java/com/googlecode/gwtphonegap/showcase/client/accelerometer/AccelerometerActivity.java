@@ -92,7 +92,7 @@ public class AccelerometerActivity extends NavBaseActivity implements Presenter 
 
     display.getStartStopButton().setText("Start");
 
-    if (phoneGap.isPhoneGapDevice()) {
+    if (!phoneGap.isPhoneGapDevice()) {
       AccelermeterMock mock = ((AccelermeterMock) phoneGap.getAccelerometer());
 
       ArrayList<Acceleration> list = new ArrayList<Acceleration>();
@@ -123,8 +123,7 @@ public class AccelerometerActivity extends NavBaseActivity implements Presenter 
     if (watcher == null) {
       final AccelerationOptions options = new AccelerationOptions();
       options.setFrequency(50);
-      watcher =
-          phoneGap.getAccelerometer().watchAcceleration(options, new AccelerometerCallbackImpl());
+      watcher = phoneGap.getAccelerometer().watchAcceleration(options, new AccelerometerCallbackImpl());
       display.getStartStopButton().setText("Stop");
     } else {
       phoneGap.getAccelerometer().clearWatch(watcher);
