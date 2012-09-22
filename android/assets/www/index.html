@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>index</title>
+    <script type="text/javascript" language="javascript" src="cordova-2.0.0.js"></script>
+      <script type="text/javascript" language="javascript" src="childbrowser.js"></script>
+    
+    
+    <script type="text/javascript" language="javascript" src="showcase/showcase.nocache.js"></script>
+    
+    
+    
+    <script type="text/javascript" language="javascript">
+    function onPause() {
+        console.log("pause");
+    }
+    
+    function onResume() {
+       console.log("resume");
+    }
+    
+    var onDeviceReady = function(){ 
+        console.log("device ready");
+        
+        alert("ready");
+    
+        
+        document.addEventListener("pause", onPause, false); 
+        document.addEventListener("resume", onResume, false); 
+        
+    };
+    
+              
+   document.addEventListener("deviceready", onDeviceReady, false); 
+    </script>
+    
+  </head>
+
+  <body>
+    <iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1' style="position:absolute;width:0;height:0;border:0"></iframe>
+
+  </body>
+</html>

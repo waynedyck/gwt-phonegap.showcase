@@ -1,0 +1,112 @@
+2012-09-07 18:12:09.510 GWTGap[11374:c07] Multi-tasking -> Device: YES, App: YES
+2012-09-07 18:12:09.661 GWTGap[11374:c07] PluginResult:toJSONString - {"status":1,"message":"wifi","keepCallback":false}
+2012-09-07 18:12:09.662 GWTGap[11374:c07] PluginResult toSuccessCallbackString: cordova.callbackSuccess('NetworkStatus0',{"status":1,"message":"wifi","keepCallback":false});
+2012-09-07 18:12:09.665 GWTGap[11374:c07] PluginResult:toJSONString - {"status":1,"message":{"name":"iPhone Simulator","uuid":"3E156FA4-466F-487C-9D5E-31609D2E91D5","platform":"iPhone Simulator","version":"5.1","cordova":"2.0.0"},"keepCallback":false}
+2012-09-07 18:12:09.666 GWTGap[11374:c07] PluginResult toSuccessCallbackString: cordova.callbackSuccess('Device1',{"status":1,"message":{"name":"iPhone Simulator","uuid":"3E156FA4-466F-487C-9D5E-31609D2E91D5","platform":"iPhone Simulator","version":"5.1","cordova":"2.0.0"},"keepCallback":false});
+2012-09-07 18:12:09.681 GWTGap[11374:c07] [INFO] report:deviceready
+Terminating in response to SpringBoard's termination.
+2012-09-07 18:12:37.276 GWTGap[11515:c07] Multi-tasking -> Device: YES, App: YES
+2012-09-07 18:12:37.401 GWTGap[11515:c07] PluginResult:toJSONString - {"status":1,"message":"wifi","keepCallback":false}
+2012-09-07 18:12:37.401 GWTGap[11515:c07] PluginResult toSuccessCallbackString: cordova.callbackSuccess('NetworkStatus0',{"status":1,"message":"wifi","keepCallback":false});
+2012-09-07 18:12:37.404 GWTGap[11515:c07] PluginResult:toJSONString - {"status":1,"message":{"name":"iPhone Simulator","uuid":"3E156FA4-466F-487C-9D5E-31609D2E91D5","platform":"iPhone Simulator","version":"5.1","cordova":"2.0.0"},"keepCallback":false}
+2012-09-07 18:12:37.405 GWTGap[11515:c07] PluginResult toSuccessCallbackString: cordova.callbackSuccess('Device1',{"status":1,"message":{"name":"iPhone Simulator","uuid":"3E156FA4-466F-487C-9D5E-31609D2E91D5","platform":"iPhone Simulator","version":"5.1","cordova":"2.0.0"},"keepCallback":false});
+2012-09-07 18:12:37.422 GWTGap[11515:c07] [INFO] report:deviceready
+Terminating in response to SpringBoard's termination.
+2012-09-07 18:17:31.496 GWTGap[11754:c07] Multi-tasking -> Device: YES, App: YES
+2012-09-07 18:17:31.662 GWTGap[11754:c07] PluginResult:toJSONString - {"status":1,"message":"wifi","keepCallback":false}
+2012-09-07 18:17:31.663 GWTGap[11754:c07] PluginResult toSuccessCallbackString: cordova.callbackSuccess('NetworkStatus0',{"status":1,"message":"wifi","keepCallback":false});
+2012-09-07 18:17:31.665 GWTGap[11754:c07] PluginResult:toJSONString - {"status":1,"message":{"name":"iPhone Simulator","uuid":"3E156FA4-466F-487C-9D5E-31609D2E91D5","platform":"iPhone Simulator","version":"5.1","cordova":"2.0.0"},"keepCallback":false}
+2012-09-07 18:17:31.666 GWTGap[11754:c07] PluginResult toSuccessCallbackString: cordova.callbackSuccess('Device1',{"status":1,"message":{"name":"iPhone Simulator","uuid":"3E156FA4-466F-487C-9D5E-31609D2E91D5","platform":"iPhone Simulator","version":"5.1","cordova":"2.0.0"},"keepCallback":false});
+2012-09-07 18:17:45.377 GWTGap[11754:c07] Camera.getPicture: source type 1 not available.
+2012-09-07 18:17:45.377 GWTGap[11754:c07] PluginResult:toJSONString - {"status":1,"message":"no camera available","keepCallback":false}
+2012-09-07 18:17:45.378 GWTGap[11754:c07] PluginResult toErrorCallbackString: cordova.callbackError('Camera4',{"status":1,"message":"no camera available","keepCallback":false});
+2012-09-07 18:17:49.589 GWTGap[11754:c07] PluginResult:toJSONString - {"status":9,"message":20,"keepCallback":false}
+2012-09-07 18:17:49.590 GWTGap[11754:c07] PluginResult toErrorCallbackString: cordova.callbackError('Compass5',{"status":9,"message":20,"keepCallback":false});
+2012-09-07 18:17:50.962 GWTGap[11754:c07] PluginResult:toJSONString - {"status":9,"message":20,"keepCallback":false}
+2012-09-07 18:17:50.962 GWTGap[11754:c07] PluginResult toErrorCallbackString: cordova.callbackError('Compass6',{"status":9,"message":20,"keepCallback":false});
+2012-09-07 18:17:52.404 GWTGap[11754:c07] PluginResult:toJSONString - {"status":9,"message":20,"keepCallback":false}
+2012-09-07 18:17:52.405 GWTGap[11754:c07] PluginResult toErrorCallbackString: cordova.callbackError('Compass7',{"status":9,"message":20,"keepCallback":false});
+2012-09-07 18:17:53.368 GWTGap[11754:c07] PluginResult:toJSONString - {"status":9,"message":20,"keepCallback":false}
+2012-09-07 18:17:53.369 GWTGap[11754:c07] PluginResult toErrorCallbackString: cordova.callbackError('Compass8',{"status":9,"message":20,"keepCallback":false});
+2012-09-07 18:17:54.190 GWTGap[11754:c07] PluginResult:toJSONString - {"status":9,"message":20,"keepCallback":false}
+2012-09-07 18:17:54.191 GWTGap[11754:c07] PluginResult toErrorCallbackString: cordova.callbackError('Compass9',{"status":9,"message":20,"keepCallback":false});
+2012-09-07 18:17:55.461 GWTGap[11754:c07] PluginResult:toJSONString - {"status":9,"message":20,"keepCallback":false}
+2012-09-07 18:17:55.462 GWTGap[11754:c07] PluginResult toErrorCallbackString: cordova.callbackError('Compass10',{"status":9,"message":20,"keepCallback":false});
+Terminating in response to SpringBoard's termination.
+2012-09-07 18:18:09.962 GWTGap[11900:c07] Multi-tasking -> Device: YES, App: YES
+2012-09-07 18:18:10.135 GWTGap[11900:c07] PluginResult:toJSONString - {"status":1,"message":"wifi","keepCallback":false}
+2012-09-07 18:18:10.136 GWTGap[11900:c07] PluginResult toSuccessCallbackString: cordova.callbackSuccess('NetworkStatus0',{"status":1,"message":"wifi","keepCallback":false});
+2012-09-07 18:18:10.138 GWTGap[11900:c07] PluginResult:toJSONString - {"status":1,"message":{"name":"iPhone Simulator","uuid":"3E156FA4-466F-487C-9D5E-31609D2E91D5","platform":"iPhone Simulator","version":"5.1","cordova":"2.0.0"},"keepCallback":false}
+2012-09-07 18:18:10.139 GWTGap[11900:c07] PluginResult toSuccessCallbackString: cordova.callbackSuccess('Device1',{"status":1,"message":{"name":"iPhone Simulator","uuid":"3E156FA4-466F-487C-9D5E-31609D2E91D5","platform":"iPhone Simulator","version":"5.1","cordova":"2.0.0"},"keepCallback":false});
+2012-09-07 18:18:18.488 GWTGap[11900:c07] PluginResult:toJSONString - {"status":1,"message":[],"keepCallback":false}
+2012-09-07 18:18:18.488 GWTGap[11900:c07] PluginResult toSuccessCallbackString: cordova.callbackSuccess('Contacts3',{"status":1,"message":[],"keepCallback":false});
+2012-09-07 18:18:19.340 GWTGap[11900:c07] PluginResult:toJSONString - {"status":1,"message":[],"keepCallback":false}
+2012-09-07 18:18:19.341 GWTGap[11900:c07] PluginResult toSuccessCallbackString: cordova.callbackSuccess('Contacts4',{"status":1,"message":[],"keepCallback":false});
+2012-09-07 18:18:30.202 GWTGap[11900:c07] PluginResult:toJSONString - {"status":1,"message":{"name":"persistent","root":{"name":"Documents","fullPath":"/Users/kurt/Library/Application Support/iPhone Simulator/5.1/Applications/A354D598-EDDA-4A9D-B763-BDB6C0A391EB/Documents","isFile":false,"isDirectory":true}},"keepCallback":false}
+2012-09-07 18:18:30.203 GWTGap[11900:c07] PluginResult toSuccessCallbackString: cordova.callbackSuccess('File5',{"status":1,"message":{"name":"persistent","root":{"name":"Documents","fullPath":"/Users/kurt/Library/Application Support/iPhone Simulator/5.1/Applications/A354D598-EDDA-4A9D-B763-BDB6C0A391EB/Documents","isFile":false,"isDirectory":true}},"keepCallback":false});
+2012-09-07 18:18:30.205 GWTGap[11900:c07] PluginResult:toJSONString - {"status":1,"message":[{"name":"Backups","fullPath":"/Users/kurt/Library/Application Support/iPhone Simulator/5.1/Applications/A354D598-EDDA-4A9D-B763-BDB6C0A391EB/Documents/Backups","isFile":false,"isDirectory":true}],"keepCallback":false}
+2012-09-07 18:18:30.206 GWTGap[11900:c07] PluginResult toSuccessCallbackString: cordova.callbackSuccess('File6',{"status":1,"message":[{"name":"Backups","fullPath":"/Users/kurt/Library/Application Support/iPhone Simulator/5.1/Applications/A354D598-EDDA-4A9D-B763-BDB6C0A391EB/Documents/Backups","isFile":false,"isDirectory":true}],"keepCallback":false});
+2012-09-07 18:18:33.434 GWTGap[11900:c07] PluginResult:toJSONString - {"status":1,"message":{"name":"Documents","fullPath":"/Users/kurt/Library/Application Support/iPhone Simulator/5.1/Applications/A354D598-EDDA-4A9D-B763-BDB6C0A391EB/Documents","isFile":false,"isDirectory":true},"keepCallback":false}
+2012-09-07 18:18:33.435 GWTGap[11900:c07] PluginResult toSuccessCallbackString: cordova.callbackSuccess('File7',{"status":1,"message":{"name":"Documents","fullPath":"/Users/kurt/Library/Application Support/iPhone Simulator/5.1/Applications/A354D598-EDDA-4A9D-B763-BDB6C0A391EB/Documents","isFile":false,"isDirectory":true},"keepCallback":false});
+2012-09-07 18:18:33.437 GWTGap[11900:c07] PluginResult:toJSONString - {"status":1,"message":[{"name":"Backups","fullPath":"/Users/kurt/Library/Application Support/iPhone Simulator/5.1/Applications/A354D598-EDDA-4A9D-B763-BDB6C0A391EB/Documents/Backups","isFile":false,"isDirectory":true}],"keepCallback":false}
+2012-09-07 18:18:33.438 GWTGap[11900:c07] PluginResult toSuccessCallbackString: cordova.callbackSuccess('File8',{"status":1,"message":[{"name":"Backups","fullPath":"/Users/kurt/Library/Application Support/iPhone Simulator/5.1/Applications/A354D598-EDDA-4A9D-B763-BDB6C0A391EB/Documents/Backups","isFile":false,"isDirectory":true}],"keepCallback":false});
+2012-09-07 18:18:34.022 GWTGap[11900:c07] PluginResult:toJSONString - {"status":1,"message":[],"keepCallback":false}
+2012-09-07 18:18:34.022 GWTGap[11900:c07] PluginResult toSuccessCallbackString: cordova.callbackSuccess('File9',{"status":1,"message":[],"keepCallback":false});
+2012-09-07 18:18:35.123 GWTGap[11900:c07] PluginResult:toJSONString - {"status":1,"message":{"name":"Documents","fullPath":"/Users/kurt/Library/Application Support/iPhone Simulator/5.1/Applications/A354D598-EDDA-4A9D-B763-BDB6C0A391EB/Documents","isFile":false,"isDirectory":true},"keepCallback":false}
+2012-09-07 18:18:35.124 GWTGap[11900:c07] PluginResult toSuccessCallbackString: cordova.callbackSuccess('File10',{"status":1,"message":{"name":"Documents","fullPath":"/Users/kurt/Library/Application Support/iPhone Simulator/5.1/Applications/A354D598-EDDA-4A9D-B763-BDB6C0A391EB/Documents","isFile":false,"isDirectory":true},"keepCallback":false});
+2012-09-07 18:18:35.125 GWTGap[11900:c07] PluginResult:toJSONString - {"status":1,"message":[{"name":"Backups","fullPath":"/Users/kurt/Library/Application Support/iPhone Simulator/5.1/Applications/A354D598-EDDA-4A9D-B763-BDB6C0A391EB/Documents/Backups","isFile":false,"isDirectory":true}],"keepCallback":false}
+2012-09-07 18:18:35.126 GWTGap[11900:c07] PluginResult toSuccessCallbackString: cordova.callbackSuccess('File11',{"status":1,"message":[{"name":"Backups","fullPath":"/Users/kurt/Library/Application Support/iPhone Simulator/5.1/Applications/A354D598-EDDA-4A9D-B763-BDB6C0A391EB/Documents/Backups","isFile":false,"isDirectory":true}],"keepCallback":false});
+2012-09-07 18:18:41.558 GWTGap[11900:c07] PluginResult:toJSONString - {"status":1,"message":{"velocity":-1,"longitude":-122.406417,"altitude":0,"timestamp":1347034721557.3171,"altitudeAccuracy":-1,"accuracy":5,"heading":-1,"latitude":37.785834000000001},"keepCallback":false}
+2012-09-07 18:18:41.559 GWTGap[11900:c07] PluginResult toSuccessCallbackString: cordova.callbackSuccess('Geolocation12',{"status":1,"message":{"velocity":-1,"longitude":-122.406417,"altitude":0,"timestamp":1347034721557.3171,"altitudeAccuracy":-1,"accuracy":5,"heading":-1,"latitude":37.785834000000001},"keepCallback":false});
+2012-09-07 18:18:41.562 GWTGap[11900:c07] PluginResult:toJSONString - {"status":1,"message":{"velocity":-1,"longitude":-122.406417,"altitude":0,"timestamp":1347034721557.3171,"altitudeAccuracy":-1,"accuracy":5,"heading":-1,"latitude":37.785834000000001},"keepCallback":true}
+2012-09-07 18:18:41.563 GWTGap[11900:c07] PluginResult toSuccessCallbackString: cordova.callbackSuccess('Geolocation13',{"status":1,"message":{"velocity":-1,"longitude":-122.406417,"altitude":0,"timestamp":1347034721557.3171,"altitudeAccuracy":-1,"accuracy":5,"heading":-1,"latitude":37.785834000000001},"keepCallback":true});
+2012-09-07 18:18:48.523 GWTGap[11900:c07] Will attempt to use file resource 'sound.mp3'
+2012-09-07 18:18:48.524 GWTGap[11900:c07] Unknown resource 'sound.mp3'
+2012-09-07 18:18:55.568 GWTGap[11900:c07] PluginResult:toJSONString - {"status":1,"message":-1,"keepCallback":false}
+2012-09-07 18:18:55.568 GWTGap[11900:c07] PluginResult toSuccessCallbackString: cordova.callbackSuccess('Media15',{"status":1,"message":-1,"keepCallback":false});
+2012-09-07 18:18:55.771 GWTGap[11900:c07] PluginResult:toJSONString - {"status":1,"message":-1,"keepCallback":false}
+2012-09-07 18:18:55.772 GWTGap[11900:c07] PluginResult toSuccessCallbackString: cordova.callbackSuccess('Media16',{"status":1,"message":-1,"keepCallback":false});
+2012-09-07 18:18:55.971 GWTGap[11900:c07] PluginResult:toJSONString - {"status":1,"message":-1,"keepCallback":false}
+2012-09-07 18:18:55.972 GWTGap[11900:c07] PluginResult toSuccessCallbackString: cordova.callbackSuccess('Media17',{"status":1,"message":-1,"keepCallback":false});
+2012-09-07 18:18:56.172 GWTGap[11900:c07] PluginResult:toJSONString - {"status":1,"message":-1,"keepCallback":false}
+2012-09-07 18:18:56.172 GWTGap[11900:c07] PluginResult toSuccessCallbackString: cordova.callbackSuccess('Media18',{"status":1,"message":-1,"keepCallback":false});
+2012-09-07 18:18:56.372 GWTGap[11900:c07] PluginResult:toJSONString - {"status":1,"message":-1,"keepCallback":false}
+2012-09-07 18:18:56.373 GWTGap[11900:c07] PluginResult toSuccessCallbackString: cordova.callbackSuccess('Media19',{"status":1,"message":-1,"keepCallback":false});
+2012-09-07 18:18:56.573 GWTGap[11900:c07] PluginResult:toJSONString - {"status":1,"message":-1,"keepCallback":false}
+2012-09-07 18:18:56.573 GWTGap[11900:c07] PluginResult toSuccessCallbackString: cordova.callbackSuccess('Media20',{"status":1,"message":-1,"keepCallback":false});
+2012-09-07 18:19:01.544 GWTGap[11900:c07] PluginResult:toJSONString - {"status":1,"message":1,"keepCallback":false}
+2012-09-07 18:19:01.545 GWTGap[11900:c07] PluginResult toSuccessCallbackString: cordova.callbackSuccess('Notification22',{"status":1,"message":1,"keepCallback":false});
+2012-09-07 18:19:03.424 GWTGap[11900:c07] PluginResult:toJSONString - {"status":1,"message":2,"keepCallback":false}
+2012-09-07 18:19:03.425 GWTGap[11900:c07] PluginResult toSuccessCallbackString: cordova.callbackSuccess('Notification23',{"status":1,"message":2,"keepCallback":false});
+2012-09-07 18:19:05.407 GWTGap[11900:c07] Will attempt to use file resource 'beep.wav'
+2012-09-07 18:19:05.409 GWTGap[11900:c07] Unknown resource 'beep.wav'
+2012-09-07 18:19:05.411 GWTGap[11900:c07] Will attempt to use file resource 'beep.wav'
+2012-09-07 18:19:05.411 GWTGap[11900:c07] Unknown resource 'beep.wav'
+2012-09-07 18:19:09.570 GWTGap[11900:c07] ERROR: Plugin 'ChildBrowserCommand' not found, or is not a CDVPlugin. Check your plugin mapping in Cordova.plist.
+2012-09-07 18:19:09.571 GWTGap[11900:c07] FAILED pluginJSON = {"className":"ChildBrowserCommand","methodName":"showWebPage","arguments":["http://www.google.de"]}
+2012-09-07 18:19:10.312 GWTGap[11900:c07] ERROR: Plugin 'ChildBrowserCommand' not found, or is not a CDVPlugin. Check your plugin mapping in Cordova.plist.
+2012-09-07 18:19:10.314 GWTGap[11900:c07] FAILED pluginJSON = {"className":"ChildBrowserCommand","methodName":"showWebPage","arguments":["http://www.google.de"]}
+2012-09-07 18:19:10.514 GWTGap[11900:c07] ERROR: Plugin 'ChildBrowserCommand' not found, or is not a CDVPlugin. Check your plugin mapping in Cordova.plist.
+2012-09-07 18:19:10.514 GWTGap[11900:c07] FAILED pluginJSON = {"className":"ChildBrowserCommand","methodName":"showWebPage","arguments":["http://www.google.de"]}
+2012-09-07 18:19:10.682 GWTGap[11900:c07] ERROR: Plugin 'ChildBrowserCommand' not found, or is not a CDVPlugin. Check your plugin mapping in Cordova.plist.
+2012-09-07 18:19:10.683 GWTGap[11900:c07] FAILED pluginJSON = {"className":"ChildBrowserCommand","methodName":"showWebPage","arguments":["http://www.google.de"]}
+2012-09-07 18:19:10.853 GWTGap[11900:c07] ERROR: Plugin 'ChildBrowserCommand' not found, or is not a CDVPlugin. Check your plugin mapping in Cordova.plist.
+2012-09-07 18:19:10.854 GWTGap[11900:c07] FAILED pluginJSON = {"className":"ChildBrowserCommand","methodName":"showWebPage","arguments":["http://www.google.de"]}
+2012-09-07 18:19:11.008 GWTGap[11900:c07] ERROR: Plugin 'ChildBrowserCommand' not found, or is not a CDVPlugin. Check your plugin mapping in Cordova.plist.
+2012-09-07 18:19:11.009 GWTGap[11900:c07] FAILED pluginJSON = {"className":"ChildBrowserCommand","methodName":"showWebPage","arguments":["http://www.google.de"]}
+2012-09-07 18:19:11.177 GWTGap[11900:c07] ERROR: Plugin 'ChildBrowserCommand' not found, or is not a CDVPlugin. Check your plugin mapping in Cordova.plist.
+2012-09-07 18:19:11.178 GWTGap[11900:c07] FAILED pluginJSON = {"className":"ChildBrowserCommand","methodName":"showWebPage","arguments":["http://www.google.de"]}
+2012-09-07 18:19:11.381 GWTGap[11900:c07] ERROR: Plugin 'ChildBrowserCommand' not found, or is not a CDVPlugin. Check your plugin mapping in Cordova.plist.
+2012-09-07 18:19:11.382 GWTGap[11900:c07] FAILED pluginJSON = {"className":"ChildBrowserCommand","methodName":"showWebPage","arguments":["http://www.google.de"]}
+2012-09-07 19:17:54.251 GWTGap[12272:c07] Multi-tasking -> Device: YES, App: YES
+2012-09-07 19:17:54.602 GWTGap[12272:c07] PluginResult:toJSONString - {"status":1,"message":"wifi","keepCallback":false}
+2012-09-07 19:17:54.603 GWTGap[12272:c07] PluginResult toSuccessCallbackString: cordova.callbackSuccess('NetworkStatus0',{"status":1,"message":"wifi","keepCallback":false});
+2012-09-07 19:17:54.605 GWTGap[12272:c07] PluginResult:toJSONString - {"status":1,"message":{"name":"iPhone Simulator","uuid":"3E156FA4-466F-487C-9D5E-31609D2E91D5","platform":"iPhone Simulator","version":"5.1","cordova":"2.0.0"},"keepCallback":false}
+2012-09-07 19:17:54.605 GWTGap[12272:c07] PluginResult toSuccessCallbackString: cordova.callbackSuccess('Device1',{"status":1,"message":{"name":"iPhone Simulator","uuid":"3E156FA4-466F-487C-9D5E-31609D2E91D5","platform":"iPhone Simulator","version":"5.1","cordova":"2.0.0"},"keepCallback":false});
+Terminating in response to SpringBoard's termination.
+2012-09-07 19:18:44.042 GWTGap[12441:c07] Multi-tasking -> Device: YES, App: YES
+2012-09-07 19:18:44.191 GWTGap[12441:c07] PluginResult:toJSONString - {"status":1,"message":"wifi","keepCallback":false}
+2012-09-07 19:18:44.192 GWTGap[12441:c07] PluginResult toSuccessCallbackString: cordova.callbackSuccess('NetworkStatus0',{"status":1,"message":"wifi","keepCallback":false});
+2012-09-07 19:18:44.194 GWTGap[12441:c07] PluginResult:toJSONString - {"status":1,"message":{"name":"iPhone Simulator","uuid":"3E156FA4-466F-487C-9D5E-31609D2E91D5","platform":"iPhone Simulator","version":"5.1","cordova":"2.0.0"},"keepCallback":false}
+2012-09-07 19:18:44.194 GWTGap[12441:c07] PluginResult toSuccessCallbackString: cordova.callbackSuccess('Device1',{"status":1,"message":{"name":"iPhone Simulator","uuid":"3E156FA4-466F-487C-9D5E-31609D2E91D5","platform":"iPhone Simulator","version":"5.1","cordova":"2.0.0"},"keepCallback":false});
+Terminating in response to SpringBoard's termination.
