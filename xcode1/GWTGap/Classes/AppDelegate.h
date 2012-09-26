@@ -19,7 +19,7 @@
 
 //
 //  AppDelegate.h
-//  GWTGap
+//  update
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
 //  Copyright ___ORGANIZATIONNAME___ ___YEAR___. All rights reserved.
@@ -34,12 +34,12 @@
 }
 
 // invoke string is passed to your app on launch, this is only valid if you 
-// edit GWTGap-Info.plist to add a protocol
+// edit update-Info.plist to add a protocol
 // a simple tutorial can be found here : 
 // http://iphonedevelopertips.com/cocoa/launching-your-own-application-via-a-custom-url-scheme.html
 
-@property (nonatomic, retain) IBOutlet UIWindow* window;
-@property (nonatomic, retain) IBOutlet CDVViewController* viewController;
+@property (nonatomic, strong) IBOutlet UIWindow* window;
+@property (nonatomic, strong) IBOutlet CDVViewController* viewController;
 
 @end
 

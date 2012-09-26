@@ -19,7 +19,7 @@
 
 //
 //  MainViewController.h
-//  GWTGap
+//  update
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
 //  Copyright ___ORGANIZATIONNAME___ ___YEAR___. All rights reserved.
@@ -47,6 +47,15 @@
 }
 
 #pragma mark - View lifecycle
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    // Set the main view to utilize the entire application frame space of the device.
+    // Change this to suit your view's UI footprint needs in your application.
+    self.view.frame = [[UIScreen mainScreen] applicationFrame];
+    
+    [super viewWillAppear:animated];
+}
 
 - (void) viewDidLoad
 {

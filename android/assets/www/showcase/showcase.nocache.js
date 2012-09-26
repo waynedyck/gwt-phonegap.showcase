@@ -1,5 +1,5 @@
 function showcase(){
-  var $intern_27 = '', $intern_11 = ' top: -1000px;', $intern_36 = '" for "gwt:onLoadErrorFn"', $intern_34 = '" for "gwt:onPropertyErrorFn"', $intern_20 = '");', $intern_37 = '#', $intern_65 = '.cache.js', $intern_39 = '/', $intern_45 = '//', $intern_60 = '03200CB28FAFEB5B64B1CD9894E69300', $intern_61 = '553C0DECDB6E458B4758D4A8A53DBA3B', $intern_62 = '556004452C7E48BEDE96A4A5EDCAEF85', $intern_64 = ':', $intern_28 = '::', $intern_12 = '<html><head><\/head><body><\/body><\/html>', $intern_31 = '=', $intern_38 = '?', $intern_33 = 'Bad handler "', $intern_18 = 'Chrome', $intern_17 = 'DOMContentLoaded', $intern_6 = 'DUMMY', $intern_63 = 'FB522208DC5879684E9C3545FE403A71', $intern_50 = 'android', $intern_44 = 'base', $intern_42 = 'baseUrl', $intern_1 = 'begin', $intern_54 = 'blackberry', $intern_7 = 'body', $intern_0 = 'bootstrap', $intern_41 = 'clear.cache.gif', $intern_30 = 'content', $intern_67 = 'end', $intern_19 = 'eval("', $intern_55 = 'file://', $intern_2 = 'gwt.codesvr.showcase=', $intern_3 = 'gwt.codesvr=', $intern_35 = 'gwt:onLoadErrorFn', $intern_32 = 'gwt:onPropertyErrorFn', $intern_29 = 'gwt:property', $intern_23 = 'head', $intern_8 = 'iframe', $intern_40 = 'img', $intern_51 = 'ipad', $intern_53 = 'iphone', $intern_52 = 'ipod', $intern_14 = 'javascript', $intern_9 = 'javascript:""', $intern_66 = 'loadExternalRefs', $intern_24 = 'meta', $intern_46 = 'mobile.user.agent', $intern_47 = 'mobilesafari', $intern_22 = 'moduleRequested', $intern_21 = 'moduleStartup', $intern_25 = 'name', $intern_57 = 'no', $intern_48 = 'not_mobile', $intern_49 = 'phonegap.env', $intern_10 = 'position:absolute; width:0; height:0; border:none; left: -1000px;', $intern_13 = 'script', $intern_58 = 'selectingPermutation', $intern_4 = 'showcase', $intern_59 = 'showcase.devmode.js', $intern_43 = 'showcase.nocache.js', $intern_26 = 'showcase::', $intern_5 = 'startup', $intern_16 = 'undefined', $intern_15 = 'var $wnd = window.parent;', $intern_56 = 'yes';
+  var $intern_27 = '', $intern_11 = ' top: -1000px;', $intern_36 = '" for "gwt:onLoadErrorFn"', $intern_34 = '" for "gwt:onPropertyErrorFn"', $intern_20 = '");', $intern_37 = '#', $intern_99 = '.cache.js', $intern_39 = '/', $intern_45 = '//', $intern_66 = '006AB5074CA6A7ABEBCDAF88008850DD', $intern_67 = '07D93142D02E583048A9233A9DC1FC53', $intern_68 = '0A69ED87B9B8E4C7954FCD1DCCE87A10', $intern_69 = '22BE08BA37F9908F9254ED1370AF33B0', $intern_70 = '2E6C6224E14D29427C42CF8592442F47', $intern_71 = '330492AD74E462DBA27A1FB4D49F361A', $intern_72 = '363C925F8F2E7C0AD0411DA41B83B616', $intern_73 = '37E55C9686A605FB2F79167A772F0415', $intern_74 = '3B6526A38F27833F186C7122DED874B9', $intern_75 = '3CFF80EF0627D347CDDBE25B4BDEBF5A', $intern_76 = '4680EEC602927C784A1B0206B7B531F3', $intern_77 = '4B841E4BB842B414D035DB1D2A2C4399', $intern_78 = '5B6D912A0D68413081735B8E155DF86F', $intern_79 = '5FA4D7D9FB94F46982F00D95CC91748E', $intern_80 = '68A8C608FD09E8FB241E627CB3B476E6', $intern_81 = '692A9AAFD24F691E1CFB80D93BC36918', $intern_82 = '72EC5B0E6D2584421BA20E617C9187F6', $intern_83 = '7B6787276EC95F3DF8F6FBDE8D7DD0FD', $intern_84 = '8DB6188411C3DDD7D3FED907F8E02E8D', $intern_85 = '9626FD9A2E8EE7DE3B3D85C048E0EBB6', $intern_86 = '9EBF63497903EEE6620C5040A95C073D', $intern_98 = ':', $intern_28 = '::', $intern_12 = '<html><head><\/head><body><\/body><\/html>', $intern_31 = '=', $intern_38 = '?', $intern_87 = 'A88CA0ADB3B770C0FB1690257F3B23C6', $intern_88 = 'AC4C08FAFAD621593E583BE710AB3AE1', $intern_89 = 'B0545BD91726B7B7E257EEF63A5926AC', $intern_90 = 'BF4E2A45B46A2456F2A33CCFADB40A0C', $intern_33 = 'Bad handler "', $intern_91 = 'CAB27D208B85885B7B12BEF1D3626686', $intern_92 = 'CEDCEDD0AC07035305597DE6F88D21DF', $intern_18 = 'Chrome', $intern_93 = 'D462D9E0B05AE2EDF9E71DE7EB8F1E4A', $intern_94 = 'DB61AF31FDE6D87860EC7846A6A76D3C', $intern_17 = 'DOMContentLoaded', $intern_6 = 'DUMMY', $intern_95 = 'E1FEF9EFCFE5EA17240F7448BB26E6F3', $intern_96 = 'F1142A5FFB3606E2CFF3BAEA4AB8FB1F', $intern_97 = 'F708BDD35710124C7231BD019E472EE4', $intern_47 = 'android', $intern_49 = 'android_tablet', $intern_44 = 'base', $intern_42 = 'baseUrl', $intern_1 = 'begin', $intern_55 = 'blackberry', $intern_7 = 'body', $intern_0 = 'bootstrap', $intern_41 = 'clear.cache.gif', $intern_30 = 'content', $intern_56 = 'desktop', $intern_101 = 'end', $intern_19 = 'eval("', $intern_61 = 'file://', $intern_2 = 'gwt.codesvr.showcase=', $intern_3 = 'gwt.codesvr=', $intern_35 = 'gwt:onLoadErrorFn', $intern_32 = 'gwt:onPropertyErrorFn', $intern_29 = 'gwt:property', $intern_23 = 'head', $intern_8 = 'iframe', $intern_40 = 'img', $intern_50 = 'ipad', $intern_51 = 'ipad_retina', $intern_52 = 'iphone', $intern_53 = 'ipod', $intern_14 = 'javascript', $intern_9 = 'javascript:""', $intern_100 = 'loadExternalRefs', $intern_24 = 'meta', $intern_46 = 'mgwt.os', $intern_48 = 'mobile', $intern_57 = 'mobile.user.agent', $intern_58 = 'mobilesafari', $intern_22 = 'moduleRequested', $intern_21 = 'moduleStartup', $intern_25 = 'name', $intern_63 = 'no', $intern_59 = 'not_mobile', $intern_60 = 'phonegap.env', $intern_10 = 'position:absolute; width:0; height:0; border:none; left: -1000px;', $intern_54 = 'retina', $intern_13 = 'script', $intern_64 = 'selectingPermutation', $intern_4 = 'showcase', $intern_65 = 'showcase.devmode.js', $intern_43 = 'showcase.nocache.js', $intern_26 = 'showcase::', $intern_5 = 'startup', $intern_16 = 'undefined', $intern_15 = 'var $wnd = window.parent;', $intern_62 = 'yes';
   var $wnd = window;
   var $doc = document;
   sendStats($intern_0, $intern_1);
@@ -339,24 +339,59 @@ function showcase(){
     }
 
     providers[$intern_46] = function(){
-      return /(android|iphone|ipod|ipad)/i.test(window.navigator.userAgent)?$intern_47:$intern_48;
-    }
-    ;
-    values[$intern_46] = {mobilesafari:0, not_mobile:1};
-    providers[$intern_49] = function(){
       {
-        var ua = window.navigator.userAgent.toLowerCase();
-        if (ua.indexOf($intern_50) != -1 || (ua.indexOf($intern_51) != -1 || (ua.indexOf($intern_52) != -1 || (ua.indexOf($intern_53) != -1 || ua.indexOf($intern_54) != -1)))) {
-          var url = document.location.href;
-          if (url.indexOf($intern_55) === 0) {
-            return $intern_56;
+        var mgwt_os = function(){
+          var ua = window.navigator.userAgent.toLowerCase();
+          if (ua.indexOf($intern_47) != -1) {
+            if (ua.indexOf($intern_48) != -1) {
+              return $intern_47;
+            }
+             else {
+              return $intern_49;
+            }
           }
+          if (ua.indexOf($intern_50) != -1) {
+            if (window.devicePixelRatio >= 2) {
+              return $intern_51;
+            }
+            return $intern_50;
+          }
+          if (ua.indexOf($intern_52) != -1 || ua.indexOf($intern_53) != -1) {
+            if (window.devicePixelRatio >= 2) {
+              return $intern_54;
+            }
+            return $intern_52;
+          }
+          if (ua.indexOf($intern_55) != -1) {
+            return $intern_55;
+          }
+          return $intern_56;
         }
-        return $intern_57;
+        ();
+        return mgwt_os;
       }
     }
     ;
-    values[$intern_49] = {no:0, yes:1};
+    values[$intern_46] = {android:0, android_tablet:1, blackberry:2, desktop:3, ipad:4, ipad_retina:5, iphone:6, retina:7};
+    providers[$intern_57] = function(){
+      return /(android|iphone|ipod|ipad)/i.test(window.navigator.userAgent)?$intern_58:$intern_59;
+    }
+    ;
+    values[$intern_57] = {mobilesafari:0, not_mobile:1};
+    providers[$intern_60] = function(){
+      {
+        var ua = window.navigator.userAgent.toLowerCase();
+        if (ua.indexOf($intern_47) != -1 || (ua.indexOf($intern_50) != -1 || (ua.indexOf($intern_53) != -1 || (ua.indexOf($intern_52) != -1 || ua.indexOf($intern_55) != -1)))) {
+          var url = document.location.href;
+          if (url.indexOf($intern_61) === 0) {
+            return $intern_62;
+          }
+        }
+        return $intern_63;
+      }
+    }
+    ;
+    values[$intern_60] = {no:0, yes:1};
     __gwt_isKnownPropertyValue = function(propName, propValue){
       return propValue in values[propName];
     }
@@ -371,18 +406,46 @@ function showcase(){
     ;
     showcase.__computePropValue = computePropValue;
     $wnd.__gwt_activeModules[$intern_4].bindings = showcase.__getPropMap;
-    sendStats($intern_0, $intern_58);
+    sendStats($intern_0, $intern_64);
     if (isHostedMode()) {
-      return computeUrlForResource($intern_59);
+      return computeUrlForResource($intern_65);
     }
     var strongName;
     try {
-      unflattenKeylistIntoAnswers([$intern_48, $intern_56], $intern_60);
-      unflattenKeylistIntoAnswers([$intern_47, $intern_56], $intern_61);
-      unflattenKeylistIntoAnswers([$intern_47, $intern_57], $intern_62);
-      unflattenKeylistIntoAnswers([$intern_48, $intern_57], $intern_63);
-      strongName = answers[computePropValue($intern_46)][computePropValue($intern_49)];
-      var idx = strongName.indexOf($intern_64);
+      unflattenKeylistIntoAnswers([$intern_51, $intern_59, $intern_62], $intern_66);
+      unflattenKeylistIntoAnswers([$intern_50, $intern_59, $intern_63], $intern_67);
+      unflattenKeylistIntoAnswers([$intern_54, $intern_59, $intern_62], $intern_68);
+      unflattenKeylistIntoAnswers([$intern_54, $intern_58, $intern_63], $intern_69);
+      unflattenKeylistIntoAnswers([$intern_49, $intern_59, $intern_63], $intern_70);
+      unflattenKeylistIntoAnswers([$intern_52, $intern_59, $intern_63], $intern_71);
+      unflattenKeylistIntoAnswers([$intern_55, $intern_59, $intern_63], $intern_72);
+      unflattenKeylistIntoAnswers([$intern_49, $intern_58, $intern_62], $intern_73);
+      unflattenKeylistIntoAnswers([$intern_55, $intern_58, $intern_62], $intern_74);
+      unflattenKeylistIntoAnswers([$intern_50, $intern_59, $intern_62], $intern_75);
+      unflattenKeylistIntoAnswers([$intern_54, $intern_59, $intern_63], $intern_76);
+      unflattenKeylistIntoAnswers([$intern_47, $intern_58, $intern_63], $intern_77);
+      unflattenKeylistIntoAnswers([$intern_47, $intern_59, $intern_62], $intern_78);
+      unflattenKeylistIntoAnswers([$intern_56, $intern_59, $intern_63], $intern_79);
+      unflattenKeylistIntoAnswers([$intern_51, $intern_58, $intern_62], $intern_80);
+      unflattenKeylistIntoAnswers([$intern_51, $intern_59, $intern_63], $intern_81);
+      unflattenKeylistIntoAnswers([$intern_52, $intern_58, $intern_63], $intern_82);
+      unflattenKeylistIntoAnswers([$intern_47, $intern_58, $intern_62], $intern_83);
+      unflattenKeylistIntoAnswers([$intern_52, $intern_59, $intern_62], $intern_84);
+      unflattenKeylistIntoAnswers([$intern_55, $intern_59, $intern_62], $intern_85);
+      unflattenKeylistIntoAnswers([$intern_56, $intern_58, $intern_63], $intern_86);
+      unflattenKeylistIntoAnswers([$intern_51, $intern_58, $intern_63], $intern_87);
+      unflattenKeylistIntoAnswers([$intern_47, $intern_59, $intern_63], $intern_88);
+      unflattenKeylistIntoAnswers([$intern_50, $intern_58, $intern_62], $intern_89);
+      unflattenKeylistIntoAnswers([$intern_50, $intern_58, $intern_63], $intern_90);
+      unflattenKeylistIntoAnswers([$intern_56, $intern_58, $intern_62], $intern_91);
+      unflattenKeylistIntoAnswers([$intern_54, $intern_58, $intern_62], $intern_92);
+      unflattenKeylistIntoAnswers([$intern_52, $intern_58, $intern_62], $intern_93);
+      unflattenKeylistIntoAnswers([$intern_49, $intern_58, $intern_63], $intern_94);
+      unflattenKeylistIntoAnswers([$intern_56, $intern_59, $intern_62], $intern_95);
+      unflattenKeylistIntoAnswers([$intern_49, $intern_59, $intern_62], $intern_96);
+      unflattenKeylistIntoAnswers([$intern_55, $intern_58, $intern_63], $intern_97);
+      strongName = answers[computePropValue($intern_46)][computePropValue($intern_57)][computePropValue($intern_60)];
+      var idx = strongName.indexOf($intern_98);
       if (idx != -1) {
         softPermutationId = strongName.substring(idx + 1);
         strongName = strongName.substring(0, idx);
@@ -391,15 +454,15 @@ function showcase(){
      catch (e) {
     }
     showcase.__softPermutationId = softPermutationId;
-    return computeUrlForResource(strongName + $intern_65);
+    return computeUrlForResource(strongName + $intern_99);
   }
 
   function loadExternalStylesheets(){
     if (!$wnd.__gwt_stylesLoaded) {
       $wnd.__gwt_stylesLoaded = {};
     }
-    sendStats($intern_66, $intern_1);
-    sendStats($intern_66, $intern_67);
+    sendStats($intern_100, $intern_1);
+    sendStats($intern_100, $intern_101);
   }
 
   processMetas();
@@ -407,7 +470,7 @@ function showcase(){
   activeModules[$intern_4].moduleBase = showcase.__moduleBase;
   var filename = getCompiledCodeFilename();
   loadExternalStylesheets();
-  sendStats($intern_0, $intern_67);
+  sendStats($intern_0, $intern_101);
   installScript(filename);
   return true;
 }
