@@ -17,7 +17,7 @@
 
 	
 	<properties>
-		<gwtversion>2.4.0</gwtversion>
+		<gwtversion>2.5.0</gwtversion>
 	</properties>
 	
 	
@@ -94,7 +94,7 @@
 				<configuration>
 					<downloadSources>true</downloadSources>
 					<downloadJavadocs>false</downloadJavadocs>
-					<buildOutputDirectory>war/WEB-INF/classes</buildOutputDirectory>
+					<buildOutputDirectory>target/${project.artifactId}-${project.version}/WEB-INF/classes</buildOutputDirectory>
 					<projectnatures>
 						<projectnature>org.eclipse.jdt.core.javanature</projectnature>
 						<projectnature>com.google.gdt.eclipse.core.webAppNature</projectnature>
