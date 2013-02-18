@@ -1,25 +1,26 @@
-package com.googlecode.gwtphonegap.showcase.client.plugin;
+package com.googlecode.gwtphonegap.showcase.client.inappbrowser;
 
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import com.google.web.bindery.event.shared.EventBus;
+
 import com.googlecode.gwtphonegap.client.PhoneGap;
-import com.googlecode.gwtphonegap.client.plugins.childbrowser.ChildBrowser;
+import com.googlecode.gwtphonegap.client.inappbrowser.InAppBrowser;
 import com.googlecode.gwtphonegap.showcase.client.ClientFactory;
 import com.googlecode.gwtphonegap.showcase.client.NavBaseActivity;
 
-public class ChildBrowserActivity extends NavBaseActivity implements ChildBrowserDisplay.Presenter {
+public class InAppBrowserActivity extends NavBaseActivity implements InAppBrowserDisplay.Presenter {
 
-  private ChildBrowserDisplay display;
+  private InAppBrowserDisplay display;
   private PhoneGap phoneGap;
-  private ChildBrowser childBrowser;
+  private InAppBrowser inAppBrowser;
 
-  public ChildBrowserActivity(ClientFactory clientFactory) {
+  public InAppBrowserActivity(ClientFactory clientFactory) {
     super(clientFactory);
 
     this.display = clientFactory.getChildBrowserDisplay();
     this.phoneGap = clientFactory.getPhoneGap();
 
-    childBrowser = (ChildBrowser) this.phoneGap.getPluginById("childBrowser");
+    inAppBrowser = this.phoneGap.getInAppBrowser();
 
   }
 
@@ -32,7 +33,7 @@ public class ChildBrowserActivity extends NavBaseActivity implements ChildBrowse
 
   @Override
   public void onOpenButtonPressed() {
-    childBrowser.showWebPage("http://www.google.de");
+    inAppBrowser.open("http://www.google.de", "", "");
 
   }
 }

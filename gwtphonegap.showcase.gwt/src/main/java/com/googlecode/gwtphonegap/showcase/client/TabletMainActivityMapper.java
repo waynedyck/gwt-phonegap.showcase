@@ -23,12 +23,12 @@ import com.googlecode.gwtphonegap.showcase.client.file.FileActivity;
 import com.googlecode.gwtphonegap.showcase.client.file.FilePlace;
 import com.googlecode.gwtphonegap.showcase.client.geolocation.GeolocationActivity;
 import com.googlecode.gwtphonegap.showcase.client.geolocation.GeolocationPlace;
+import com.googlecode.gwtphonegap.showcase.client.inappbrowser.InAppBrowserActivity;
+import com.googlecode.gwtphonegap.showcase.client.inappbrowser.InAppBrowserPlace;
 import com.googlecode.gwtphonegap.showcase.client.media.MediaActivity;
 import com.googlecode.gwtphonegap.showcase.client.media.MediaPlace;
 import com.googlecode.gwtphonegap.showcase.client.notification.NotificationActivity;
 import com.googlecode.gwtphonegap.showcase.client.notification.NotificationPlace;
-import com.googlecode.gwtphonegap.showcase.client.plugin.ChildBrowserActivity;
-import com.googlecode.gwtphonegap.showcase.client.plugin.ChildBrowserPlace;
 
 public class TabletMainActivityMapper implements ActivityMapper {
 
@@ -123,11 +123,11 @@ public class TabletMainActivityMapper implements ActivityMapper {
 			return new NotificationActivity(clientFactory);
 		}
 
-		if (newPlace instanceof ChildBrowserPlace) {
-			if (lastPlace instanceof ChildBrowserPlace) {
+		if (newPlace instanceof InAppBrowserPlace) {
+			if (lastPlace instanceof InAppBrowserPlace) {
 				return lastActivity;
 			}
-			return new ChildBrowserActivity(clientFactory);
+			return new InAppBrowserActivity(clientFactory);
 		}
 
 		if (newPlace instanceof AboutPlace || newPlace instanceof OverviewPlace) {

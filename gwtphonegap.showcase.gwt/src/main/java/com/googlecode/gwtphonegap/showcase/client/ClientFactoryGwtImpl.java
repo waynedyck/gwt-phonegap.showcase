@@ -24,12 +24,12 @@ import com.googlecode.gwtphonegap.showcase.client.file.FileDisplay;
 import com.googlecode.gwtphonegap.showcase.client.file.FileDisplayGwtImpl;
 import com.googlecode.gwtphonegap.showcase.client.geolocation.GeolocationDisplay;
 import com.googlecode.gwtphonegap.showcase.client.geolocation.GeolocationDisplayGwtImpl;
+import com.googlecode.gwtphonegap.showcase.client.inappbrowser.InAppBrowserDisplay;
+import com.googlecode.gwtphonegap.showcase.client.inappbrowser.InAppBrowserDisplayGwtImpl;
 import com.googlecode.gwtphonegap.showcase.client.media.MediaDisplay;
 import com.googlecode.gwtphonegap.showcase.client.media.MediaDisplayGwtImpl;
 import com.googlecode.gwtphonegap.showcase.client.notification.NotificationDisplay;
 import com.googlecode.gwtphonegap.showcase.client.notification.NotificationDisplayGwtImpl;
-import com.googlecode.gwtphonegap.showcase.client.plugin.ChildBrowserDisplay;
-import com.googlecode.gwtphonegap.showcase.client.plugin.ChildBrowserDisplayGwtImpl;
 
 public class ClientFactoryGwtImpl implements ClientFactory {
 
@@ -47,7 +47,7 @@ public class ClientFactoryGwtImpl implements ClientFactory {
 	private GeolocationDisplay geolocationDisplay;
 	private MediaDisplay mediaDisplay;
 	private NotificationDisplay notificationDisplay;
-	private ChildBrowserDisplay childBrowserDisplay;
+	private InAppBrowserDisplay childBrowserDisplay;
 	private AboutDisplay aboutDisplay;
 	private FileDisplay fileDisplay;
 
@@ -165,9 +165,9 @@ public class ClientFactoryGwtImpl implements ClientFactory {
 	}
 
 	@Override
-	public ChildBrowserDisplay getChildBrowserDisplay() {
+	public InAppBrowserDisplay getChildBrowserDisplay() {
 		if (childBrowserDisplay == null) {
-			childBrowserDisplay = new ChildBrowserDisplayGwtImpl();
+			childBrowserDisplay = new InAppBrowserDisplayGwtImpl();
 		}
 		return childBrowserDisplay;
 	}

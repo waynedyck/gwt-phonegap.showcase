@@ -13,9 +13,9 @@ import com.googlecode.gwtphonegap.showcase.client.device.DeviceDisplay;
 import com.googlecode.gwtphonegap.showcase.client.event.EventDisplay;
 import com.googlecode.gwtphonegap.showcase.client.file.FileDisplay;
 import com.googlecode.gwtphonegap.showcase.client.geolocation.GeolocationDisplay;
+import com.googlecode.gwtphonegap.showcase.client.inappbrowser.InAppBrowserDisplay;
 import com.googlecode.gwtphonegap.showcase.client.media.MediaDisplay;
 import com.googlecode.gwtphonegap.showcase.client.notification.NotificationDisplay;
-import com.googlecode.gwtphonegap.showcase.client.plugin.ChildBrowserDisplay;
 
 public interface ClientFactory {
 	public PhoneGap getPhoneGap();
@@ -46,7 +46,7 @@ public interface ClientFactory {
 
 	public NotificationDisplay getNotificationDisplay();
 
-	public ChildBrowserDisplay getChildBrowserDisplay();
+	public InAppBrowserDisplay getChildBrowserDisplay();
 
 	public AboutDisplay getAboutDisplay();
 

@@ -27,9 +27,9 @@ import com.googlecode.gwtphonegap.showcase.client.device.DevicePlace;
 import com.googlecode.gwtphonegap.showcase.client.event.EventPlace;
 import com.googlecode.gwtphonegap.showcase.client.file.FilePlace;
 import com.googlecode.gwtphonegap.showcase.client.geolocation.GeolocationPlace;
+import com.googlecode.gwtphonegap.showcase.client.inappbrowser.InAppBrowserPlace;
 import com.googlecode.gwtphonegap.showcase.client.media.MediaPlace;
 import com.googlecode.gwtphonegap.showcase.client.notification.NotificationPlace;
-import com.googlecode.gwtphonegap.showcase.client.plugin.ChildBrowserPlace;
 
 /**
  * @author Daniel Kurka
@@ -37,6 +37,6 @@ import com.googlecode.gwtphonegap.showcase.client.plugin.ChildBrowserPlace;
  */
 @WithTokenizers({ OverviewPlace.Tokenizer.class, AccelerometerPlace.Tokenizer.class, CameraPlace.Tokenizer.class, CompassPlace.Tokenizer.class, ConnectionPlace.Tokenizer.class,
 		ContactPlace.Tokenizer.class, DevicePlace.Tokenizer.class, EventPlace.Tokenizer.class, GeolocationPlace.Tokenizer.class, MediaPlace.Tokenizer.class, NotificationPlace.Tokenizer.class,
-		ChildBrowserPlace.Tokenizer.class, AboutPlace.Tokenizer.class, FilePlace.Tokenizer.class })
+		InAppBrowserPlace.Tokenizer.class, AboutPlace.Tokenizer.class, FilePlace.Tokenizer.class })
 public interface AppPlaceHistoryMapper extends PlaceHistoryMapper {
 }

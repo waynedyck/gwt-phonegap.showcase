@@ -16,10 +16,10 @@ import com.googlecode.gwtphonegap.showcase.client.device.DevicePlace;
 import com.googlecode.gwtphonegap.showcase.client.event.EventPlace;
 import com.googlecode.gwtphonegap.showcase.client.file.FilePlace;
 import com.googlecode.gwtphonegap.showcase.client.geolocation.GeolocationPlace;
+import com.googlecode.gwtphonegap.showcase.client.inappbrowser.InAppBrowserPlace;
 import com.googlecode.gwtphonegap.showcase.client.media.MediaPlace;
 import com.googlecode.gwtphonegap.showcase.client.model.PGModule;
 import com.googlecode.gwtphonegap.showcase.client.notification.NotificationPlace;
-import com.googlecode.gwtphonegap.showcase.client.plugin.ChildBrowserPlace;
 import com.googlecode.mgwt.mvp.client.MGWTAbstractActivity;
 
 public class OverviewActivity extends MGWTAbstractActivity implements Presenter {
@@ -107,7 +107,7 @@ public class OverviewActivity extends MGWTAbstractActivity implements Presenter 
         break;
 
       case 11:
-        clientFactory.getPlaceController().goTo(new ChildBrowserPlace());
+        clientFactory.getPlaceController().goTo(new InAppBrowserPlace());
         break;
     }
 
