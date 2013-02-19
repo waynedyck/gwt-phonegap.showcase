@@ -1,10 +1,8 @@
 package com.googlecode.gwtphonegap.showcase.client;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import com.google.web.bindery.event.shared.EventBus;
+
 import com.googlecode.gwtphonegap.showcase.client.OverviewDisplay.Presenter;
 import com.googlecode.gwtphonegap.showcase.client.about.AboutPlace;
 import com.googlecode.gwtphonegap.showcase.client.accelerometer.AccelerometerPlace;
@@ -21,6 +19,9 @@ import com.googlecode.gwtphonegap.showcase.client.media.MediaPlace;
 import com.googlecode.gwtphonegap.showcase.client.model.PGModule;
 import com.googlecode.gwtphonegap.showcase.client.notification.NotificationPlace;
 import com.googlecode.mgwt.mvp.client.MGWTAbstractActivity;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class OverviewActivity extends MGWTAbstractActivity implements Presenter {
 
@@ -59,7 +60,7 @@ public class OverviewActivity extends MGWTAbstractActivity implements Presenter 
     list.add(new PGModule("Media"));
     list.add(new PGModule("Notification"));
 
-    list.add(new PGModule("Plugins - ChildBrowser"));
+    list.add(new PGModule("InAppBrowser"));
     return list;
   }
 
