@@ -2,11 +2,11 @@ gwt-phonegap/.classpath
 gwt-phonegap/.project
 gwt-phonegap/.settings/
 gwt-phonegap/target/
-gwtphonegap.showcase.gwt/.classpath
-gwtphonegap.showcase.gwt/.project
-gwtphonegap.showcase.gwt/.settings/
-gwtphonegap.showcase.gwt/target/
-gwt-phonegap-xcode/GWTPhoneGapTest/www/showcase/
+gwt/.classpath
+gwt/.project
+gwt/.settings/
+gwt/target/
+
 android/bin/
 
 xcode/CordovaLib/CordovaLib.xcodeproj/xcuserdata/
