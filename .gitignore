@@ -8,3 +8,10 @@ gwtphonegap.showcase.gwt/.settings/
 gwtphonegap.showcase.gwt/target/
 gwt-phonegap-xcode/GWTPhoneGapTest/www/showcase/
 android/bin/
+
+xcode/CordovaLib/CordovaLib.xcodeproj/xcuserdata/
+xcode/CordovaLib/build/
+xcode/GWTGap.xcodeproj/project.xcworkspace/xcuserdata/
+xcode/GWTGap.xcodeproj/xcuserdata/
+xcode/build/
+xcode/cordova/console.log
