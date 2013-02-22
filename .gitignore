@@ -8,6 +8,10 @@ gwt/.settings/
 gwt/target/
 
 android/bin/
+android/.classpath
+android/.project
+android/gen/
+android/assets/www/**
 
 xcode/CordovaLib/CordovaLib.xcodeproj/xcuserdata/
 xcode/CordovaLib/build/
@@ -15,3 +19,7 @@ xcode/GWTGap.xcodeproj/project.xcworkspace/xcuserdata/
 xcode/GWTGap.xcodeproj/xcuserdata/
 xcode/build/
 xcode/cordova/console.log
+xcode/www/showcase/
+xcode/www/beep.wav
+xcode/www/index.html
+xcode/www/sound.mp3

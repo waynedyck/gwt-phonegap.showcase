@@ -9,10 +9,9 @@
   		<directory>target/${project.artifactId}-${project.version}</directory>
   		<includes>
  			<include>**/*.js</include>
-  			<include>**/*.png</include>
- 			<include>**/*.rpc</include>
  			<include>**/*.html</include>
- 			<include>**/*.gif</include>
+ 			<include>**/*.mp3</include>
+ 			<include>**/*.wav</include>
  		</includes>
   		<outputDirectory></outputDirectory>
   	</fileSet>

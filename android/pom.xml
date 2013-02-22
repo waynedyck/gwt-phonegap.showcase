@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.googlecode.gwtphonegap.android</groupId>
-	<artifactId>GWTGap</artifactId>
+	<artifactId>gwt-phonegap-showcase-android</artifactId>
 	<description>GWT Phonegap android demo app</description>
 	<packaging>apk</packaging>
 	<version>2.2.0.0-SNAPSHOT</version>
@@ -12,15 +12,32 @@
 	<dependencies>
 
 	
-		<!-- wether android sdk nor phonegap are in central....--> 
-			
-		
+		<!-- wether android sdk nor phonegap are in central....-->
+
+		<dependency>
+			<groupId>com.google.android</groupId>
+			<artifactId>android</artifactId>
+			<version>2.2.1</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.cordova</groupId>
+			<artifactId>cordova-android</artifactId>
+			<version>2.4.0</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/libs/cordova-2.4.0.jar</systemPath>
+		</dependency>
+
+
 
 	</dependencies>
 
-	
+
 
 	<build>
+		<sourceDirectory>src</sourceDirectory>
+		
 		<pluginManagement>
 			<plugins>
 				<plugin>
@@ -73,7 +90,7 @@
 					</classpathContainers>
 				</configuration>
 			</plugin>
-			
+
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -164,39 +181,39 @@
 					</execution>
 				</executions>
 			</plugin>
-			
+
 			<plugin>
-							<groupId>org.apache.maven.plugins</groupId>
-							<artifactId>maven-jarsigner-plugin</artifactId>
-							<version>1.2</version>
-							<executions>
-								<execution>
-									<id>signing</id>
-									<goals>
-										<goal>sign</goal>
-									</goals>
-									<phase>package</phase>
-									<inherited>true</inherited>
-									<configuration>
-										<archiveDirectory />
-										<includes>
-											<include>target/*.apk</include>
-										</includes>
-										<alias>dkur</alias>
-										<keystore>keystore</keystore>
-										<storepass>storepass</storepass>
-										<keypass>keypass</keypass>
-										<arguments>
-											<argument>-sigalg</argument>
-											<argument>MD5withRSA</argument>
-											<argument>-digestalg</argument>
-											<argument>SHA1</argument>
-											<argument>-verbose</argument>
-										</arguments>
-									</configuration>
-								</execution>
-							</executions>
-						</plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jarsigner-plugin</artifactId>
+				<version>1.2</version>
+				<executions>
+					<execution>
+						<id>signing</id>
+						<goals>
+							<goal>sign</goal>
+						</goals>
+						<phase>package</phase>
+						<inherited>true</inherited>
+						<configuration>
+							<archiveDirectory />
+							<includes>
+								<include>target/*.apk</include>
+							</includes>
+							<alias>dkur</alias>
+							<keystore>keystore</keystore>
+							<storepass>storepass</storepass>
+							<keypass>keypass</keypass>
+							<arguments>
+								<argument>-sigalg</argument>
+								<argument>MD5withRSA</argument>
+								<argument>-digestalg</argument>
+								<argument>SHA1</argument>
+								<argument>-verbose</argument>
+							</arguments>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 

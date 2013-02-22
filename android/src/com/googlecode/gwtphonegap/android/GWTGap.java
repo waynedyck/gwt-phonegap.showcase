@@ -6,7 +6,7 @@ import org.apache.cordova.DroidGap;
 
 import android.os.Bundle;
 
-public class MainActivity extends DroidGap {
+public class GWTGap extends DroidGap {
 
   @Override
   public void onCreate(Bundle savedInstanceState) {
@@ -16,7 +16,8 @@ public class MainActivity extends DroidGap {
 
   @Override
   public void init() {
-    super.init(new CordovaWebView(this), new GWTCordovaWebViewClient(this), new CordovaChromeClient(this));
+    super.init(new CordovaWebView(this), new GWTCordovaWebViewClient(this),
+        new CordovaChromeClient(this));
     System.out.println("asdfasdf");
   }
 
