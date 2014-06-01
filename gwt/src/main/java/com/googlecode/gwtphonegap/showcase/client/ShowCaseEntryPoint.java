@@ -1,11 +1,11 @@
 /*
  * Copyright 2010 Daniel Kurka
- * 
+ *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
  * in compliance with the License. You may obtain a copy of the License at
- * 
+ *
  * http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software distributed under the License
  * is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express
  * or implied. See the License for the specific language governing permissions and limitations under
@@ -28,16 +28,15 @@ import com.googlecode.gwtphonegap.client.PhoneGapAvailableHandler;
 import com.googlecode.gwtphonegap.client.PhoneGapTimeoutEvent;
 import com.googlecode.gwtphonegap.client.PhoneGapTimeoutHandler;
 import com.googlecode.gwtphonegap.showcase.client.css.AppBundle;
-import com.googlecode.mgwt.mvp.client.AnimatableDisplay;
 import com.googlecode.mgwt.mvp.client.AnimatingActivityManager;
 import com.googlecode.mgwt.mvp.client.AnimationMapper;
 import com.googlecode.mgwt.ui.client.MGWT;
 import com.googlecode.mgwt.ui.client.MGWTSettings;
 import com.googlecode.mgwt.ui.client.MGWTSettings.ViewPort;
-import com.googlecode.mgwt.ui.client.MGWTSettings.ViewPort.DENSITY;
-import com.googlecode.mgwt.ui.client.dialog.TabletPortraitOverlay;
 import com.googlecode.mgwt.ui.client.layout.MasterRegionHandler;
 import com.googlecode.mgwt.ui.client.layout.OrientationRegionHandler;
+import com.googlecode.mgwt.ui.client.widget.animation.AnimationWidget;
+import com.googlecode.mgwt.ui.client.widget.dialog.TabletPortraitOverlay;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -93,13 +92,11 @@ public class ShowCaseEntryPoint implements EntryPoint {
   private void buildDisplay(ClientFactory clientFactory) {
 
     ViewPort viewPort = new MGWTSettings.ViewPort();
-    viewPort.setTargetDensity(DENSITY.MEDIUM);
     viewPort.setUserScaleAble(false).setMinimumScale(1.0).setMinimumScale(1.0).setMaximumScale(1.0);
 
     MGWTSettings settings = new MGWTSettings();
     settings.setViewPort(viewPort);
     settings.setIconUrl("logo.png");
-    settings.setAddGlosToIcon(true);
     settings.setFullscreen(true);
     settings.setPreventScrolling(true);
 
@@ -129,7 +126,7 @@ public class ShowCaseEntryPoint implements EntryPoint {
   }
 
   private void createPhoneDisplay(ClientFactory clientFactory) {
-    AnimatableDisplay display = GWT.create(AnimatableDisplay.class);
+    AnimationWidget animationWidget = new AnimationWidget();
 
     PhoneActivityMapper appActivityMapper = new PhoneActivityMapper(clientFactory);
 
@@ -139,9 +136,9 @@ public class ShowCaseEntryPoint implements EntryPoint {
         new AnimatingActivityManager(appActivityMapper, appAnimationMapper, clientFactory
             .getEventBus());
 
-    activityManager.setDisplay(display);
+    activityManager.setDisplay(animationWidget);
 
-    RootPanel.get().add(display);
+    RootPanel.get().add(animationWidget);
 
   }
 
@@ -149,11 +146,11 @@ public class ShowCaseEntryPoint implements EntryPoint {
     SimplePanel navContainer = new SimplePanel();
     navContainer.getElement().setId("nav");
     navContainer.getElement().addClassName("landscapeonly");
-    AnimatableDisplay navDisplay = GWT.create(AnimatableDisplay.class);
+    AnimationWidget navAnimationWidget = new AnimationWidget();
 
     final TabletPortraitOverlay tabletPortraitOverlay = new TabletPortraitOverlay();
 
-    new OrientationRegionHandler(navContainer, tabletPortraitOverlay, navDisplay);
+    new OrientationRegionHandler(navContainer, tabletPortraitOverlay, navAnimationWidget);
     new MasterRegionHandler(clientFactory.getEventBus(), "nav", tabletPortraitOverlay);
 
     ActivityMapper navActivityMapper = new TabletNavActivityMapper(clientFactory);
@@ -164,13 +161,13 @@ public class ShowCaseEntryPoint implements EntryPoint {
         new AnimatingActivityManager(navActivityMapper, navAnimationMapper, clientFactory
             .getEventBus());
 
-    navActivityManager.setDisplay(navDisplay);
+    navActivityManager.setDisplay(navAnimationWidget);
 
     RootPanel.get().add(navContainer);
 
     SimplePanel mainContainer = new SimplePanel();
     mainContainer.getElement().setId("main");
-    AnimatableDisplay mainDisplay = GWT.create(AnimatableDisplay.class);
+    AnimationWidget mainAnimationWidget = new AnimationWidget();
 
     TabletMainActivityMapper tabletMainActivityMapper = new TabletMainActivityMapper(clientFactory);
 
@@ -180,11 +177,9 @@ public class ShowCaseEntryPoint implements EntryPoint {
         new AnimatingActivityManager(tabletMainActivityMapper, tabletMainAnimationMapper,
             clientFactory.getEventBus());
 
-    mainActivityManager.setDisplay(mainDisplay);
-    mainContainer.setWidget(mainDisplay);
+    mainActivityManager.setDisplay(mainAnimationWidget);
+    mainContainer.setWidget(mainAnimationWidget);
 
     RootPanel.get().add(mainContainer);
-
   }
-
 }

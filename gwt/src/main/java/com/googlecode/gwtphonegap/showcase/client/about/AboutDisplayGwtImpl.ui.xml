@@ -2,14 +2,17 @@
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
 	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:mgwt="urn:import:com.googlecode.mgwt.ui.client.widget">
 	
-	<mgwt:LayoutPanel>
-		<mgwt:HeaderPanel>
-			<mgwt:left><mgwt:HeaderButton ui:field="backButton" backButton="true" text="Modules"></mgwt:HeaderButton></mgwt:left>
-			<mgwt:center><g:HTML>About</g:HTML></mgwt:center>
-		</mgwt:HeaderPanel>
+	<mgwt:panel.flex.RootFlexPanel>
+	    <mgwt:header.HeaderPanel>
+			<mgwt:header.HeaderButton ui:field="backButton" backButton="true" text="Modules"/>
+			<mgwt:panel.flex.FlexSpacer/>
+			<mgwt:header.HeaderTitle>About</mgwt:header.HeaderTitle>
+			<mgwt:panel.flex.FlexSpacer/>
+			<mgwt:panel.flex.FixedSpacer/>
+		</mgwt:header.HeaderPanel>
 		
-		<mgwt:ScrollPanel scrollingEnabledX="false">
-			<mgwt:RoundPanel>
+		<mgwt:panel.scroll.ScrollPanel scrollingEnabledX="false">
+			<mgwt:panel.Panel>
 			
 				<g:HTMLPanel>
 				This is the demo application of the GWT Phonegap open source project.
@@ -28,9 +31,9 @@
 				<br/>
 				 Twitter: <a href='http://www.twitter.com/dankurka'>@dankurka</a>
 				</g:HTMLPanel>
-			</mgwt:RoundPanel>
-		</mgwt:ScrollPanel>
+			</mgwt:panel.Panel>
+		</mgwt:panel.scroll.ScrollPanel>
 		
-	</mgwt:LayoutPanel>
+	</mgwt:panel.flex.RootFlexPanel>
 	
 </ui:UiBinder> 

@@ -3,15 +3,17 @@
 	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:mgwt="urn:import:com.googlecode.mgwt.ui.client.widget">
 	
 	
-	<mgwt:LayoutPanel>
-		<mgwt:HeaderPanel>
-			<mgwt:center><g:HTML>Modules</g:HTML></mgwt:center>
-			<mgwt:right><mgwt:HeaderButton ui:field="aboutButton" text="About"></mgwt:HeaderButton></mgwt:right>
-		</mgwt:HeaderPanel>
-		<mgwt:ScrollPanel scrollingEnabledX="false">
-			<mgwt:CellList ui:field="cellList"></mgwt:CellList>
-		
-		</mgwt:ScrollPanel>
+	<mgwt:panel.flex.RootFlexPanel>
+	    <mgwt:header.HeaderPanel>
+	        <mgwt:panel.flex.FixedSpacer/>
+			<mgwt:panel.flex.FlexSpacer/>
+			<mgwt:header.HeaderTitle>Modules</mgwt:header.HeaderTitle>
+			<mgwt:panel.flex.FlexSpacer/>
+			<mgwt:header.HeaderButton ui:field="aboutButton" text="About"/>
+		</mgwt:header.HeaderPanel>
+		<mgwt:panel.scroll.ScrollPanel scrollingEnabledX="false">
+			<mgwt:list.celllist.CellList ui:field="cellList"/>
+		</mgwt:panel.scroll.ScrollPanel>
 	
-	</mgwt:LayoutPanel>
+	</mgwt:panel.flex.RootFlexPanel>
 </ui:UiBinder> 

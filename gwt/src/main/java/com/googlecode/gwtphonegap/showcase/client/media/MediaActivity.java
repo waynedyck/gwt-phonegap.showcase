@@ -62,7 +62,7 @@ public class MediaActivity extends NavBaseActivity implements MediaDisplay.Prese
       }
 
       @Override
-      public void onStatusChange() {
+      public void onStatusChange(int mediaStatus) {
 
       }
 

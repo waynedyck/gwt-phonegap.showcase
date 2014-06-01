@@ -76,7 +76,6 @@ public class GeolocationActivity extends NavBaseActivity implements Presenter {
 
     if (watcher == null) {
       GeolocationOptions options = new GeolocationOptions();
-      options.setFrequency(1000);
       watcher = phoneGap.getGeolocation().watchPosition(options, new GeoLocationCallbackImpl());
       display.getStartStopButton().setText("Stop");
 

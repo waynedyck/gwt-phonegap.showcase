@@ -6,11 +6,12 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.Widget;
+
 import com.googlecode.mgwt.dom.client.event.tap.TapEvent;
 import com.googlecode.mgwt.ui.client.MGWT;
-import com.googlecode.mgwt.ui.client.MGWTStyle;
-import com.googlecode.mgwt.ui.client.widget.Button;
-import com.googlecode.mgwt.ui.client.widget.HeaderButton;
+import com.googlecode.mgwt.ui.client.resource.MainResourceHolder;
+import com.googlecode.mgwt.ui.client.widget.button.Button;
+import com.googlecode.mgwt.ui.client.widget.header.HeaderButton;
 
 public class NotificationDisplayGwtImpl extends Composite implements NotificationDisplay {
 
@@ -42,7 +43,7 @@ public class NotificationDisplayGwtImpl extends Composite implements Notificatio
 		if (MGWT.getOsDetection().isTablet()) {
 			backButton.setBackButton(false);
 			backButton.setText("Modules");
-			backButton.addStyleName(MGWTStyle.getTheme().getMGWTClientBundle().getUtilCss().portraitonly());
+			backButton.addStyleName(MainResourceHolder.getUtilCss().portraitonly());
 		}
 	}
 

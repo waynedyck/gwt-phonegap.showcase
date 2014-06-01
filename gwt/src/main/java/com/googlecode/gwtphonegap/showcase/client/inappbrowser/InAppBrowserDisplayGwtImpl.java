@@ -9,9 +9,9 @@ import com.google.gwt.user.client.ui.Widget;
 
 import com.googlecode.mgwt.dom.client.event.tap.TapEvent;
 import com.googlecode.mgwt.ui.client.MGWT;
-import com.googlecode.mgwt.ui.client.MGWTStyle;
-import com.googlecode.mgwt.ui.client.widget.HeaderButton;
-import com.googlecode.mgwt.ui.client.widget.base.ButtonBase;
+import com.googlecode.mgwt.ui.client.resource.MainResourceHolder;
+import com.googlecode.mgwt.ui.client.widget.button.ButtonBase;
+import com.googlecode.mgwt.ui.client.widget.header.HeaderButton;
 
 public class InAppBrowserDisplayGwtImpl extends Composite implements InAppBrowserDisplay {
 
@@ -35,8 +35,7 @@ public class InAppBrowserDisplayGwtImpl extends Composite implements InAppBrowse
     if (MGWT.getOsDetection().isTablet()) {
       backButton.setBackButton(false);
       backButton.setText("Modules");
-      backButton.addStyleName(MGWTStyle.getTheme().getMGWTClientBundle().getUtilCss()
-          .portraitonly());
+      backButton.addStyleName(MainResourceHolder.getUtilCss().portraitonly());
     }
   }
 

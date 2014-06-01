@@ -1,25 +1,27 @@
 package com.googlecode.gwtphonegap.showcase.client.contact;
 
-import java.util.List;
-
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.core.client.Scheduler;
 import com.google.gwt.core.client.Scheduler.ScheduledCommand;
 import com.google.gwt.event.dom.client.KeyUpEvent;
+import com.google.gwt.event.logical.shared.ValueChangeEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.Widget;
+
 import com.googlecode.gwtphonegap.showcase.client.BasicCell;
 import com.googlecode.gwtphonegap.showcase.client.model.DemoContact;
 import com.googlecode.mgwt.dom.client.event.tap.TapEvent;
 import com.googlecode.mgwt.ui.client.MGWT;
-import com.googlecode.mgwt.ui.client.MGWTStyle;
-import com.googlecode.mgwt.ui.client.widget.CellList;
-import com.googlecode.mgwt.ui.client.widget.HeaderButton;
-import com.googlecode.mgwt.ui.client.widget.MSearchBox;
-import com.googlecode.mgwt.ui.client.widget.ScrollPanel;
+import com.googlecode.mgwt.ui.client.resource.MainResourceHolder;
+import com.googlecode.mgwt.ui.client.widget.header.HeaderButton;
+import com.googlecode.mgwt.ui.client.widget.input.search.MSearchBox;
+import com.googlecode.mgwt.ui.client.widget.list.celllist.CellList;
+import com.googlecode.mgwt.ui.client.widget.panel.scroll.ScrollPanel;
+
+import java.util.List;
 
 public class ContactDisplayGwtImpl extends Composite implements ContactDisplay {
 
@@ -63,7 +65,7 @@ public class ContactDisplayGwtImpl extends Composite implements ContactDisplay {
 		if (MGWT.getOsDetection().isTablet()) {
 			backButton.setBackButton(false);
 			backButton.setText("Modules");
-			backButton.addStyleName(MGWTStyle.getTheme().getMGWTClientBundle().getUtilCss().portraitonly());
+			backButton.addStyleName(MainResourceHolder.getUtilCss().portraitonly());
 		}
 	}
 
@@ -81,19 +83,8 @@ public class ContactDisplayGwtImpl extends Composite implements ContactDisplay {
 	}
 
 	@UiHandler("searchBox")
-	protected void onSearchBoxTyped(KeyUpEvent event) {
-
-		if (presenter != null) {
-			Scheduler.get().scheduleDeferred(new ScheduledCommand() {
-
-				@Override
-				public void execute() {
-					presenter.onSearchTermEntered(searchBox.getValue());
-
-				}
-			});
-
-		}
+	protected void onSearchBoxTyped(ValueChangeEvent<String> event) {
+	  presenter.onSearchTermEntered(event.getValue());
 	}
 
 	@UiHandler("backButton")

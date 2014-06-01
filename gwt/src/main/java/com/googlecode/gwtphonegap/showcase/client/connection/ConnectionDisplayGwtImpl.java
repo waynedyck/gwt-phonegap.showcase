@@ -8,11 +8,12 @@ import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.HasHTML;
 import com.google.gwt.user.client.ui.Widget;
+
 import com.googlecode.mgwt.dom.client.event.tap.TapEvent;
 import com.googlecode.mgwt.ui.client.MGWT;
-import com.googlecode.mgwt.ui.client.MGWTStyle;
-import com.googlecode.mgwt.ui.client.widget.Button;
-import com.googlecode.mgwt.ui.client.widget.HeaderButton;
+import com.googlecode.mgwt.ui.client.resource.MainResourceHolder;
+import com.googlecode.mgwt.ui.client.widget.button.Button;
+import com.googlecode.mgwt.ui.client.widget.header.HeaderButton;
 
 public class ConnectionDisplayGwtImpl extends Composite implements ConnectionDisplay {
 
@@ -39,7 +40,7 @@ public class ConnectionDisplayGwtImpl extends Composite implements ConnectionDis
 		if (MGWT.getOsDetection().isTablet()) {
 			backButton.setBackButton(false);
 			backButton.setText("Modules");
-			backButton.addStyleName(MGWTStyle.getTheme().getMGWTClientBundle().getUtilCss().portraitonly());
+			backButton.addStyleName(MainResourceHolder.getUtilCss().portraitonly());
 		}
 	}
 

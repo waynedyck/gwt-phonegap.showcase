@@ -2,25 +2,27 @@
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
 	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:mgwt="urn:import:com.googlecode.mgwt.ui.client.widget">
 	
-	<mgwt:LayoutPanel>
-		<mgwt:HeaderPanel>
-			<mgwt:left><mgwt:HeaderButton ui:field="backButton" backButton="true" text="Modules"></mgwt:HeaderButton></mgwt:left>
-			<mgwt:center><g:HTML>Connection</g:HTML></mgwt:center>
-		</mgwt:HeaderPanel>
-		
-		<mgwt:ScrollPanel scrollingEnabledX="false">
+	<mgwt:panel.flex.RootFlexPanel>
+		<mgwt:header.HeaderPanel>
+			<mgwt:header.HeaderButton ui:field="backButton" backButton="true" text="Modules"/>
+			<mgwt:panel.flex.FlexSpacer/>
+			<mgwt:header.HeaderTitle>Connection</mgwt:header.HeaderTitle>
+			<mgwt:panel.flex.FlexSpacer/>
+			<mgwt:panel.flex.FixedSpacer/>
+		</mgwt:header.HeaderPanel>
+		<mgwt:panel.scroll.ScrollPanel scrollingEnabledX="false">
 			<g:FlowPanel>
-				<mgwt:WidgetList round="true">
+				<mgwt:list.widgetlist.WidgetList round="true">
 					<g:HorizontalPanel>
 						<g:HTML>Connection: &nbsp;</g:HTML>
 						<g:HTML ui:field="connection"></g:HTML>
 					</g:HorizontalPanel>
-				</mgwt:WidgetList>
+				</mgwt:list.widgetlist.WidgetList>
 				
-				<mgwt:Button ui:field="startButton" text="Connection"></mgwt:Button>
+				<mgwt:button.Button ui:field="startButton" text="Connection"></mgwt:button.Button>
 			</g:FlowPanel>
-		</mgwt:ScrollPanel>
+		</mgwt:panel.scroll.ScrollPanel>
 		
-	</mgwt:LayoutPanel>
+	</mgwt:panel.flex.RootFlexPanel>
 	
 </ui:UiBinder> 

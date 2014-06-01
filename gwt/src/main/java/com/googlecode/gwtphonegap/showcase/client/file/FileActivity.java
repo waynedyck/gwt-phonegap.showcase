@@ -12,6 +12,7 @@ import com.googlecode.gwtphonegap.client.file.EntryBase;
 import com.googlecode.gwtphonegap.client.file.FileCallback;
 import com.googlecode.gwtphonegap.client.file.FileEntry;
 import com.googlecode.gwtphonegap.client.file.FileError;
+import com.googlecode.gwtphonegap.client.file.FileObject;
 import com.googlecode.gwtphonegap.client.file.FileReader;
 import com.googlecode.gwtphonegap.client.file.FileSystem;
 import com.googlecode.gwtphonegap.client.file.FileWriter;
@@ -22,6 +23,8 @@ import com.googlecode.gwtphonegap.collection.shared.LightArray;
 import com.googlecode.gwtphonegap.showcase.client.ClientFactory;
 import com.googlecode.gwtphonegap.showcase.client.NavBaseActivity;
 import com.googlecode.gwtphonegap.showcase.client.model.FileDemo;
+
+import org.apache.commons.io.FileCleaningTracker;
 
 public class FileActivity extends NavBaseActivity implements FileDisplay.Presenter {
 
@@ -223,15 +226,28 @@ public class FileActivity extends NavBaseActivity implements FileDisplay.Present
     }
 
     if (entryBase.isFile()) {
-      FileEntry fileEntry = entryBase.getAsFileEntry();
-      readFile(fileEntry);
+      final FileEntry fileEntry = entryBase.getAsFileEntry();
+      fileEntry.getFile(new FileCallback<FileObject, FileError>() {
+
+        @Override
+        public void onSuccess(FileObject fileObject) {
+          readFile(fileEntry, fileObject);
+
+        }
+
+        @Override
+        public void onFailure(FileError error) {
+          Window.alert("Can not get FileObject");
+        }
+      });
+
       display.setSelected(index + 1);
       return;
     }
 
   }
 
-  private void readFile(final FileEntry fileEntry) {
+  private void readFile(final FileEntry entry, final FileObject fileObject) {
     FileReader reader = phoneGap.getFile().createReader();
 
     reader.setOnloadCallback(new ReaderCallback<FileReader>() {
@@ -240,7 +256,7 @@ public class FileActivity extends NavBaseActivity implements FileDisplay.Present
       public void onCallback(FileReader result) {
 
         display.getFileContent().setText(result.getResult());
-        currentFile = fileEntry;
+        currentFile = entry;
       }
     });
 
@@ -253,7 +269,7 @@ public class FileActivity extends NavBaseActivity implements FileDisplay.Present
       }
     });
 
-    reader.readAsText(fileEntry);
+    reader.readAsText(fileObject);
   }
 
 }
