@@ -6,6 +6,7 @@ gwt/.classpath
 gwt/.project
 gwt/.settings/
 gwt/target/
+gwt/gwt-unitCache/
 
 android/bin/
 android/.classpath

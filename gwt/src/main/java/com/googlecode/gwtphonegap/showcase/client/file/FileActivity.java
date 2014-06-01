@@ -1,10 +1,9 @@
 package com.googlecode.gwtphonegap.showcase.client.file;
 
-import java.util.LinkedList;
-
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import com.google.web.bindery.event.shared.EventBus;
+
 import com.googlecode.gwtphonegap.client.PhoneGap;
 import com.googlecode.gwtphonegap.client.file.DirectoryEntry;
 import com.googlecode.gwtphonegap.client.file.DirectoryReader;
@@ -24,7 +23,7 @@ import com.googlecode.gwtphonegap.showcase.client.ClientFactory;
 import com.googlecode.gwtphonegap.showcase.client.NavBaseActivity;
 import com.googlecode.gwtphonegap.showcase.client.model.FileDemo;
 
-import org.apache.commons.io.FileCleaningTracker;
+import java.util.LinkedList;
 
 public class FileActivity extends NavBaseActivity implements FileDisplay.Presenter {
 

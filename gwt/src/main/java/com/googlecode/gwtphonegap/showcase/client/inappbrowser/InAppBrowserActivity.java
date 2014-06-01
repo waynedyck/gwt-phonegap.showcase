@@ -33,7 +33,7 @@ public class InAppBrowserActivity extends NavBaseActivity implements InAppBrowse
 
   @Override
   public void onOpenButtonPressed() {
-    inAppBrowser.open("http://www.google.de", "", "");
+    inAppBrowser.open("http://www.google.de", "_blank", "");
 
   }
 }
