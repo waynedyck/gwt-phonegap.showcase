@@ -1,11 +1,13 @@
 /Users/dankurka/Documents/workspace/gwt-phonegap.showcase/showcase/platforms/android/ant-build/classes.dex : \
 /Users/dankurka/Documents/workspace/gwt-phonegap.showcase/showcase/platforms/android/ant-build/classes/com/googlecode/gwtphonegap/showcase/BuildConfig.class \
+/Users/dankurka/Documents/workspace/gwt-phonegap.showcase/showcase/platforms/android/ant-build/classes/com/googlecode/gwtphonegap/showcase/GWTPhonegap.class \
 /Users/dankurka/Documents/workspace/gwt-phonegap.showcase/showcase/platforms/android/ant-build/classes/com/googlecode/gwtphonegap/showcase/R$attr.class \
 /Users/dankurka/Documents/workspace/gwt-phonegap.showcase/showcase/platforms/android/ant-build/classes/com/googlecode/gwtphonegap/showcase/R$drawable.class \
 /Users/dankurka/Documents/workspace/gwt-phonegap.showcase/showcase/platforms/android/ant-build/classes/com/googlecode/gwtphonegap/showcase/R$string.class \
 /Users/dankurka/Documents/workspace/gwt-phonegap.showcase/showcase/platforms/android/ant-build/classes/com/googlecode/gwtphonegap/showcase/R$xml.class \
 /Users/dankurka/Documents/workspace/gwt-phonegap.showcase/showcase/platforms/android/ant-build/classes/com/googlecode/gwtphonegap/showcase/R.class \
-/Users/dankurka/Documents/workspace/gwt-phonegap.showcase/showcase/platforms/android/ant-build/classes/com/googlecode/gwtphonegap/showcase/Showcase.class \
+/Users/dankurka/Documents/workspace/gwt-phonegap.showcase/showcase/platforms/android/ant-build/classes/org/apache/cordova/batterystatus/BatteryListener$1.class \
+/Users/dankurka/Documents/workspace/gwt-phonegap.showcase/showcase/platforms/android/ant-build/classes/org/apache/cordova/batterystatus/BatteryListener.class \
 /Users/dankurka/Documents/workspace/gwt-phonegap.showcase/showcase/platforms/android/ant-build/classes/org/apache/cordova/camera/CameraLauncher.class \
 /Users/dankurka/Documents/workspace/gwt-phonegap.showcase/showcase/platforms/android/ant-build/classes/org/apache/cordova/camera/ExifHelper.class \
 /Users/dankurka/Documents/workspace/gwt-phonegap.showcase/showcase/platforms/android/ant-build/classes/org/apache/cordova/camera/FileHelper.class \
@@ -79,6 +81,22 @@
 /Users/dankurka/Documents/workspace/gwt-phonegap.showcase/showcase/platforms/android/ant-build/classes/org/apache/cordova/file/LocalFilesystemURL.class \
 /Users/dankurka/Documents/workspace/gwt-phonegap.showcase/showcase/platforms/android/ant-build/classes/org/apache/cordova/file/NoModificationAllowedException.class \
 /Users/dankurka/Documents/workspace/gwt-phonegap.showcase/showcase/platforms/android/ant-build/classes/org/apache/cordova/file/TypeMismatchException.class \
+/Users/dankurka/Documents/workspace/gwt-phonegap.showcase/showcase/platforms/android/ant-build/classes/org/apache/cordova/filetransfer/FileProgressResult.class \
+/Users/dankurka/Documents/workspace/gwt-phonegap.showcase/showcase/platforms/android/ant-build/classes/org/apache/cordova/filetransfer/FileTransfer$1.class \
+/Users/dankurka/Documents/workspace/gwt-phonegap.showcase/showcase/platforms/android/ant-build/classes/org/apache/cordova/filetransfer/FileTransfer$2.class \
+/Users/dankurka/Documents/workspace/gwt-phonegap.showcase/showcase/platforms/android/ant-build/classes/org/apache/cordova/filetransfer/FileTransfer$3.class \
+/Users/dankurka/Documents/workspace/gwt-phonegap.showcase/showcase/platforms/android/ant-build/classes/org/apache/cordova/filetransfer/FileTransfer$4.class \
+/Users/dankurka/Documents/workspace/gwt-phonegap.showcase/showcase/platforms/android/ant-build/classes/org/apache/cordova/filetransfer/FileTransfer$5.class \
+/Users/dankurka/Documents/workspace/gwt-phonegap.showcase/showcase/platforms/android/ant-build/classes/org/apache/cordova/filetransfer/FileTransfer$ExposedGZIPInputStream.class \
+/Users/dankurka/Documents/workspace/gwt-phonegap.showcase/showcase/platforms/android/ant-build/classes/org/apache/cordova/filetransfer/FileTransfer$RequestContext.class \
+/Users/dankurka/Documents/workspace/gwt-phonegap.showcase/showcase/platforms/android/ant-build/classes/org/apache/cordova/filetransfer/FileTransfer$SimpleTrackingInputStream.class \
+/Users/dankurka/Documents/workspace/gwt-phonegap.showcase/showcase/platforms/android/ant-build/classes/org/apache/cordova/filetransfer/FileTransfer$TrackingGZIPInputStream.class \
+/Users/dankurka/Documents/workspace/gwt-phonegap.showcase/showcase/platforms/android/ant-build/classes/org/apache/cordova/filetransfer/FileTransfer$TrackingInputStream.class \
+/Users/dankurka/Documents/workspace/gwt-phonegap.showcase/showcase/platforms/android/ant-build/classes/org/apache/cordova/filetransfer/FileTransfer.class \
+/Users/dankurka/Documents/workspace/gwt-phonegap.showcase/showcase/platforms/android/ant-build/classes/org/apache/cordova/filetransfer/FileUploadResult.class \
+/Users/dankurka/Documents/workspace/gwt-phonegap.showcase/showcase/platforms/android/ant-build/classes/org/apache/cordova/globalization/Globalization$1.class \
+/Users/dankurka/Documents/workspace/gwt-phonegap.showcase/showcase/platforms/android/ant-build/classes/org/apache/cordova/globalization/Globalization.class \
+/Users/dankurka/Documents/workspace/gwt-phonegap.showcase/showcase/platforms/android/ant-build/classes/org/apache/cordova/globalization/GlobalizationError.class \
 /Users/dankurka/Documents/workspace/gwt-phonegap.showcase/showcase/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$1.class \
 /Users/dankurka/Documents/workspace/gwt-phonegap.showcase/showcase/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$2.class \
 /Users/dankurka/Documents/workspace/gwt-phonegap.showcase/showcase/platforms/android/ant-build/classes/org/apache/cordova/inappbrowser/InAppBrowser$3.class \
@@ -106,5 +124,6 @@
 /Users/dankurka/Documents/workspace/gwt-phonegap.showcase/showcase/platforms/android/ant-build/classes/org/apache/cordova/mediacapture/FileHelper.class \
 /Users/dankurka/Documents/workspace/gwt-phonegap.showcase/showcase/platforms/android/ant-build/classes/org/apache/cordova/networkinformation/NetworkManager$1.class \
 /Users/dankurka/Documents/workspace/gwt-phonegap.showcase/showcase/platforms/android/ant-build/classes/org/apache/cordova/networkinformation/NetworkManager.class \
+/Users/dankurka/Documents/workspace/gwt-phonegap.showcase/showcase/platforms/android/ant-build/classes/org/apache/cordova/splashscreen/SplashScreen.class \
 /Users/dankurka/Documents/workspace/gwt-phonegap.showcase/showcase/platforms/android/ant-build/classes/org/apache/cordova/vibration/Vibration.class \
 /Users/dankurka/Documents/workspace/gwt-phonegap.showcase/showcase/platforms/android/ant-build/dexedLibs/classes-161c868dc4ca8e004c5cf6bd92087324.jar \

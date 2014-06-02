@@ -20,7 +20,6 @@ import com.google.gwt.dom.client.StyleInjector;
 import com.google.gwt.place.shared.PlaceHistoryHandler;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.RootPanel;
-import com.google.gwt.user.client.ui.SimplePanel;
 
 import com.googlecode.gwtphonegap.client.PhoneGap;
 import com.googlecode.gwtphonegap.client.PhoneGapAvailableEvent;
@@ -33,10 +32,8 @@ import com.googlecode.mgwt.mvp.client.AnimationMapper;
 import com.googlecode.mgwt.ui.client.MGWT;
 import com.googlecode.mgwt.ui.client.MGWTSettings;
 import com.googlecode.mgwt.ui.client.MGWTSettings.ViewPort;
-import com.googlecode.mgwt.ui.client.layout.MasterRegionHandler;
-import com.googlecode.mgwt.ui.client.layout.OrientationRegionHandler;
 import com.googlecode.mgwt.ui.client.widget.animation.AnimationWidget;
-import com.googlecode.mgwt.ui.client.widget.dialog.TabletPortraitOverlay;
+import com.googlecode.mgwt.ui.client.widget.menu.overlay.OverlayMenu;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -143,15 +140,10 @@ public class ShowCaseEntryPoint implements EntryPoint {
   }
 
   private void createTabletDisplay(ClientFactory clientFactory) {
-    SimplePanel navContainer = new SimplePanel();
-    navContainer.getElement().setId("nav");
-    navContainer.getElement().addClassName("landscapeonly");
+    OverlayMenu overlayMenu = new OverlayMenu();
     AnimationWidget navAnimationWidget = new AnimationWidget();
 
-    final TabletPortraitOverlay tabletPortraitOverlay = new TabletPortraitOverlay();
 
-    new OrientationRegionHandler(navContainer, tabletPortraitOverlay, navAnimationWidget);
-    new MasterRegionHandler(clientFactory.getEventBus(), "nav", tabletPortraitOverlay);
 
     ActivityMapper navActivityMapper = new TabletNavActivityMapper(clientFactory);
 
@@ -162,11 +154,11 @@ public class ShowCaseEntryPoint implements EntryPoint {
             .getEventBus());
 
     navActivityManager.setDisplay(navAnimationWidget);
+    overlayMenu.setMaster(navAnimationWidget);
 
-    RootPanel.get().add(navContainer);
+    RootPanel.get().add(overlayMenu);
 
-    SimplePanel mainContainer = new SimplePanel();
-    mainContainer.getElement().setId("main");
+
     AnimationWidget mainAnimationWidget = new AnimationWidget();
 
     TabletMainActivityMapper tabletMainActivityMapper = new TabletMainActivityMapper(clientFactory);
@@ -178,8 +170,6 @@ public class ShowCaseEntryPoint implements EntryPoint {
             clientFactory.getEventBus());
 
     mainActivityManager.setDisplay(mainAnimationWidget);
-    mainContainer.setWidget(mainAnimationWidget);
-
-    RootPanel.get().add(mainContainer);
+    overlayMenu.setDetail(mainAnimationWidget);
   }
 }
