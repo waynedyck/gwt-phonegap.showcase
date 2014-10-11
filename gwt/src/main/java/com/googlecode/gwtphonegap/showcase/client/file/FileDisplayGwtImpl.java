@@ -1,5 +1,8 @@
 package com.googlecode.gwtphonegap.showcase.client.file;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
@@ -10,12 +13,9 @@ import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.HasHTML;
 import com.google.gwt.user.client.ui.HasText;
 import com.google.gwt.user.client.ui.Widget;
-
 import com.googlecode.gwtphonegap.showcase.client.BasicCell;
 import com.googlecode.gwtphonegap.showcase.client.model.FileDemo;
 import com.googlecode.mgwt.dom.client.event.tap.TapEvent;
-import com.googlecode.mgwt.ui.client.MGWT;
-import com.googlecode.mgwt.ui.client.resource.MainResourceHolder;
 import com.googlecode.mgwt.ui.client.widget.button.ButtonBase;
 import com.googlecode.mgwt.ui.client.widget.dialog.Dialogs;
 import com.googlecode.mgwt.ui.client.widget.dialog.Dialogs.ButtonType;
@@ -25,9 +25,6 @@ import com.googlecode.mgwt.ui.client.widget.header.HeaderButton;
 import com.googlecode.mgwt.ui.client.widget.input.MTextArea;
 import com.googlecode.mgwt.ui.client.widget.list.celllist.CellList;
 import com.googlecode.mgwt.ui.client.widget.list.celllist.CellSelectedEvent;
-
-import java.util.ArrayList;
-import java.util.LinkedList;
 
 public class FileDisplayGwtImpl extends Composite implements FileDisplay {
 
@@ -74,11 +71,6 @@ public class FileDisplayGwtImpl extends Composite implements FileDisplay {
 
 		initWidget(uiBinder.createAndBindUi(this));
 
-		if (MGWT.getOsDetection().isTablet()) {
-			backButton.setBackButton(false);
-			backButton.setText("Modules");
-			backButton.addStyleName(MainResourceHolder.getUtilCss().portraitonly());
-		}
 
 	}
 
@@ -158,7 +150,19 @@ public class FileDisplayGwtImpl extends Composite implements FileDisplay {
 
 	@Override
 	public HasText getFileContent() {
-		return content;
+		return new HasText() {
+
+      @Override
+      public void setText(String text) {
+        content.setText(text);
+
+      }
+
+      @Override
+      public String getText() {
+        return content.getText();
+      }
+    };
 	}
 
 	@Override

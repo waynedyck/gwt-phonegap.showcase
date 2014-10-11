@@ -13,14 +13,19 @@
  */
 package com.googlecode.gwtphonegap.showcase.client;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 import com.google.gwt.activity.shared.ActivityMapper;
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.dom.client.StyleInjector;
+import com.google.gwt.event.dom.client.ClickEvent;
+import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.place.shared.PlaceHistoryHandler;
 import com.google.gwt.user.client.Window;
+import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.RootPanel;
-
 import com.googlecode.gwtphonegap.client.PhoneGap;
 import com.googlecode.gwtphonegap.client.PhoneGapAvailableEvent;
 import com.googlecode.gwtphonegap.client.PhoneGapAvailableHandler;
@@ -34,9 +39,6 @@ import com.googlecode.mgwt.ui.client.MGWTSettings;
 import com.googlecode.mgwt.ui.client.MGWTSettings.ViewPort;
 import com.googlecode.mgwt.ui.client.widget.animation.AnimationWidget;
 import com.googlecode.mgwt.ui.client.widget.menu.overlay.OverlayMenu;
-
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class ShowCaseEntryPoint implements EntryPoint {
   private Logger log = Logger.getLogger(getClass().getName());
@@ -60,6 +62,9 @@ public class ShowCaseEntryPoint implements EntryPoint {
 
       @Override
       public void onPhoneGapAvailable(PhoneGapAvailableEvent event) {
+
+
+
         startShowCase(phoneGap);
 
       }

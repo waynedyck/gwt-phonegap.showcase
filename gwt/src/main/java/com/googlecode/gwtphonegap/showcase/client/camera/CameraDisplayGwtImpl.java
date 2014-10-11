@@ -10,10 +10,7 @@ import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.Image;
 import com.google.gwt.user.client.ui.Widget;
-
 import com.googlecode.mgwt.dom.client.event.tap.TapEvent;
-import com.googlecode.mgwt.ui.client.MGWT;
-import com.googlecode.mgwt.ui.client.resource.MainResourceHolder;
 import com.googlecode.mgwt.ui.client.widget.button.ButtonBase;
 import com.googlecode.mgwt.ui.client.widget.header.HeaderButton;
 import com.googlecode.mgwt.ui.client.widget.panel.scroll.ScrollPanel;
@@ -42,11 +39,6 @@ public class CameraDisplayGwtImpl extends Composite implements CameraDisplay {
 	public CameraDisplayGwtImpl() {
 
 		initWidget(uiBinder.createAndBindUi(this));
-		if (MGWT.getOsDetection().isTablet()) {
-			backButton.setBackButton(false);
-			backButton.setText("Modules");
-			backButton.addStyleName(MainResourceHolder.getUtilCss().portraitonly());
-		}
 	}
 
 	@Override

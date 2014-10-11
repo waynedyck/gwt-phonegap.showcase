@@ -46,8 +46,6 @@ public class OverviewDisplayGwtImpl extends Composite implements OverviewDisplay
 
 		cellList = new CellList<PGModule>(cell);
 
-		cellList.setRound(true);
-
 		initWidget(uiBinder.createAndBindUi(this));
 	}
 

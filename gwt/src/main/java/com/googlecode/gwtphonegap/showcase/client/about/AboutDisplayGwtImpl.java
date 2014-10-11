@@ -6,10 +6,7 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.Widget;
-
 import com.googlecode.mgwt.dom.client.event.tap.TapEvent;
-import com.googlecode.mgwt.ui.client.MGWT;
-import com.googlecode.mgwt.ui.client.resource.MainResourceHolder;
 import com.googlecode.mgwt.ui.client.widget.header.HeaderButton;
 
 public class AboutDisplayGwtImpl extends Composite implements AboutDisplay {
@@ -27,11 +24,7 @@ public class AboutDisplayGwtImpl extends Composite implements AboutDisplay {
 
 		initWidget(uiBinder.createAndBindUi(this));
 
-		if (MGWT.getOsDetection().isTablet()) {
-			backButton.setBackButton(false);
-			backButton.setText("Modules");
-			backButton.addStyleName(MainResourceHolder.getUtilCss().portraitonly());
-		}
+
 	}
 
 	@Override

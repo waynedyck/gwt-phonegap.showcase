@@ -3,7 +3,6 @@ package com.googlecode.gwtphonegap.showcase.client;
 import com.google.gwt.place.shared.PlaceController;
 import com.googlecode.mgwt.mvp.client.MGWTAbstractActivity;
 import com.googlecode.mgwt.ui.client.MGWT;
-import com.googlecode.mgwt.ui.client.event.ShowMasterEvent;
 
 public abstract class NavBaseActivity extends MGWTAbstractActivity {
 
@@ -16,11 +15,11 @@ public abstract class NavBaseActivity extends MGWTAbstractActivity {
 	}
 
 	public void onBackButtonPressed() {
-		if (MGWT.getOsDetection().isTablet()) {
-			eventBus.fireEvent(new ShowMasterEvent("nav"));
-		} else {
+//		if (MGWT.getOsDetection().isTablet()) {
+//			eventBus.fireEvent(new ShowMasterEvent("nav"));
+//		} else {
 			placeController.goTo(new OverviewPlace());
-		}
+//		}
 	}
 
 }

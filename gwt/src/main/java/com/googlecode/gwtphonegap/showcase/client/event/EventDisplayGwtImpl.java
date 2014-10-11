@@ -1,22 +1,19 @@
 package com.googlecode.gwtphonegap.showcase.client.event;
 
+import java.util.LinkedList;
+
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.Widget;
-
 import com.googlecode.gwtphonegap.showcase.client.BasicCell;
 import com.googlecode.gwtphonegap.showcase.client.model.EventDemo;
 import com.googlecode.mgwt.dom.client.event.tap.TapEvent;
-import com.googlecode.mgwt.ui.client.MGWT;
-import com.googlecode.mgwt.ui.client.resource.MainResourceHolder;
 import com.googlecode.mgwt.ui.client.widget.header.HeaderButton;
 import com.googlecode.mgwt.ui.client.widget.list.celllist.CellList;
 import com.googlecode.mgwt.ui.client.widget.panel.scroll.ScrollPanel;
-
-import java.util.LinkedList;
 
 public class EventDisplayGwtImpl extends Composite implements EventDisplay {
 
@@ -51,11 +48,6 @@ public class EventDisplayGwtImpl extends Composite implements EventDisplay {
 
 		initWidget(uiBinder.createAndBindUi(this));
 
-		if (MGWT.getOsDetection().isTablet()) {
-			backButton.setBackButton(false);
-			backButton.setText("Modules");
-			backButton.addStyleName(MainResourceHolder.getUtilCss().portraitonly());
-		}
 	}
 
 	@UiHandler("backButton")
