@@ -1,12 +1,12 @@
 /*
  * Copyright 2010 Daniel Kurka
- * 
+ *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
  * the License at
- * 
+ *
  * http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
@@ -19,7 +19,6 @@ import com.google.gwt.activity.shared.Activity;
 import com.google.gwt.activity.shared.ActivityMapper;
 import com.google.gwt.place.shared.Place;
 import com.googlecode.gwtphonegap.showcase.client.about.AboutActivity;
-import com.googlecode.gwtphonegap.showcase.client.about.AboutPlace;
 import com.googlecode.gwtphonegap.showcase.client.accelerometer.AccelerometerActivity;
 import com.googlecode.gwtphonegap.showcase.client.accelerometer.AccelerometerPlace;
 import com.googlecode.gwtphonegap.showcase.client.camera.CameraActivity;
@@ -47,7 +46,7 @@ import com.googlecode.gwtphonegap.showcase.client.notification.NotificationPlace
 
 /**
  * @author Daniel Kurka
- * 
+ *
  */
 public class PhoneActivityMapper implements ActivityMapper {
 
@@ -106,8 +105,8 @@ public class PhoneActivityMapper implements ActivityMapper {
 			return new InAppBrowserActivity(clientFactory);
 		}
 
-		if (place instanceof AboutPlace) {
-			return new AboutActivity(clientFactory);
+		if (place instanceof AboutActivity.MyPlace) {
+			return new AboutActivity(clientFactory.getPlaceController());
 		}
 
 		if (place instanceof FilePlace) {

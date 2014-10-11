@@ -4,7 +4,6 @@ import com.google.gwt.activity.shared.Activity;
 import com.google.gwt.activity.shared.ActivityMapper;
 import com.google.gwt.place.shared.Place;
 import com.googlecode.gwtphonegap.showcase.client.about.AboutActivity;
-import com.googlecode.gwtphonegap.showcase.client.about.AboutPlace;
 import com.googlecode.gwtphonegap.showcase.client.accelerometer.AccelerometerActivity;
 import com.googlecode.gwtphonegap.showcase.client.accelerometer.AccelerometerPlace;
 import com.googlecode.gwtphonegap.showcase.client.camera.CameraActivity;
@@ -130,11 +129,11 @@ public class TabletMainActivityMapper implements ActivityMapper {
 			return new InAppBrowserActivity(clientFactory);
 		}
 
-		if (newPlace instanceof AboutPlace || newPlace instanceof OverviewPlace) {
-			if (lastPlace instanceof AboutPlace || lastPlace instanceof OverviewPlace) {
+		if (newPlace instanceof AboutActivity.MyPlace || newPlace instanceof OverviewPlace) {
+			if (lastPlace instanceof AboutActivity.MyPlace || lastPlace instanceof OverviewPlace) {
 				return lastActivity;
 			}
-			return new AboutActivity(clientFactory);
+			return new AboutActivity(clientFactory.getPlaceController());
 		}
 
 		if (newPlace instanceof FilePlace) {

@@ -4,8 +4,6 @@ import com.google.gwt.place.shared.PlaceController;
 import com.google.web.bindery.event.shared.EventBus;
 import com.google.web.bindery.event.shared.SimpleEventBus;
 import com.googlecode.gwtphonegap.client.PhoneGap;
-import com.googlecode.gwtphonegap.showcase.client.about.AboutDisplay;
-import com.googlecode.gwtphonegap.showcase.client.about.AboutDisplayGwtImpl;
 import com.googlecode.gwtphonegap.showcase.client.accelerometer.AccelerometerDisplay;
 import com.googlecode.gwtphonegap.showcase.client.accelerometer.AccelerometerDisplayGwtImpl;
 import com.googlecode.gwtphonegap.showcase.client.camera.CameraDisplay;
@@ -48,7 +46,6 @@ public class ClientFactoryGwtImpl implements ClientFactory {
 	private MediaDisplay mediaDisplay;
 	private NotificationDisplay notificationDisplay;
 	private InAppBrowserDisplay childBrowserDisplay;
-	private AboutDisplay aboutDisplay;
 	private FileDisplay fileDisplay;
 
 	public ClientFactoryGwtImpl() {
@@ -170,14 +167,6 @@ public class ClientFactoryGwtImpl implements ClientFactory {
 			childBrowserDisplay = new InAppBrowserDisplayGwtImpl();
 		}
 		return childBrowserDisplay;
-	}
-
-	@Override
-	public AboutDisplay getAboutDisplay() {
-		if (aboutDisplay == null) {
-			aboutDisplay = new AboutDisplayGwtImpl();
-		}
-		return aboutDisplay;
 	}
 
 	@Override

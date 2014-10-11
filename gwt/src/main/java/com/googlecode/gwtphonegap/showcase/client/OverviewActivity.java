@@ -1,10 +1,12 @@
 package com.googlecode.gwtphonegap.showcase.client;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import com.google.web.bindery.event.shared.EventBus;
-
 import com.googlecode.gwtphonegap.showcase.client.OverviewDisplay.Presenter;
-import com.googlecode.gwtphonegap.showcase.client.about.AboutPlace;
+import com.googlecode.gwtphonegap.showcase.client.about.AboutActivity;
 import com.googlecode.gwtphonegap.showcase.client.accelerometer.AccelerometerPlace;
 import com.googlecode.gwtphonegap.showcase.client.camera.CameraPlace;
 import com.googlecode.gwtphonegap.showcase.client.compass.CompassPlace;
@@ -19,9 +21,6 @@ import com.googlecode.gwtphonegap.showcase.client.media.MediaPlace;
 import com.googlecode.gwtphonegap.showcase.client.model.PGModule;
 import com.googlecode.gwtphonegap.showcase.client.notification.NotificationPlace;
 import com.googlecode.mgwt.mvp.client.MGWTAbstractActivity;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class OverviewActivity extends MGWTAbstractActivity implements Presenter {
 
@@ -116,8 +115,7 @@ public class OverviewActivity extends MGWTAbstractActivity implements Presenter 
 
   @Override
   public void onAboutButton() {
-    clientFactory.getPlaceController().goTo(new AboutPlace());
-
+    clientFactory.getPlaceController().goTo(new AboutActivity.MyPlace());
   }
 
 }
