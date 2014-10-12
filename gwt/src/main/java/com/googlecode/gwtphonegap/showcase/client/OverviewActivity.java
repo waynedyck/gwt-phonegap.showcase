@@ -16,7 +16,7 @@ import com.googlecode.gwtphonegap.showcase.client.device.DeviceActivity;
 import com.googlecode.gwtphonegap.showcase.client.event.EventActivity;
 import com.googlecode.gwtphonegap.showcase.client.file.FileActivity;
 import com.googlecode.gwtphonegap.showcase.client.geolocation.GeolocationActivity;
-import com.googlecode.gwtphonegap.showcase.client.inappbrowser.InAppBrowserPlace;
+import com.googlecode.gwtphonegap.showcase.client.inappbrowser.InAppBrowserActivity;
 import com.googlecode.gwtphonegap.showcase.client.media.MediaPlace;
 import com.googlecode.gwtphonegap.showcase.client.model.PGModule;
 import com.googlecode.gwtphonegap.showcase.client.notification.NotificationPlace;
@@ -107,15 +107,13 @@ public class OverviewActivity extends MGWTAbstractActivity implements Presenter 
         break;
 
       case 11:
-        clientFactory.getPlaceController().goTo(new InAppBrowserPlace());
+        clientFactory.getPlaceController().goTo(new InAppBrowserActivity.MyPlace());
         break;
     }
-
   }
 
   @Override
   public void onAboutButton() {
     clientFactory.getPlaceController().goTo(new AboutActivity.MyPlace());
   }
-
 }

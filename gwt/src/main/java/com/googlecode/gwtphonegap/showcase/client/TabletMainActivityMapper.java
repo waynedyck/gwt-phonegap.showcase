@@ -14,7 +14,6 @@ import com.googlecode.gwtphonegap.showcase.client.event.EventActivity;
 import com.googlecode.gwtphonegap.showcase.client.file.FileActivity;
 import com.googlecode.gwtphonegap.showcase.client.geolocation.GeolocationActivity;
 import com.googlecode.gwtphonegap.showcase.client.inappbrowser.InAppBrowserActivity;
-import com.googlecode.gwtphonegap.showcase.client.inappbrowser.InAppBrowserPlace;
 import com.googlecode.gwtphonegap.showcase.client.media.MediaActivity;
 import com.googlecode.gwtphonegap.showcase.client.media.MediaPlace;
 import com.googlecode.gwtphonegap.showcase.client.notification.NotificationActivity;
@@ -113,8 +112,8 @@ public class TabletMainActivityMapper implements ActivityMapper {
 			return new NotificationActivity(clientFactory);
 		}
 
-		if (newPlace instanceof InAppBrowserPlace) {
-			if (lastPlace instanceof InAppBrowserPlace) {
+		if (newPlace instanceof InAppBrowserActivity.MyPlace) {
+			if (lastPlace instanceof InAppBrowserActivity.MyPlace) {
 				return lastActivity;
 			}
 			return new InAppBrowserActivity(clientFactory);
