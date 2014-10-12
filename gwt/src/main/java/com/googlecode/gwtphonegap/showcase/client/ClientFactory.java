@@ -3,7 +3,6 @@ package com.googlecode.gwtphonegap.showcase.client;
 import com.google.gwt.place.shared.PlaceController;
 import com.google.web.bindery.event.shared.EventBus;
 import com.googlecode.gwtphonegap.client.PhoneGap;
-import com.googlecode.gwtphonegap.showcase.client.notification.NotificationDisplay;
 
 public interface ClientFactory {
 	public PhoneGap getPhoneGap();
@@ -13,6 +12,4 @@ public interface ClientFactory {
 	public EventBus getEventBus();
 
 	public OverviewDisplay getOverviewDisplay();
-
-	public NotificationDisplay getNotificationDisplay();
 }

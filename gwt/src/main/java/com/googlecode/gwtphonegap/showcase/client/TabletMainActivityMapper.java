@@ -16,7 +16,6 @@ import com.googlecode.gwtphonegap.showcase.client.geolocation.GeolocationActivit
 import com.googlecode.gwtphonegap.showcase.client.inappbrowser.InAppBrowserActivity;
 import com.googlecode.gwtphonegap.showcase.client.media.MediaActivity;
 import com.googlecode.gwtphonegap.showcase.client.notification.NotificationActivity;
-import com.googlecode.gwtphonegap.showcase.client.notification.NotificationPlace;
 
 public class TabletMainActivityMapper implements ActivityMapper {
 
@@ -104,8 +103,8 @@ public class TabletMainActivityMapper implements ActivityMapper {
 			return new MediaActivity(clientFactory);
 		}
 
-		if (newPlace instanceof NotificationPlace) {
-			if (lastPlace instanceof NotificationPlace) {
+		if (newPlace instanceof NotificationActivity.MyPlace) {
+			if (lastPlace instanceof NotificationActivity.MyPlace) {
 				return lastActivity;
 			}
 			return new NotificationActivity(clientFactory);

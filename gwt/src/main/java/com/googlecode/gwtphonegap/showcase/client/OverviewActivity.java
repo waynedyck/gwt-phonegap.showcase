@@ -19,7 +19,7 @@ import com.googlecode.gwtphonegap.showcase.client.geolocation.GeolocationActivit
 import com.googlecode.gwtphonegap.showcase.client.inappbrowser.InAppBrowserActivity;
 import com.googlecode.gwtphonegap.showcase.client.media.MediaActivity;
 import com.googlecode.gwtphonegap.showcase.client.model.PGModule;
-import com.googlecode.gwtphonegap.showcase.client.notification.NotificationPlace;
+import com.googlecode.gwtphonegap.showcase.client.notification.NotificationActivity;
 import com.googlecode.mgwt.mvp.client.MGWTAbstractActivity;
 
 public class OverviewActivity extends MGWTAbstractActivity implements Presenter {
@@ -103,7 +103,7 @@ public class OverviewActivity extends MGWTAbstractActivity implements Presenter 
         clientFactory.getPlaceController().goTo(new MediaActivity.MyPlace());
         break;
       case 10:
-        clientFactory.getPlaceController().goTo(new NotificationPlace());
+        clientFactory.getPlaceController().goTo(new NotificationActivity.MyPlace());
         break;
 
       case 11:

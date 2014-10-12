@@ -31,7 +31,6 @@ import com.googlecode.gwtphonegap.showcase.client.geolocation.GeolocationActivit
 import com.googlecode.gwtphonegap.showcase.client.inappbrowser.InAppBrowserActivity;
 import com.googlecode.gwtphonegap.showcase.client.media.MediaActivity;
 import com.googlecode.gwtphonegap.showcase.client.notification.NotificationActivity;
-import com.googlecode.gwtphonegap.showcase.client.notification.NotificationPlace;
 
 /**
  * @author Daniel Kurka
@@ -86,7 +85,7 @@ public class PhoneActivityMapper implements ActivityMapper {
 			return new MediaActivity(clientFactory);
 		}
 
-		if (place instanceof NotificationPlace) {
+		if (place instanceof NotificationActivity.MyPlace) {
 			return new NotificationActivity(clientFactory);
 		}
 
