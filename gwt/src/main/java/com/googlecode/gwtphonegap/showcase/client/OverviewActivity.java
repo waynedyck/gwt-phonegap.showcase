@@ -12,7 +12,7 @@ import com.googlecode.gwtphonegap.showcase.client.camera.CameraActivity;
 import com.googlecode.gwtphonegap.showcase.client.compass.CompassActivity;
 import com.googlecode.gwtphonegap.showcase.client.connection.ConnectionActivity;
 import com.googlecode.gwtphonegap.showcase.client.contact.ContactActivity;
-import com.googlecode.gwtphonegap.showcase.client.device.DevicePlace;
+import com.googlecode.gwtphonegap.showcase.client.device.DeviceActivity;
 import com.googlecode.gwtphonegap.showcase.client.event.EventPlace;
 import com.googlecode.gwtphonegap.showcase.client.file.FilePlace;
 import com.googlecode.gwtphonegap.showcase.client.geolocation.GeolocationPlace;
@@ -87,7 +87,7 @@ public class OverviewActivity extends MGWTAbstractActivity implements Presenter 
         break;
 
       case 5:
-        clientFactory.getPlaceController().goTo(new DevicePlace());
+        clientFactory.getPlaceController().goTo(new DeviceActivity.MyPlace());
         break;
 
       case 6:

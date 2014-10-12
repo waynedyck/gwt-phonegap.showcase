@@ -13,38 +13,81 @@
  */
 package com.googlecode.gwtphonegap.showcase.client.device;
 
+import com.google.gwt.core.client.GWT;
+import com.google.gwt.place.shared.Place;
+import com.google.gwt.place.shared.PlaceController;
+import com.google.gwt.place.shared.PlaceTokenizer;
+import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
+import com.google.gwt.user.client.ui.HTML;
+import com.google.gwt.user.client.ui.Widget;
 import com.google.web.bindery.event.shared.EventBus;
 import com.googlecode.gwtphonegap.client.PhoneGap;
 import com.googlecode.gwtphonegap.showcase.client.ClientFactory;
-import com.googlecode.gwtphonegap.showcase.client.NavBaseActivity;
+import com.googlecode.gwtphonegap.showcase.client.OverviewPlace;
+import com.googlecode.mgwt.dom.client.event.tap.TapEvent;
+import com.googlecode.mgwt.mvp.client.MGWTAbstractActivity;
 
-public class DeviceActivity extends NavBaseActivity implements DeviceDisplay.Presenter {
+public class DeviceActivity extends MGWTAbstractActivity {
 
-  private final DeviceDisplay display;
+  public static class MyPlace extends Place {
+    public static class Tokenizer implements PlaceTokenizer<MyPlace> {
+
+      @Override
+      public MyPlace getPlace(String token) {
+        return new MyPlace();
+      }
+      @Override
+      public String getToken(MyPlace place) {
+        return null;
+      }
+    }
+  }
+
+  private static Binder BINDER = GWT.create(Binder.class);
+  interface Binder extends UiBinder<Widget, DeviceActivity> {}
+
+  private Widget rootWidget;
+  private PlaceController placeController;
+
   private final PhoneGap phoneGap;
 
+  @UiField
+  HTML name;
+
+  @UiField
+  HTML platform;
+
+  @UiField
+  HTML version;
+
+  @UiField
+  HTML pversion;
+
+  @UiField
+  HTML uuid;
+
   public DeviceActivity(ClientFactory clientFactory) {
-    super(clientFactory);
-
-    this.display = clientFactory.getDeviceDisplay();
+    placeController = clientFactory.getPlaceController();
+    rootWidget = BINDER.createAndBindUi(this);
     this.phoneGap = clientFactory.getPhoneGap();
-
   }
 
   @Override
   public void start(AcceptsOneWidget panel, EventBus eventBus) {
+    version.setHTML(phoneGap.getDevice().getVersion());
+    name.setHTML(phoneGap.getDevice().getModel());
+    pversion.setHTML(phoneGap.getDevice().getPhoneGapVersion());
+    platform.setHTML(phoneGap.getDevice().getPlatform());
+    uuid.setHTML(phoneGap.getDevice().getUuid());
 
-    display.setPresenter(this);
-
-    display.getVersion().setHTML(phoneGap.getDevice().getVersion());
-    display.getName().setHTML(phoneGap.getDevice().getModel());
-    display.getPhoneGapVersion().setHTML(phoneGap.getDevice().getPhoneGapVersion());
-    display.getPlatform().setHTML(phoneGap.getDevice().getPlatform());
-    display.getUUID().setHTML(phoneGap.getDevice().getUuid());
-
-    panel.setWidget(display);
-
+    panel.setWidget(rootWidget);
   }
 
+  @UiHandler("backButton")
+  protected void oBackButtonPressed(TapEvent event) {
+    placeController.goTo(new OverviewPlace());
+  }
 }
