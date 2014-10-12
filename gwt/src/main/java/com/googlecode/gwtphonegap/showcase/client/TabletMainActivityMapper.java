@@ -9,7 +9,6 @@ import com.googlecode.gwtphonegap.showcase.client.camera.CameraActivity;
 import com.googlecode.gwtphonegap.showcase.client.compass.CompassActivity;
 import com.googlecode.gwtphonegap.showcase.client.connection.ConnectionActivity;
 import com.googlecode.gwtphonegap.showcase.client.contact.ContactActivity;
-import com.googlecode.gwtphonegap.showcase.client.contact.ContactPlace;
 import com.googlecode.gwtphonegap.showcase.client.device.DeviceActivity;
 import com.googlecode.gwtphonegap.showcase.client.device.DevicePlace;
 import com.googlecode.gwtphonegap.showcase.client.event.EventActivity;
@@ -76,8 +75,8 @@ public class TabletMainActivityMapper implements ActivityMapper {
 			return new ConnectionActivity(clientFactory);
 		}
 
-		if (newPlace instanceof ContactPlace) {
-			if (lastPlace instanceof ContactPlace) {
+		if (newPlace instanceof ContactActivity.MyPlace) {
+			if (lastPlace instanceof ContactActivity.MyPlace) {
 				return lastActivity;
 			}
 			return new ContactActivity(clientFactory);

@@ -24,7 +24,6 @@ import com.googlecode.gwtphonegap.showcase.client.camera.CameraActivity;
 import com.googlecode.gwtphonegap.showcase.client.compass.CompassActivity;
 import com.googlecode.gwtphonegap.showcase.client.connection.ConnectionActivity;
 import com.googlecode.gwtphonegap.showcase.client.contact.ContactActivity;
-import com.googlecode.gwtphonegap.showcase.client.contact.ContactPlace;
 import com.googlecode.gwtphonegap.showcase.client.device.DeviceActivity;
 import com.googlecode.gwtphonegap.showcase.client.device.DevicePlace;
 import com.googlecode.gwtphonegap.showcase.client.event.EventActivity;
@@ -73,7 +72,7 @@ public class PhoneActivityMapper implements ActivityMapper {
 			return new ConnectionActivity(clientFactory);
 		}
 
-		if (place instanceof ContactPlace) {
+		if (place instanceof ContactActivity.MyPlace) {
 			return new ContactActivity(clientFactory);
 		}
 

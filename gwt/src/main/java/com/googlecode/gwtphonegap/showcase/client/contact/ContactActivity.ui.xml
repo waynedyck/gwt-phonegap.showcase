@@ -4,19 +4,15 @@
 	
 	<mgwt:panel.flex.RootFlexPanel>
 		<mgwt:header.HeaderPanel>
-			<mgwt:header.HeaderButton ui:field="backButton" backButton="true" text="Modules"/>
+			<mgwt:button.image.PreviousitemImageButton ui:field="backButton" text="Modules"/>
 			<mgwt:panel.flex.FlexSpacer/>
 			<mgwt:header.HeaderTitle>Contacts</mgwt:header.HeaderTitle>
 			<mgwt:panel.flex.FlexSpacer/>
 			<mgwt:panel.flex.FixedSpacer/>
 		</mgwt:header.HeaderPanel>
-		
 		<mgwt:input.search.MSearchBox ui:field="searchBox"></mgwt:input.search.MSearchBox>
-		
 		<mgwt:panel.scroll.ScrollPanel ui:field="scrollPanel" scrollingEnabledX="false">
 				<mgwt:list.celllist.CellList ui:field="cellList"/>
 		</mgwt:panel.scroll.ScrollPanel>
-		
 	</mgwt:panel.flex.RootFlexPanel>
-	
-</ui:UiBinder> 
+</ui:UiBinder>

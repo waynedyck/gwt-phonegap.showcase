@@ -3,7 +3,6 @@ package com.googlecode.gwtphonegap.showcase.client;
 import com.google.gwt.place.shared.PlaceController;
 import com.google.web.bindery.event.shared.EventBus;
 import com.googlecode.gwtphonegap.client.PhoneGap;
-import com.googlecode.gwtphonegap.showcase.client.contact.ContactDisplay;
 import com.googlecode.gwtphonegap.showcase.client.device.DeviceDisplay;
 import com.googlecode.gwtphonegap.showcase.client.event.EventDisplay;
 import com.googlecode.gwtphonegap.showcase.client.file.FileDisplay;
@@ -20,8 +19,6 @@ public interface ClientFactory {
 	public EventBus getEventBus();
 
 	public OverviewDisplay getOverviewDisplay();
-
-	public ContactDisplay getContactDisplay();
 
 	public DeviceDisplay getDeviceDisplay();
 
