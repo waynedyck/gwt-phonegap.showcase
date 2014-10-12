@@ -5,7 +5,7 @@
 	
 	<mgwt:panel.flex.RootFlexPanel>
 	    <mgwt:header.HeaderPanel>
-			<mgwt:header.HeaderButton ui:field="backButton" backButton="true" text="Modules"/>
+			<mgwt:button.image.PreviousitemImageButton ui:field="backButton" text="Modules"/>
 			<mgwt:panel.flex.FlexSpacer/>
 			<mgwt:header.HeaderTitle>Camera</mgwt:header.HeaderTitle>
 			<mgwt:panel.flex.FlexSpacer/>

@@ -18,7 +18,7 @@ package com.googlecode.gwtphonegap.showcase.client;
 import com.google.gwt.place.shared.Place;
 import com.googlecode.gwtphonegap.showcase.client.about.AboutActivity;
 import com.googlecode.gwtphonegap.showcase.client.accelerometer.AccelerometerActivity;
-import com.googlecode.gwtphonegap.showcase.client.camera.CameraPlace;
+import com.googlecode.gwtphonegap.showcase.client.camera.CameraActivity;
 import com.googlecode.gwtphonegap.showcase.client.compass.CompassPlace;
 import com.googlecode.gwtphonegap.showcase.client.connection.ConnectionPlace;
 import com.googlecode.gwtphonegap.showcase.client.contact.ContactPlace;
@@ -54,11 +54,11 @@ public class PhoneAnimationMapper implements AnimationMapper {
 			return Animations.SLIDE_REVERSE;
 		}
 
-		if (oldPlace instanceof OverviewPlace && newPlace instanceof CameraPlace) {
+		if (oldPlace instanceof OverviewPlace && newPlace instanceof CameraActivity.MyPlace) {
 			return Animations.SLIDE;
 		}
 
-		if (oldPlace instanceof CameraPlace && newPlace instanceof OverviewPlace) {
+		if (oldPlace instanceof CameraActivity.MyPlace && newPlace instanceof OverviewPlace) {
 			return Animations.SLIDE_REVERSE;
 		}
 

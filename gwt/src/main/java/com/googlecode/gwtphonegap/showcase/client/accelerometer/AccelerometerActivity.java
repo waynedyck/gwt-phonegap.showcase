@@ -35,7 +35,6 @@ import com.googlecode.gwtphonegap.client.accelerometer.AccelermeterMock;
 import com.googlecode.gwtphonegap.client.accelerometer.AccelerometerWatcher;
 import com.googlecode.gwtphonegap.client.accelerometer.browser.AccelerationBrowserImpl;
 import com.googlecode.gwtphonegap.showcase.client.ClientFactory;
-import com.googlecode.gwtphonegap.showcase.client.NavBaseActivity;
 import com.googlecode.gwtphonegap.showcase.client.OverviewPlace;
 import com.googlecode.mgwt.dom.client.event.tap.TapEvent;
 import com.googlecode.mgwt.mvp.client.MGWTAbstractActivity;

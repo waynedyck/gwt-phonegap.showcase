@@ -4,8 +4,6 @@ import com.google.gwt.place.shared.PlaceController;
 import com.google.web.bindery.event.shared.EventBus;
 import com.google.web.bindery.event.shared.SimpleEventBus;
 import com.googlecode.gwtphonegap.client.PhoneGap;
-import com.googlecode.gwtphonegap.showcase.client.camera.CameraDisplay;
-import com.googlecode.gwtphonegap.showcase.client.camera.CameraDisplayGwtImpl;
 import com.googlecode.gwtphonegap.showcase.client.compass.CompassDisplay;
 import com.googlecode.gwtphonegap.showcase.client.compass.CompassDisplayGwtImpl;
 import com.googlecode.gwtphonegap.showcase.client.connection.ConnectionDisplay;
@@ -33,7 +31,6 @@ public class ClientFactoryGwtImpl implements ClientFactory {
 	private SimpleEventBus eventBus;
 	private PlaceController placeController;
 	private OverviewDisplay overviewDisplay;
-	private CameraDisplay cameraDisplay;
 	private CompassDisplayGwtImpl compassDisplay;
 	private ConnectionDisplayGwtImpl connectionDisplay;
 	private ContactDisplay contactDisplay;
@@ -76,14 +73,6 @@ public class ClientFactoryGwtImpl implements ClientFactory {
 			overviewDisplay = new OverviewDisplayGwtImpl();
 		}
 		return overviewDisplay;
-	}
-
-	@Override
-	public CameraDisplay getCameraDisplay() {
-		if (cameraDisplay == null) {
-			cameraDisplay = new CameraDisplayGwtImpl();
-		}
-		return cameraDisplay;
 	}
 
 	@Override
