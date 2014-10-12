@@ -27,7 +27,6 @@ import com.googlecode.gwtphonegap.showcase.client.contact.ContactActivity;
 import com.googlecode.gwtphonegap.showcase.client.device.DeviceActivity;
 import com.googlecode.gwtphonegap.showcase.client.event.EventActivity;
 import com.googlecode.gwtphonegap.showcase.client.file.FileActivity;
-import com.googlecode.gwtphonegap.showcase.client.file.FilePlace;
 import com.googlecode.gwtphonegap.showcase.client.geolocation.GeolocationActivity;
 import com.googlecode.gwtphonegap.showcase.client.geolocation.GeolocationPlace;
 import com.googlecode.gwtphonegap.showcase.client.inappbrowser.InAppBrowserActivity;
@@ -102,11 +101,9 @@ public class PhoneActivityMapper implements ActivityMapper {
 			return new AboutActivity(clientFactory.getPlaceController());
 		}
 
-		if (place instanceof FilePlace) {
+		if (place instanceof FileActivity.MyPlace) {
 			return new FileActivity(clientFactory);
 		}
-
 		return null;
-
 	}
 }

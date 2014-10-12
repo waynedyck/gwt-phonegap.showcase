@@ -12,7 +12,6 @@ import com.googlecode.gwtphonegap.showcase.client.contact.ContactActivity;
 import com.googlecode.gwtphonegap.showcase.client.device.DeviceActivity;
 import com.googlecode.gwtphonegap.showcase.client.event.EventActivity;
 import com.googlecode.gwtphonegap.showcase.client.file.FileActivity;
-import com.googlecode.gwtphonegap.showcase.client.file.FilePlace;
 import com.googlecode.gwtphonegap.showcase.client.geolocation.GeolocationActivity;
 import com.googlecode.gwtphonegap.showcase.client.geolocation.GeolocationPlace;
 import com.googlecode.gwtphonegap.showcase.client.inappbrowser.InAppBrowserActivity;
@@ -129,14 +128,12 @@ public class TabletMainActivityMapper implements ActivityMapper {
 			return new AboutActivity(clientFactory.getPlaceController());
 		}
 
-		if (newPlace instanceof FilePlace) {
-			if (lastPlace instanceof FilePlace) {
+		if (newPlace instanceof FileActivity.MyPlace) {
+			if (lastPlace instanceof FileActivity.MyPlace) {
 				return lastActivity;
 			}
 			return new FileActivity(clientFactory);
 		}
-
 		return null;
 	}
-
 }

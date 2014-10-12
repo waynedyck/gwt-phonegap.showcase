@@ -5,38 +5,28 @@
 
 	<mgwt:panel.flex.RootFlexPanel>
 	    <mgwt:header.HeaderPanel>
-			<mgwt:header.HeaderButton ui:field="backButton" backButton="true" text="Modules"/>
+			<mgwt:button.image.PreviousitemImageButton ui:field="backButton" text="Modules"/>
 			<mgwt:panel.flex.FlexSpacer/>
 			<mgwt:header.HeaderTitle>File</mgwt:header.HeaderTitle>
 			<mgwt:panel.flex.FlexSpacer/>
 			<mgwt:panel.flex.FixedSpacer/>
 		</mgwt:header.HeaderPanel>
-		
 		<mgwt:panel.scroll.ScrollPanel ui:field="scrollPanel"
 			scrollingEnabledX="false">
 			<g:FlowPanel>
 				<mgwt:list.celllist.CellList ui:field="cellList"/>
 			</g:FlowPanel>
-
 		</mgwt:panel.scroll.ScrollPanel>
-		
-		
-		
 		<mgwt:panel.Panel>
 			<g:HTML ui:field="status"></g:HTML>
 		</mgwt:panel.Panel>
-		
-		
 		<mgwt:panel.Panel>
 			<mgwt:input.MTextArea ui:field="content"></mgwt:input.MTextArea>
 		</mgwt:panel.Panel>
-		
 		<mgwt:buttonbar.ButtonBar>
 			<mgwt:button.image.NewImageButton ui:field="plusButton"/>
 			<mgwt:panel.flex.FlexSpacer/>
 			<mgwt:button.image.SearchImageButton ui:field="actionButton"/>
 		</mgwt:buttonbar.ButtonBar>
-		
 	</mgwt:panel.flex.RootFlexPanel>
-
-</ui:UiBinder> 
+</ui:UiBinder>

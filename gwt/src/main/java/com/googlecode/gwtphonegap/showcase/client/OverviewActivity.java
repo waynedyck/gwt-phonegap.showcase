@@ -14,7 +14,7 @@ import com.googlecode.gwtphonegap.showcase.client.connection.ConnectionActivity;
 import com.googlecode.gwtphonegap.showcase.client.contact.ContactActivity;
 import com.googlecode.gwtphonegap.showcase.client.device.DeviceActivity;
 import com.googlecode.gwtphonegap.showcase.client.event.EventActivity;
-import com.googlecode.gwtphonegap.showcase.client.file.FilePlace;
+import com.googlecode.gwtphonegap.showcase.client.file.FileActivity;
 import com.googlecode.gwtphonegap.showcase.client.geolocation.GeolocationPlace;
 import com.googlecode.gwtphonegap.showcase.client.inappbrowser.InAppBrowserPlace;
 import com.googlecode.gwtphonegap.showcase.client.media.MediaPlace;
@@ -94,7 +94,7 @@ public class OverviewActivity extends MGWTAbstractActivity implements Presenter 
         clientFactory.getPlaceController().goTo(new EventActivity.MyPlace());
         break;
       case 7:
-        clientFactory.getPlaceController().goTo(new FilePlace());
+        clientFactory.getPlaceController().goTo(new FileActivity.MyPlace());
         break;
       case 8:
         clientFactory.getPlaceController().goTo(new GeolocationPlace());
