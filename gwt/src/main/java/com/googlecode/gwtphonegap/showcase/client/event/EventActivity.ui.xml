@@ -5,22 +5,17 @@
 	
 	<mgwt:panel.flex.RootFlexPanel>
 	    <mgwt:header.HeaderPanel>
-			<mgwt:header.HeaderButton ui:field="backButton" backButton="true" text="Modules"/>
+			<mgwt:button.image.PreviousitemImageButton ui:field="backButton" text="Modules"/>
 			<mgwt:panel.flex.FlexSpacer/>
 			<mgwt:header.HeaderTitle>Events</mgwt:header.HeaderTitle>
 			<mgwt:panel.flex.FlexSpacer/>
 			<mgwt:panel.flex.FixedSpacer/>
 		</mgwt:header.HeaderPanel>
-		
-		
-		
 		<mgwt:panel.scroll.ScrollPanel ui:field="scrollPanel" scrollingEnabledX="false">
 				<g:FlowPanel>
 					<g:HTML>Events will show up here</g:HTML>
 					<mgwt:list.celllist.CellList ui:field="cellList"/>
 				</g:FlowPanel>
 		</mgwt:panel.scroll.ScrollPanel>
-		
 	</mgwt:panel.flex.RootFlexPanel>
-	
-</ui:UiBinder> 
+</ui:UiBinder>

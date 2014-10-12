@@ -4,8 +4,6 @@ import com.google.gwt.place.shared.PlaceController;
 import com.google.web.bindery.event.shared.EventBus;
 import com.google.web.bindery.event.shared.SimpleEventBus;
 import com.googlecode.gwtphonegap.client.PhoneGap;
-import com.googlecode.gwtphonegap.showcase.client.event.EventDisplay;
-import com.googlecode.gwtphonegap.showcase.client.event.EventDisplayGwtImpl;
 import com.googlecode.gwtphonegap.showcase.client.file.FileDisplay;
 import com.googlecode.gwtphonegap.showcase.client.file.FileDisplayGwtImpl;
 import com.googlecode.gwtphonegap.showcase.client.geolocation.GeolocationDisplay;
@@ -23,7 +21,6 @@ public class ClientFactoryGwtImpl implements ClientFactory {
 	private SimpleEventBus eventBus;
 	private PlaceController placeController;
 	private OverviewDisplay overviewDisplay;
-	private EventDisplay eventDisplay;
 	private GeolocationDisplay geolocationDisplay;
 	private MediaDisplay mediaDisplay;
 	private NotificationDisplay notificationDisplay;
@@ -61,14 +58,6 @@ public class ClientFactoryGwtImpl implements ClientFactory {
 			overviewDisplay = new OverviewDisplayGwtImpl();
 		}
 		return overviewDisplay;
-	}
-
-	@Override
-	public EventDisplay getEventDisplay() {
-		if (eventDisplay == null) {
-			eventDisplay = new EventDisplayGwtImpl();
-		}
-		return eventDisplay;
 	}
 
 	@Override
