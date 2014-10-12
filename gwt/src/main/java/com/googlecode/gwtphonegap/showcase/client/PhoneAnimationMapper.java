@@ -17,7 +17,7 @@ package com.googlecode.gwtphonegap.showcase.client;
 
 import com.google.gwt.place.shared.Place;
 import com.googlecode.gwtphonegap.showcase.client.about.AboutActivity;
-import com.googlecode.gwtphonegap.showcase.client.accelerometer.AccelerometerPlace;
+import com.googlecode.gwtphonegap.showcase.client.accelerometer.AccelerometerActivity;
 import com.googlecode.gwtphonegap.showcase.client.camera.CameraPlace;
 import com.googlecode.gwtphonegap.showcase.client.compass.CompassPlace;
 import com.googlecode.gwtphonegap.showcase.client.connection.ConnectionPlace;
@@ -46,11 +46,11 @@ public class PhoneAnimationMapper implements AnimationMapper {
 			return Animations.FADE;
 		}
 
-		if (oldPlace instanceof OverviewPlace && newPlace instanceof AccelerometerPlace) {
+		if (oldPlace instanceof OverviewPlace && newPlace instanceof AccelerometerActivity.MyPlace) {
 			return Animations.SLIDE;
 		}
 
-		if (oldPlace instanceof AccelerometerPlace && newPlace instanceof OverviewPlace) {
+		if (oldPlace instanceof AccelerometerActivity.MyPlace && newPlace instanceof OverviewPlace) {
 			return Animations.SLIDE_REVERSE;
 		}
 

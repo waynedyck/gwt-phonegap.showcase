@@ -7,7 +7,7 @@ import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import com.google.web.bindery.event.shared.EventBus;
 import com.googlecode.gwtphonegap.showcase.client.OverviewDisplay.Presenter;
 import com.googlecode.gwtphonegap.showcase.client.about.AboutActivity;
-import com.googlecode.gwtphonegap.showcase.client.accelerometer.AccelerometerPlace;
+import com.googlecode.gwtphonegap.showcase.client.accelerometer.AccelerometerActivity;
 import com.googlecode.gwtphonegap.showcase.client.camera.CameraPlace;
 import com.googlecode.gwtphonegap.showcase.client.compass.CompassPlace;
 import com.googlecode.gwtphonegap.showcase.client.connection.ConnectionPlace;
@@ -67,7 +67,7 @@ public class OverviewActivity extends MGWTAbstractActivity implements Presenter 
   public void onCellSelected(int index) {
     switch (index) {
       case 0:
-        clientFactory.getPlaceController().goTo(new AccelerometerPlace());
+        clientFactory.getPlaceController().goTo(new AccelerometerActivity.MyPlace());
         break;
 
       case 1:

@@ -4,8 +4,6 @@ import com.google.gwt.place.shared.PlaceController;
 import com.google.web.bindery.event.shared.EventBus;
 import com.google.web.bindery.event.shared.SimpleEventBus;
 import com.googlecode.gwtphonegap.client.PhoneGap;
-import com.googlecode.gwtphonegap.showcase.client.accelerometer.AccelerometerDisplay;
-import com.googlecode.gwtphonegap.showcase.client.accelerometer.AccelerometerDisplayGwtImpl;
 import com.googlecode.gwtphonegap.showcase.client.camera.CameraDisplay;
 import com.googlecode.gwtphonegap.showcase.client.camera.CameraDisplayGwtImpl;
 import com.googlecode.gwtphonegap.showcase.client.compass.CompassDisplay;
@@ -35,7 +33,6 @@ public class ClientFactoryGwtImpl implements ClientFactory {
 	private SimpleEventBus eventBus;
 	private PlaceController placeController;
 	private OverviewDisplay overviewDisplay;
-	private AccelerometerDisplay accelerometerDisplay;
 	private CameraDisplay cameraDisplay;
 	private CompassDisplayGwtImpl compassDisplay;
 	private ConnectionDisplayGwtImpl connectionDisplay;
@@ -79,14 +76,6 @@ public class ClientFactoryGwtImpl implements ClientFactory {
 			overviewDisplay = new OverviewDisplayGwtImpl();
 		}
 		return overviewDisplay;
-	}
-
-	@Override
-	public AccelerometerDisplay getAccelerometerDisplay() {
-		if (accelerometerDisplay == null) {
-			accelerometerDisplay = new AccelerometerDisplayGwtImpl();
-		}
-		return accelerometerDisplay;
 	}
 
 	@Override

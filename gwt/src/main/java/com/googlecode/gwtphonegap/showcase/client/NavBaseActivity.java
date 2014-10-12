@@ -2,7 +2,6 @@ package com.googlecode.gwtphonegap.showcase.client;
 
 import com.google.gwt.place.shared.PlaceController;
 import com.googlecode.mgwt.mvp.client.MGWTAbstractActivity;
-import com.googlecode.mgwt.ui.client.MGWT;
 
 public abstract class NavBaseActivity extends MGWTAbstractActivity {
 
@@ -21,5 +20,4 @@ public abstract class NavBaseActivity extends MGWTAbstractActivity {
 			placeController.goTo(new OverviewPlace());
 //		}
 	}
-
 }

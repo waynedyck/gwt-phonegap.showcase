@@ -5,7 +5,6 @@ import com.google.gwt.activity.shared.ActivityMapper;
 import com.google.gwt.place.shared.Place;
 import com.googlecode.gwtphonegap.showcase.client.about.AboutActivity;
 import com.googlecode.gwtphonegap.showcase.client.accelerometer.AccelerometerActivity;
-import com.googlecode.gwtphonegap.showcase.client.accelerometer.AccelerometerPlace;
 import com.googlecode.gwtphonegap.showcase.client.camera.CameraActivity;
 import com.googlecode.gwtphonegap.showcase.client.camera.CameraPlace;
 import com.googlecode.gwtphonegap.showcase.client.compass.CompassActivity;
@@ -52,8 +51,8 @@ public class TabletMainActivityMapper implements ActivityMapper {
 
 	private Activity getActivity(Place lastPlace, Place newPlace) {
 
-		if (newPlace instanceof AccelerometerPlace) {
-			if (lastPlace instanceof AccelerometerPlace) {
+		if (newPlace instanceof AccelerometerActivity.MyPlace) {
+			if (lastPlace instanceof AccelerometerActivity.MyPlace) {
 				return lastActivity;
 			}
 			return new AccelerometerActivity(clientFactory);
