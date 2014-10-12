@@ -5,13 +5,12 @@
 	
 	<mgwt:panel.flex.RootFlexPanel>
 		<mgwt:header.HeaderPanel>
-			<mgwt:header.HeaderButton ui:field="backButton" backButton="true" text="Modules"/>
+			<mgwt:button.image.PreviousitemImageButton ui:field="backButton" text="Modules"/>
 			<mgwt:panel.flex.FlexSpacer/>
 			<mgwt:header.HeaderTitle>Geolocation</mgwt:header.HeaderTitle>
 			<mgwt:panel.flex.FlexSpacer/>
 			<mgwt:panel.flex.FixedSpacer/>
 		</mgwt:header.HeaderPanel>
-		
 		<mgwt:panel.scroll.ScrollPanel scrollingEnabledX="false">
 			<g:FlowPanel>
 				<mgwt:list.widgetlist.WidgetList round="true">
@@ -48,9 +47,8 @@
 						<g:HTML ui:field="timestamp"></g:HTML>
 					</g:HorizontalPanel>
 				</mgwt:list.widgetlist.WidgetList>
-				
 				<mgwt:button.Button ui:field="startButton" ></mgwt:button.Button>
 			</g:FlowPanel>
 		</mgwt:panel.scroll.ScrollPanel>
 	</mgwt:panel.flex.RootFlexPanel>
-</ui:UiBinder> 
+</ui:UiBinder>

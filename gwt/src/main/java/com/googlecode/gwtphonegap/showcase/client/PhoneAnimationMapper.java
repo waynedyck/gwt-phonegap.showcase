@@ -25,7 +25,7 @@ import com.googlecode.gwtphonegap.showcase.client.contact.ContactActivity;
 import com.googlecode.gwtphonegap.showcase.client.device.DeviceActivity;
 import com.googlecode.gwtphonegap.showcase.client.event.EventActivity;
 import com.googlecode.gwtphonegap.showcase.client.file.FileActivity;
-import com.googlecode.gwtphonegap.showcase.client.geolocation.GeolocationPlace;
+import com.googlecode.gwtphonegap.showcase.client.geolocation.GeolocationActivity;
 import com.googlecode.gwtphonegap.showcase.client.inappbrowser.InAppBrowserPlace;
 import com.googlecode.gwtphonegap.showcase.client.media.MediaPlace;
 import com.googlecode.gwtphonegap.showcase.client.notification.NotificationPlace;
@@ -102,11 +102,11 @@ public class PhoneAnimationMapper implements AnimationMapper {
 			return Animations.SLIDE_REVERSE;
 		}
 
-		if (oldPlace instanceof OverviewPlace && newPlace instanceof GeolocationPlace) {
+		if (oldPlace instanceof OverviewPlace && newPlace instanceof GeolocationActivity.MyPlace) {
 			return Animations.SLIDE;
 		}
 
-		if (oldPlace instanceof GeolocationPlace && newPlace instanceof OverviewPlace) {
+		if (oldPlace instanceof GeolocationActivity.MyPlace && newPlace instanceof OverviewPlace) {
 			return Animations.SLIDE_REVERSE;
 		}
 
@@ -149,8 +149,6 @@ public class PhoneAnimationMapper implements AnimationMapper {
 		if (oldPlace instanceof FileActivity.MyPlace && newPlace instanceof OverviewPlace) {
 			return Animations.SLIDE_REVERSE;
 		}
-
 		return Animations.SLIDE;
-
 	}
 }

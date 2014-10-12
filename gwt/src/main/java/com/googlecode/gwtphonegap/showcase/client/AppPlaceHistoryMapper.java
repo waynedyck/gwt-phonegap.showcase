@@ -26,7 +26,7 @@ import com.googlecode.gwtphonegap.showcase.client.contact.ContactActivity;
 import com.googlecode.gwtphonegap.showcase.client.device.DeviceActivity;
 import com.googlecode.gwtphonegap.showcase.client.event.EventActivity;
 import com.googlecode.gwtphonegap.showcase.client.file.FileActivity;
-import com.googlecode.gwtphonegap.showcase.client.geolocation.GeolocationPlace;
+import com.googlecode.gwtphonegap.showcase.client.geolocation.GeolocationActivity;
 import com.googlecode.gwtphonegap.showcase.client.inappbrowser.InAppBrowserPlace;
 import com.googlecode.gwtphonegap.showcase.client.media.MediaPlace;
 import com.googlecode.gwtphonegap.showcase.client.notification.NotificationPlace;
@@ -36,7 +36,7 @@ import com.googlecode.gwtphonegap.showcase.client.notification.NotificationPlace
  *
  */
 @WithTokenizers({ OverviewPlace.Tokenizer.class, AccelerometerActivity.MyPlace.Tokenizer.class, CameraActivity.MyPlace.Tokenizer.class, CompassActivity.MyPlace.Tokenizer.class, ConnectionActivity.MyPlace.Tokenizer.class,
-    ContactActivity.MyPlace.Tokenizer.class, DeviceActivity.MyPlace.Tokenizer.class, EventActivity.MyPlace.Tokenizer.class, GeolocationPlace.Tokenizer.class, MediaPlace.Tokenizer.class, NotificationPlace.Tokenizer.class,
+    ContactActivity.MyPlace.Tokenizer.class, DeviceActivity.MyPlace.Tokenizer.class, EventActivity.MyPlace.Tokenizer.class, GeolocationActivity.MyPlace.Tokenizer.class, MediaPlace.Tokenizer.class, NotificationPlace.Tokenizer.class,
 		InAppBrowserPlace.Tokenizer.class, AboutActivity.MyPlace.Tokenizer.class, FileActivity.MyPlace.Tokenizer.class })
 public interface AppPlaceHistoryMapper extends PlaceHistoryMapper {
 }

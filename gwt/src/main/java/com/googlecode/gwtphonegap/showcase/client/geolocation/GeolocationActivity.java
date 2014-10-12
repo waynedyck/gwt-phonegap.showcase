@@ -1,11 +1,11 @@
 /*
  * Copyright 2010 Daniel Kurka
- * 
+ *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
  * in compliance with the License. You may obtain a copy of the License at
- * 
+ *
  * http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software distributed under the License
  * is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express
  * or implied. See the License for the specific language governing permissions and limitations under
@@ -13,8 +13,17 @@
  */
 package com.googlecode.gwtphonegap.showcase.client.geolocation;
 
+import com.google.gwt.core.client.GWT;
+import com.google.gwt.place.shared.Place;
+import com.google.gwt.place.shared.PlaceController;
+import com.google.gwt.place.shared.PlaceTokenizer;
+import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
+import com.google.gwt.user.client.ui.HTML;
+import com.google.gwt.user.client.ui.Widget;
 import com.google.web.bindery.event.shared.EventBus;
 import com.googlecode.gwtphonegap.client.PhoneGap;
 import com.googlecode.gwtphonegap.client.geolocation.GeolocationCallback;
@@ -23,78 +32,112 @@ import com.googlecode.gwtphonegap.client.geolocation.GeolocationWatcher;
 import com.googlecode.gwtphonegap.client.geolocation.Position;
 import com.googlecode.gwtphonegap.client.geolocation.PositionError;
 import com.googlecode.gwtphonegap.showcase.client.ClientFactory;
-import com.googlecode.gwtphonegap.showcase.client.NavBaseActivity;
-import com.googlecode.gwtphonegap.showcase.client.geolocation.GeolocationDisplay.Presenter;
+import com.googlecode.gwtphonegap.showcase.client.OverviewPlace;
+import com.googlecode.mgwt.dom.client.event.tap.TapEvent;
+import com.googlecode.mgwt.mvp.client.MGWTAbstractActivity;
+import com.googlecode.mgwt.ui.client.widget.button.Button;
 
-public class GeolocationActivity extends NavBaseActivity implements Presenter {
+public class GeolocationActivity extends MGWTAbstractActivity {
 
+  public static class MyPlace extends Place {
+    public static class Tokenizer implements PlaceTokenizer<MyPlace> {
+
+      @Override
+      public MyPlace getPlace(String token) {
+        return new MyPlace();
+      }
+      @Override
+      public String getToken(MyPlace place) {
+        return null;
+      }
+    }
+  }
+
+  private static Binder BINDER = GWT.create(Binder.class);
+  interface Binder extends UiBinder<Widget, GeolocationActivity> {}
+
+  private Widget rootWidget;
+  private PlaceController placeController;
   private final PhoneGap phoneGap;
-  private final GeolocationDisplay display;
-
   private GeolocationWatcher watcher;
 
+  @UiField
+  HTML latitude;
+
+  @UiField
+  HTML longitude;
+
+  @UiField
+  HTML altitude;
+
+  @UiField
+  HTML accuracy;
+
+  @UiField
+  HTML aa;
+
+  @UiField
+  HTML heading;
+
+  @UiField
+  HTML speed;
+
+  @UiField
+  HTML timestamp;
+
+  @UiField
+  Button startButton;
+
   public GeolocationActivity(ClientFactory clientFactory) {
-    super(clientFactory);
-
-    this.display = clientFactory.getGeolocationDisplay();
+    placeController = clientFactory.getPlaceController();
+    rootWidget = BINDER.createAndBindUi(this);
     this.phoneGap = clientFactory.getPhoneGap();
-
   }
 
   @Override
   public void start(AcceptsOneWidget panel, EventBus eventBus) {
 
-    display.setPresenter(this);
+    startButton.setText("Start");
+    accuracy.setText("");
+    altitude.setText("");
+    aa.setText("");
+    heading.setText("");
+    latitude.setText("");
+    longitude.setText("");
+    timestamp.setText("");
 
-    display.getStartStopButton().setText("Start");
-
-    display.getAccuracy().setText("");
-    display.getAltitude().setText("");
-    display.getAltitudeAccuracy().setText("");
-    display.getHeading().setText("");
-    display.getLatidute().setText("");
-    display.getLongitude().setText("");
-    display.getTimeStamp().setText("");
-
-    panel.setWidget(display);
-
+    panel.setWidget(rootWidget);
   }
 
   @Override
   public void onStop() {
-    display.setPresenter(null);
-
     if (watcher != null) {
-
       phoneGap.getGeolocation().clearWatch(watcher);
       watcher = null;
     }
   }
 
-  @Override
-  public void onStartStopButtonPressed() {
+  @UiHandler("startButton")
+  public void onStartStopButtonPressed(TapEvent event) {
 
     if (watcher == null) {
       GeolocationOptions options = new GeolocationOptions();
       watcher = phoneGap.getGeolocation().watchPosition(options, new GeoLocationCallbackImpl());
-      display.getStartStopButton().setText("Stop");
+      startButton.setText("Stop");
 
     } else {
       phoneGap.getGeolocation().clearWatch(watcher);
       watcher = null;
-      display.getStartStopButton().setText("Start");
-
-      display.getAccuracy().setText("");
-      display.getAltitude().setText("");
-      display.getAltitudeAccuracy().setText("");
-      display.getHeading().setText("");
-      display.getLatidute().setText("");
-      display.getLongitude().setText("");
-      display.getTimeStamp().setText("");
-      display.getSpeed().setText("");
-
+      startButton.setText("Start");
+      accuracy.setText("");
+      altitude.setText("");
+      aa.setText("");
+      heading.setText("");
+      latitude.setText("");
+      longitude.setText("");
+      timestamp.setText("");
+      speed.setText("");
     }
-
   }
 
   private class GeoLocationCallbackImpl implements GeolocationCallback {
@@ -102,15 +145,14 @@ public class GeolocationActivity extends NavBaseActivity implements Presenter {
     @Override
     public void onSuccess(Position position) {
 
-      display.getAccuracy().setText("" + position.getCoordinates().getAccuracy());
-      display.getAltitude().setText("" + position.getCoordinates().getAltitude());
-      display.getAltitudeAccuracy().setText("" + position.getCoordinates().getAltitudeAccuracy());
-      display.getHeading().setText("" + position.getCoordinates().getHeading());
-      display.getLatidute().setText("" + position.getCoordinates().getLatitude());
-      display.getLongitude().setText("" + position.getCoordinates().getLongitude());
-      display.getSpeed().setText("" + position.getCoordinates().getSpeed());
-      display.getTimeStamp().setText("" + position.getTimeStamp());
-
+      accuracy.setText("" + position.getCoordinates().getAccuracy());
+      altitude.setText("" + position.getCoordinates().getAltitude());
+      aa.setText("" + position.getCoordinates().getAltitudeAccuracy());
+      heading.setText("" + position.getCoordinates().getHeading());
+      latitude.setText("" + position.getCoordinates().getLatitude());
+      longitude.setText("" + position.getCoordinates().getLongitude());
+      speed.setText("" + position.getCoordinates().getSpeed());
+      timestamp.setText("" + position.getTimeStamp());
     }
 
     @Override
@@ -118,7 +160,6 @@ public class GeolocationActivity extends NavBaseActivity implements Presenter {
       switch (error.getCode()) {
         case PositionError.PERMISSION_DENIED:
           Window.alert("no permission - stoping watcher");
-
           break;
         case PositionError.POSITION_UNAVAILABLE:
           Window.alert("unavaible");
@@ -133,12 +174,13 @@ public class GeolocationActivity extends NavBaseActivity implements Presenter {
       if (watcher != null) {
         phoneGap.getGeolocation().clearWatch(watcher);
         watcher = null;
-        display.getStartStopButton().setText("Start");
-
+        startButton.setText("Start");
       }
-
     }
-
   }
 
+  @UiHandler("backButton")
+  protected void oBackButtonPressed(TapEvent event) {
+    placeController.goTo(new OverviewPlace());
+  }
 }
