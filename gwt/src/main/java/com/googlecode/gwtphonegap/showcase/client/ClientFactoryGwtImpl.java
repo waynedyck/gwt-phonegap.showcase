@@ -4,8 +4,6 @@ import com.google.gwt.place.shared.PlaceController;
 import com.google.web.bindery.event.shared.EventBus;
 import com.google.web.bindery.event.shared.SimpleEventBus;
 import com.googlecode.gwtphonegap.client.PhoneGap;
-import com.googlecode.gwtphonegap.showcase.client.compass.CompassDisplay;
-import com.googlecode.gwtphonegap.showcase.client.compass.CompassDisplayGwtImpl;
 import com.googlecode.gwtphonegap.showcase.client.connection.ConnectionDisplay;
 import com.googlecode.gwtphonegap.showcase.client.connection.ConnectionDisplayGwtImpl;
 import com.googlecode.gwtphonegap.showcase.client.contact.ContactDisplay;
@@ -31,7 +29,6 @@ public class ClientFactoryGwtImpl implements ClientFactory {
 	private SimpleEventBus eventBus;
 	private PlaceController placeController;
 	private OverviewDisplay overviewDisplay;
-	private CompassDisplayGwtImpl compassDisplay;
 	private ConnectionDisplayGwtImpl connectionDisplay;
 	private ContactDisplay contactDisplay;
 	private DeviceDisplay deviceDisplay;
@@ -73,14 +70,6 @@ public class ClientFactoryGwtImpl implements ClientFactory {
 			overviewDisplay = new OverviewDisplayGwtImpl();
 		}
 		return overviewDisplay;
-	}
-
-	@Override
-	public CompassDisplay getCompassDisplay() {
-		if (compassDisplay == null) {
-			compassDisplay = new CompassDisplayGwtImpl();
-		}
-		return compassDisplay;
 	}
 
 	@Override

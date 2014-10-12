@@ -22,7 +22,6 @@ import com.googlecode.gwtphonegap.showcase.client.about.AboutActivity;
 import com.googlecode.gwtphonegap.showcase.client.accelerometer.AccelerometerActivity;
 import com.googlecode.gwtphonegap.showcase.client.camera.CameraActivity;
 import com.googlecode.gwtphonegap.showcase.client.compass.CompassActivity;
-import com.googlecode.gwtphonegap.showcase.client.compass.CompassPlace;
 import com.googlecode.gwtphonegap.showcase.client.connection.ConnectionActivity;
 import com.googlecode.gwtphonegap.showcase.client.connection.ConnectionPlace;
 import com.googlecode.gwtphonegap.showcase.client.contact.ContactActivity;
@@ -67,7 +66,7 @@ public class PhoneActivityMapper implements ActivityMapper {
 			return new CameraActivity(clientFactory);
 		}
 
-		if (place instanceof CompassPlace) {
+		if (place instanceof CompassActivity.MyPlace) {
 			return new CompassActivity(clientFactory);
 		}
 

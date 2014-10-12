@@ -19,7 +19,7 @@ import com.google.gwt.place.shared.Place;
 import com.googlecode.gwtphonegap.showcase.client.about.AboutActivity;
 import com.googlecode.gwtphonegap.showcase.client.accelerometer.AccelerometerActivity;
 import com.googlecode.gwtphonegap.showcase.client.camera.CameraActivity;
-import com.googlecode.gwtphonegap.showcase.client.compass.CompassPlace;
+import com.googlecode.gwtphonegap.showcase.client.compass.CompassActivity;
 import com.googlecode.gwtphonegap.showcase.client.connection.ConnectionPlace;
 import com.googlecode.gwtphonegap.showcase.client.contact.ContactPlace;
 import com.googlecode.gwtphonegap.showcase.client.device.DevicePlace;
@@ -62,11 +62,11 @@ public class PhoneAnimationMapper implements AnimationMapper {
 			return Animations.SLIDE_REVERSE;
 		}
 
-		if (oldPlace instanceof OverviewPlace && newPlace instanceof CompassPlace) {
+		if (oldPlace instanceof OverviewPlace && newPlace instanceof CompassActivity.MyPlace) {
 			return Animations.SLIDE;
 		}
 
-		if (oldPlace instanceof CompassPlace && newPlace instanceof OverviewPlace) {
+		if (oldPlace instanceof CompassActivity.MyPlace && newPlace instanceof OverviewPlace) {
 			return Animations.SLIDE_REVERSE;
 		}
 

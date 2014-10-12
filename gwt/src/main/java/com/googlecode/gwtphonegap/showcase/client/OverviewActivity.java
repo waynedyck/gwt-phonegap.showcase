@@ -9,7 +9,7 @@ import com.googlecode.gwtphonegap.showcase.client.OverviewDisplay.Presenter;
 import com.googlecode.gwtphonegap.showcase.client.about.AboutActivity;
 import com.googlecode.gwtphonegap.showcase.client.accelerometer.AccelerometerActivity;
 import com.googlecode.gwtphonegap.showcase.client.camera.CameraActivity;
-import com.googlecode.gwtphonegap.showcase.client.compass.CompassPlace;
+import com.googlecode.gwtphonegap.showcase.client.compass.CompassActivity;
 import com.googlecode.gwtphonegap.showcase.client.connection.ConnectionPlace;
 import com.googlecode.gwtphonegap.showcase.client.contact.ContactPlace;
 import com.googlecode.gwtphonegap.showcase.client.device.DevicePlace;
@@ -75,7 +75,7 @@ public class OverviewActivity extends MGWTAbstractActivity implements Presenter 
         break;
 
       case 2:
-        clientFactory.getPlaceController().goTo(new CompassPlace());
+        clientFactory.getPlaceController().goTo(new CompassActivity.MyPlace());
         break;
 
       case 3:
