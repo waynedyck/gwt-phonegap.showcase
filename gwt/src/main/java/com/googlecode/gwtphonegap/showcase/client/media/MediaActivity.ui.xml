@@ -5,28 +5,22 @@
 	
 	<mgwt:panel.flex.RootFlexPanel>
 	    <mgwt:header.HeaderPanel>
-			<mgwt:header.HeaderButton ui:field="backButton" backButton="true" text="Modules"/>
+			<mgwt:button.image.PreviousitemImageButton ui:field="backButton" text="Modules"/>
 			<mgwt:panel.flex.FlexSpacer/>
 			<mgwt:header.HeaderTitle>Media</mgwt:header.HeaderTitle>
 			<mgwt:panel.flex.FlexSpacer/>
 			<mgwt:panel.flex.FixedSpacer/>
 		</mgwt:header.HeaderPanel>
-		
-		
 		<mgwt:panel.scroll.ScrollPanel scrollingEnabledX="false">
 			<g:FlowPanel>
 				<g:HTML ui:field="position"></g:HTML>
 			</g:FlowPanel>
 		</mgwt:panel.scroll.ScrollPanel>
-		
 		<mgwt:buttonbar.ButtonBar>
 			<mgwt:panel.flex.FlexSpacer/>
 			<mgwt:button.image.PlayImageButton ui:field="play"/>
 			<mgwt:button.image.PauseImageButton ui:field="pause"/>
 			<mgwt:panel.flex.FlexSpacer/>
 		</mgwt:buttonbar.ButtonBar>
-		
 	</mgwt:panel.flex.RootFlexPanel>
-	
-	
-</ui:UiBinder> 
+</ui:UiBinder>

@@ -4,8 +4,6 @@ import com.google.gwt.place.shared.PlaceController;
 import com.google.web.bindery.event.shared.EventBus;
 import com.google.web.bindery.event.shared.SimpleEventBus;
 import com.googlecode.gwtphonegap.client.PhoneGap;
-import com.googlecode.gwtphonegap.showcase.client.media.MediaDisplay;
-import com.googlecode.gwtphonegap.showcase.client.media.MediaDisplayGwtImpl;
 import com.googlecode.gwtphonegap.showcase.client.notification.NotificationDisplay;
 import com.googlecode.gwtphonegap.showcase.client.notification.NotificationDisplayGwtImpl;
 
@@ -15,7 +13,6 @@ public class ClientFactoryGwtImpl implements ClientFactory {
 	private SimpleEventBus eventBus;
 	private PlaceController placeController;
 	private OverviewDisplay overviewDisplay;
-	private MediaDisplay mediaDisplay;
 	private NotificationDisplay notificationDisplay;
 
 	public ClientFactoryGwtImpl() {
@@ -49,14 +46,6 @@ public class ClientFactoryGwtImpl implements ClientFactory {
 			overviewDisplay = new OverviewDisplayGwtImpl();
 		}
 		return overviewDisplay;
-	}
-
-	@Override
-	public MediaDisplay getMediaDisplay() {
-		if (mediaDisplay == null) {
-			mediaDisplay = new MediaDisplayGwtImpl();
-		}
-		return mediaDisplay;
 	}
 
 	@Override
