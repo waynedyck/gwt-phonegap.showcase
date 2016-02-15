@@ -7,6 +7,12 @@ target/
 .buildpath
 bin/
 /target
+
 showcase/platforms/android/assets/www/
 showcase/platforms/android/.gradle/
 showcase/platforms/android/CordovaLib/build/
+
+showcase/platforms/ios/www/
+showcase/platforms/ios/CordovaLib/CordovaLib.xcodeproj/xcuserdata/
+showcase/platforms/ios/GWT-Phonegap.xcodeproj/project.xcworkspace/
+showcase/platforms/ios/GWT-Phonegap.xcodeproj/xcuserdata/

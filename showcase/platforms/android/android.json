@@ -79,6 +79,10 @@
                         {
                             "xml": "<feature name=\"Vibration\"><param name=\"android-package\" value=\"org.apache.cordova.vibration.Vibration\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"StatusBar\"><param name=\"android-package\" value=\"org.apache.cordova.statusbar.StatusBar\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -194,6 +198,9 @@
             "PACKAGE_NAME": "com.googlecode.gwtphonegap.showcase"
         },
         "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "com.googlecode.gwtphonegap.showcase"
+        },
+        "cordova-plugin-statusbar": {
             "PACKAGE_NAME": "com.googlecode.gwtphonegap.showcase"
         }
     },
@@ -648,6 +655,13 @@
             "merges": [
                 "navigator.notification",
                 "navigator"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
+            "id": "cordova-plugin-statusbar.statusbar",
+            "clobbers": [
+                "window.StatusBar"
             ]
         }
     ]
