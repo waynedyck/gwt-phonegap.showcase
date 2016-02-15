@@ -7,4 +7,6 @@ target/
 .buildpath
 bin/
 /target
-
+showcase/platforms/android/assets/www/
+showcase/platforms/android/.gradle/
+showcase/platforms/android/CordovaLib/build/
