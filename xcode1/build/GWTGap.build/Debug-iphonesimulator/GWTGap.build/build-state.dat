@@ -1,678 +1,0 @@
-TGWTGap
-v5
-r1
-cCheck dependencies
-cProcessInfoPlistFile /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/Info.plist GWTGap/GWTGap-Info.plist
-cPhaseScriptExecution "Touch www folder" /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/Script-304B58A110DAC018002A0835.sh
-cCpResource www cordova/../build/GWTGap.app/www
-cCpResource /Users/kurt/Documents/CordovaLib/VERSION cordova/../build/GWTGap.app/VERSION
-cCopyPlistFile /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/Cordova.plist GWTGap/Resources/../Cordova.plist
-cCpResource GWTGap/Resources/icons/icon-72.png cordova/../build/GWTGap.app/icon-72.png
-cCpResource GWTGap/Resources/icons/icon.png cordova/../build/GWTGap.app/icon.png
-cCpResource GWTGap/Resources/icons/icon@2x.png cordova/../build/GWTGap.app/icon@2x.png
-cCpResource GWTGap/Resources/Capture.bundle cordova/../build/GWTGap.app/Capture.bundle
-cCopyStringsFile /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/en.lproj/Localizable.strings GWTGap/Resources/en.lproj/Localizable.strings
-cCopyStringsFile /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/es.lproj/Localizable.strings GWTGap/Resources/es.lproj/Localizable.strings
-cCompileXIB /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Classes/MainViewController.xib
-cCopyStringsFile /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/de.lproj/Localizable.strings GWTGap/Resources/de.lproj/Localizable.strings
-cCopyStringsFile /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/se.lproj/Localizable.strings GWTGap/Resources/se.lproj/Localizable.strings
-cCpResource GWTGap/Resources/splash/Default-Landscape@2x~ipad.png cordova/../build/GWTGap.app/Default-Landscape@2x~ipad.png
-cCpResource GWTGap/Resources/splash/Default-Landscape~ipad.png cordova/../build/GWTGap.app/Default-Landscape~ipad.png
-cCpResource GWTGap/Resources/splash/Default-Portrait@2x~ipad.png cordova/../build/GWTGap.app/Default-Portrait@2x~ipad.png
-cCpResource GWTGap/Resources/splash/Default-Portrait~ipad.png cordova/../build/GWTGap.app/Default-Portrait~ipad.png
-cCpResource GWTGap/Resources/splash/Default@2x~iphone.png cordova/../build/GWTGap.app/Default@2x~iphone.png
-cCpResource GWTGap/Resources/splash/Default~iphone.png cordova/../build/GWTGap.app/Default~iphone.png
-cProcessPCH /var/folders/9c/4qdzbqq96vx6x4fldqx5_4bh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GWTGap-Prefix-hbtfvzaupsgaclheitgsytprjrem/GWTGap-Prefix.pch.pth GWTGap/GWTGap-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/Objects-normal/i386/AppDelegate.o /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Classes/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/Objects-normal/i386/MainViewController.o /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/Objects-normal/i386/main.o /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cLd /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/GWTGap normal i386
-cGenerateDSYMFile /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app.dSYM /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/GWTGap
-cTouch /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk
-c00000000502671320000000000000110
-t1344696626
-s272
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
-c000000004F8967160000000000182900
-t1334404886
-s1583360
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/AddressBook.framework/AddressBook
-c000000004F8967150000000000095860
-t1334404885
-s612448
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/AddressBookUI.framework/AddressBookUI
-c000000004F8967160000000000169880
-t1334404886
-s1480832
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-c000000004F89671600000000002FDC30
-t1334404886
-s3136560
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
-c000000004F89671700000000002051E0
-t1334404887
-s2118112
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c000000004F8967170000000000244490
-t1334404887
-s2376848
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
-c000000004F8967170000000000089510
-t1334404887
-s562448
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/CoreMedia.framework/CoreMedia
-c000000004F8967170000000000069670
-t1334404887
-s431728
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c000000004F8967180000000000353830
-t1334404888
-s3487792
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer
-c000000004F89671B0000000000243A90
-t1334404891
-s2374288
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
-c000000004F89671B00000000000998D0
-t1334404891
-s628944
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
-c000000004F89671B00000000001AB190
-t1334404891
-s1749392
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
-c000000004F89671C000000000006C8A0
-t1334404892
-s444576
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c000000004F89671E0000000000905E40
-t1334404894
-s9461312
-
-N/Users/kurt/Documents/CordovaLib/VERSION
-c0000000050089EE90000000000000005
-t1342742249
-s5
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Classes/AppDelegate.h
-c00000000504A176000000000000005BB
-t1347032928
-s1467
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Classes/AppDelegate.m
-c00000000504A1760000000000000132C
-t1347032928
-s4908
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Classes/MainViewController.h
-c00000000504A1760000000000000040D
-t1347032928
-s1037
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Classes/MainViewController.m
-c00000000504A17600000000000000FFD
-t1347032928
-s4093
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Classes/MainViewController.xib
-c00000000504A17600000000000001759
-t1347032928
-s5977
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/GWTGap-Prefix.pch
-c00000000504A176000000000000003BD
-t1347032928
-s957
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Resources/../Cordova.plist
-c00000000504A1760000000000000094C
-t1347032928
-s2380
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Resources/Capture.bundle
-c00000000504A176000000000000002EC
-t1347032928
-s748
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Resources/de.lproj/Localizable.strings
-c00000000504A17600000000000000485
-t1347032928
-s1157
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Resources/en.lproj/Localizable.strings
-c00000000504A17600000000000000470
-t1347032928
-s1136
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Resources/es.lproj/Localizable.strings
-c00000000504A1760000000000000047D
-t1347032928
-s1149
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Resources/icons/icon-72.png
-c00000000504A17600000000000001350
-t1347032928
-s4944
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Resources/icons/icon.png
-c00000000504A17600000000000000F3E
-t1347032928
-s3902
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Resources/icons/icon@2x.png
-c00000000504A17600000000000001EBD
-t1347032928
-s7869
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Resources/se.lproj/Localizable.strings
-c00000000504A17600000000000000471
-t1347032928
-s1137
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Resources/splash/Default-Landscape@2x~ipad.png
-c00000000504A17600000000000176888
-t1347032928
-s1534088
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Resources/splash/Default-Landscape~ipad.png
-c00000000504A176000000000000674B7
-t1347032928
-s423095
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Resources/splash/Default-Portrait@2x~ipad.png
-c00000000504A176000000000001892C2
-t1347032928
-s1610434
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Resources/splash/Default-Portrait~ipad.png
-c00000000504A17600000000000066F23
-t1347032928
-s421667
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Resources/splash/Default@2x~iphone.png
-c00000000504A17600000000000055981
-t1347032928
-s350593
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Resources/splash/Default~iphone.png
-c00000000504A17600000000000016EC9
-t1347032928
-s93897
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/main.m
-c00000000504A1760000000000000048F
-t1347032928
-s1167
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/Objects-normal/i386/AppDelegate.o
-t2
-s0
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/Objects-normal/i386/GWTGap.LinkFileList
-c00000000504A2C6F00000000000001CE
-t1347038319
-s462
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/Objects-normal/i386/MainViewController.o
-t2
-s0
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/Objects-normal/i386/main.o
-t2
-s0
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/Script-304B58A110DAC018002A0835.sh
-c00000000504A2C6F0000000000000027
-t1347038319
-s39
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/libCordova.a
-c00000000504A2C6F000000000027C370
-t1347038319
-s2605936
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app
-t2
-s0
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app.dSYM
-t2
-s0
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/Capture.bundle
-t2
-s0
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/Cordova.plist
-t2
-s0
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/Default-Landscape@2x~ipad.png
-t2
-s0
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/Default-Landscape~ipad.png
-t2
-s0
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/Default-Portrait@2x~ipad.png
-t2
-s0
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/Default-Portrait~ipad.png
-t2
-s0
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/Default@2x~iphone.png
-t2
-s0
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/Default~iphone.png
-t2
-s0
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/GWTGap
-t2
-s0
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/Info.plist
-t2
-s0
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/MainViewController.nib
-t2
-s0
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/PkgInfo
-t2
-s0
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/VERSION
-t2
-s0
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/de.lproj/Localizable.strings
-t2
-s0
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/en.lproj/Localizable.strings
-t2
-s0
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/es.lproj/Localizable.strings
-t2
-s0
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/icon-72.png
-t2
-s0
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/icon.png
-t2
-s0
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/icon@2x.png
-t2
-s0
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/se.lproj/Localizable.strings
-t2
-s0
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/www
-t2
-s0
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/include/Cordova/CDVCommandDelegate.h
-c00000000504A2C370000000000000455
-t1347038263
-s1109
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/include/Cordova/CDVCordovaView.h
-c00000000504A2C370000000000000357
-t1347038263
-s855
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/include/Cordova/CDVInvokedUrlCommand.h
-c00000000504A2C3700000000000004CA
-t1347038263
-s1226
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/include/Cordova/CDVPlugin.h
-c00000000504A2C3700000000000007E5
-t1347038263
-s2021
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/include/Cordova/CDVPluginResult.h
-c00000000504A2C37000000000000097E
-t1347038263
-s2430
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/include/Cordova/CDVURLProtocol.h
-c00000000504A2C3700000000000004B1
-t1347038263
-s1201
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/include/Cordova/CDVViewController.h
-c00000000504A2C370000000000000996
-t1347038263
-s2454
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/include/Cordova/CDVWhitelist.h
-c00000000504A2C3700000000000004B0
-t1347038263
-s1200
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/include/Cordova/JSONKit.h
-c00000000504A2C370000000000002EA2
-t1347038263
-s11938
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/include/Cordova/NSMutableArray+QueueAdditions.h
-c00000000504A2C3700000000000003A7
-t1347038263
-s935
-
-N/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/www
-c00000000504A2C3A0000000000000132
-t1347038266
-s306
-
-N/var/folders/9c/4qdzbqq96vx6x4fldqx5_4bh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GWTGap-Prefix-hbtfvzaupsgaclheitgsytprjrem/GWTGap-Prefix.pch.pth
-t2
-s0
-
-NGWTGap/GWTGap-Info.plist
-c00000000504A176000000000000009C8
-t1347032928
-s2504
-
-CCheck dependencies
-r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesa67d2bef63fab541^e8882cef63fab541^---0#1#0#--18"Check dependencies36"A7C74BA2-4572-45D6-B24D-63639CFE6778-
-
-CCompileC build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/Objects-normal/i386/AppDelegate.o /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Classes/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s368731119.867317
-e368731120.005325
-r1
-xCompileC
-xbuild/GWTGap.build/Debug-iphonesimulator/GWTGap.build/Objects-normal/i386/AppDelegate.o
-x/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Classes/AppDelegate.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-o/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Classes/AppDelegate.m:77:25: warning: 'invokeString' is deprecated [-Wdeprecated-declarations]
-o    self.viewController.invokeString = invokeString;
-o                        ^
-o1 warning generated.
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection102"Compile /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Classes/AppDelegate.m793fdeef63fab541^ee5b01f063fab541^-268"/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Classes/AppDelegate.m:77:25: warning: 'invokeString' is deprecated [-Wdeprecated-declarations]    self.viewController.invokeString = invokeString;                        ^1 warning generated.1(36%IDEClangDiagnosticActivityLogMessage2@28"'invokeString' is deprecated-368731120#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@110"file://localhost/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Classes/AppDelegate.m0000000000000000^76#24#76#24#2537#0#12"Deprecations--0#0#0#-19%DVTDocumentLocation4@110"file://localhost/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Classes/AppDelegate.m0000000000000000^3914"CompileC build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/Objects-normal/i386/AppDelegate.o GWTGap/Classes/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/GWTGap-generated-files.hmap -I/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/GWTGap-own-target-headers.hmap -I/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/GWTGap-all-target-headers.hmap -iquote /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/GWTGap-project-headers.hmap -I/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/include -I/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/usr/local/lib/include -I/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/UninstalledProducts/include -I/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build -I/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/DerivedSources/i386 -I/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/DerivedSources -F/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build -include /var/folders/9c/4qdzbqq96vx6x4fldqx5_4bh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GWTGap-Prefix-hbtfvzaupsgaclheitgsytprjrem/GWTGap-Prefix.pch -MMD -MT dependencies -MF /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/Objects-normal/i386/AppDelegate.d --serialize-diagnostics /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/Objects-normal/i386/AppDelegate.dia -c /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Classes/AppDelegate.m -o /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/Objects-normal/i386/AppDelegate.o36"EF048EEC-D747-4474-B919-F3BB93848E83-
-
-CCompileC build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/Objects-normal/i386/MainViewController.o /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s368731119.867324
-e368731119.977835
-r1
-xCompileC
-xbuild/GWTGap.build/Debug-iphonesimulator/GWTGap.build/Objects-normal/i386/MainViewController.o
-x/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Classes/MainViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-o/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Classes/MainViewController.m:108:15: warning: 'invokeString' is deprecated [-Wdeprecated-declarations]
-o     if (self.invokeString)
-o              ^
-o/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Classes/MainViewController.m:112:93: warning: 'invokeString' is deprecated [-Wdeprecated-declarations]
-o        NSString* jsString = [NSString stringWithFormat:@"var invokeString = \"%@\";", self.invokeString];
-o                                                                                            ^
-o2 warnings generated.
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection109"Compile /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Classes/MainViewController.m253fdeef63fab541^116efaef63fab541^-619"/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Classes/MainViewController.m:108:15: warning: 'invokeString' is deprecated [-Wdeprecated-declarations]     if (self.invokeString)              ^/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Classes/MainViewController.m:112:93: warning: 'invokeString' is deprecated [-Wdeprecated-declarations]        NSString* jsString = [NSString stringWithFormat:@"var invokeString = \"%@\";", self.invokeString];                                                                                            ^2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@28"'invokeString' is deprecated-368731119#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@117"file://localhost/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Classes/MainViewController.m0000000000000000^107#14#107#14#2850#0#12"Deprecations--2@28"'invokeString' is deprecated-368731119#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@117"file://localhost/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Classes/MainViewController.m0000000000000000^111#92#111#92#3260#0#12"Deprecations--0#0#0#-19%DVTDocumentLocation4@117"file://localhost/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Classes/MainViewController.m0000000000000000^3956"CompileC build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/Objects-normal/i386/MainViewController.o GWTGap/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/GWTGap-generated-files.hmap -I/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/GWTGap-own-target-headers.hmap -I/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/GWTGap-all-target-headers.hmap -iquote /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/GWTGap-project-headers.hmap -I/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/include -I/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/usr/local/lib/include -I/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/UninstalledProducts/include -I/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build -I/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/DerivedSources/i386 -I/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/DerivedSources -F/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build -include /var/folders/9c/4qdzbqq96vx6x4fldqx5_4bh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GWTGap-Prefix-hbtfvzaupsgaclheitgsytprjrem/GWTGap-Prefix.pch -MMD -MT dependencies -MF /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/Objects-normal/i386/MainViewController.d --serialize-diagnostics /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/Objects-normal/i386/MainViewController.dia -c /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Classes/MainViewController.m -o /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/Objects-normal/i386/MainViewController.o36"CC9D8BDB-84C1-427E-B22A-9F52823A5F5A-
-
-CCompileC build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/Objects-normal/i386/main.o /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s368731119.867330
-e368731119.913412
-r1
-xCompileC
-xbuild/GWTGap.build/Debug-iphonesimulator/GWTGap.build/Objects-normal/i386/main.o
-x/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/main.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Compile /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/main.me63ddeef63fab541^85ebe9ef63fab541^---0#0#0#-19%DVTDocumentLocation2@95"file://localhost/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/main.m0000000000000000^3856"CompileC build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/Objects-normal/i386/main.o GWTGap/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/GWTGap-generated-files.hmap -I/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/GWTGap-own-target-headers.hmap -I/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/GWTGap-all-target-headers.hmap -iquote /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/GWTGap-project-headers.hmap -I/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/include -I/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/usr/local/lib/include -I/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/UninstalledProducts/include -I/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build -I/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/DerivedSources/i386 -I/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/DerivedSources -F/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build -include /var/folders/9c/4qdzbqq96vx6x4fldqx5_4bh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GWTGap-Prefix-hbtfvzaupsgaclheitgsytprjrem/GWTGap-Prefix.pch -MMD -MT dependencies -MF /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/Objects-normal/i386/main.d --serialize-diagnostics /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/Objects-normal/i386/main.dia -c /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/main.m -o /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/Objects-normal/i386/main.o36"4A1C3471-3B0A-42F9-95B4-F84E80B052EB-
-
-CCompileXIB /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Classes/MainViewController.xib
-s368731119.279311
-e368731119.413458
-r1
-xCompileXIB
-x/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Classes/MainViewController.xib
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection113"Compiling /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Classes/MainViewController.xiba99f47ef63fab541^c8eb69ef63fab541^---0#0#0#-19%DVTDocumentLocation2@119"file://localhost/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Classes/MainViewController.xib0000000000000000^1028"CompileXIB GWTGap/Classes/MainViewController.xib    cd /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/MainViewController.nib /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Classes/MainViewController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk36"839DC3E6-2F83-4564-B38E-1D34309AB932-
-
-CCopyPlistFile /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/Cordova.plist GWTGap/Resources/../Cordova.plist
-s368731119.241816
-e368731119.245665
-r1
-xCopyPlistFile
-x/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/Cordova.plist
-xGWTGap/Resources/../Cordova.plist
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection38"Copy GWTGap/Resources/../Cordova.plist2d0b3eef63fab541^3be43eef63fab541^---0#0#0#-19%DVTDocumentLocation2@115"file://localhost/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Resources/../Cordova.plist0000000000000000^584"CopyPlistFile cordova/../build/GWTGap.app/Cordova.plist GWTGap/Resources/../Cordova.plist    cd /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copyPlist --convert binary1 --outdir /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app -- GWTGap/Resources/../Cordova.plist36"4A74B215-4B00-44A2-B27E-124BC216D7F0-
-
-CCopyStringsFile /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/de.lproj/Localizable.strings GWTGap/Resources/de.lproj/Localizable.strings
-s368731119.333836
-e368731119.441078
-r1
-xCopyStringsFile
-x/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/de.lproj/Localizable.strings
-xGWTGap/Resources/de.lproj/Localizable.strings
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Copy GWTGap/Resources/de.lproj/Localizable.strings779d55ef63fab541^cc9971ef63fab541^---0#0#0#-19%DVTDocumentLocation2@127"file://localhost/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Resources/de.lproj/Localizable.strings0000000000000000^675"CopyStringsFile cordova/../build/GWTGap.app/de.lproj/Localizable.strings GWTGap/Resources/de.lproj/Localizable.strings    cd /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/de.lproj -- GWTGap/Resources/de.lproj/Localizable.strings36"3193DB77-EBC1-4404-9CC9-8A067673B6F1-
-
-CCopyStringsFile /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/en.lproj/Localizable.strings GWTGap/Resources/en.lproj/Localizable.strings
-s368731119.258703
-e368731119.326182
-r1
-xCopyStringsFile
-x/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/en.lproj/Localizable.strings
-xGWTGap/Resources/en.lproj/Localizable.strings
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Copy GWTGap/Resources/en.lproj/Localizable.strings1b6442ef63fab541^210454ef63fab541^---0#0#0#-19%DVTDocumentLocation2@127"file://localhost/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Resources/en.lproj/Localizable.strings0000000000000000^675"CopyStringsFile cordova/../build/GWTGap.app/en.lproj/Localizable.strings GWTGap/Resources/en.lproj/Localizable.strings    cd /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/en.lproj -- GWTGap/Resources/en.lproj/Localizable.strings36"C697B96E-F0B8-4018-B0C7-F368EFBA7FA9-
-
-CCopyStringsFile /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/es.lproj/Localizable.strings GWTGap/Resources/es.lproj/Localizable.strings
-s368731119.278464
-e368731119.330545
-r1
-xCopyStringsFile
-x/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/es.lproj/Localizable.strings
-xGWTGap/Resources/es.lproj/Localizable.strings
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Copy GWTGap/Resources/es.lproj/Localizable.strings117147ef63fab541^29b054ef63fab541^---0#0#0#-19%DVTDocumentLocation2@127"file://localhost/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Resources/es.lproj/Localizable.strings0000000000000000^675"CopyStringsFile cordova/../build/GWTGap.app/es.lproj/Localizable.strings GWTGap/Resources/es.lproj/Localizable.strings    cd /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/es.lproj -- GWTGap/Resources/es.lproj/Localizable.strings36"1987AB99-446E-43C1-B0E4-66A237F2A0E3-
-
-CCopyStringsFile /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/se.lproj/Localizable.strings GWTGap/Resources/se.lproj/Localizable.strings
-s368731119.335178
-e368731119.456985
-r1
-xCopyStringsFile
-x/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/se.lproj/Localizable.strings
-xGWTGap/Resources/se.lproj/Localizable.strings
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Copy GWTGap/Resources/se.lproj/Localizable.strings5ef455ef63fab541^6f0c75ef63fab541^---0#0#0#-19%DVTDocumentLocation2@127"file://localhost/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Resources/se.lproj/Localizable.strings0000000000000000^675"CopyStringsFile cordova/../build/GWTGap.app/se.lproj/Localizable.strings GWTGap/Resources/se.lproj/Localizable.strings    cd /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/se.lproj -- GWTGap/Resources/se.lproj/Localizable.strings36"6E2AC435-EFD1-471D-8CC3-58E436851E18-
-
-CCpResource /Users/kurt/Documents/CordovaLib/VERSION cordova/../build/GWTGap.app/VERSION
-s368731119.241811
-e368731119.244374
-r1
-xCpResource
-x/Users/kurt/Documents/CordovaLib/VERSION
-xcordova/../build/GWTGap.app/VERSION
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection40"Copy cordova/../build/GWTGap.app/VERSION3a083eef63fab541^69903eef63fab541^---0#0#0#-19%DVTDocumentLocation2@117"file://localhost/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/VERSION000000000080d041^649"CpResource /Users/kurt/Documents/CordovaLib/VERSION cordova/../build/GWTGap.app/VERSION    cd /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/kurt/Documents/CordovaLib/VERSION /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app36"FAD1574F-E7FC-486C-BC64-0C1A45570867-
-
-CCpResource GWTGap/Resources/Capture.bundle cordova/../build/GWTGap.app/Capture.bundle
-s368731119.246942
-e368731119.277047
-r1
-xCpResource
-xGWTGap/Resources/Capture.bundle
-xcordova/../build/GWTGap.app/Capture.bundle
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection47"Copy cordova/../build/GWTGap.app/Capture.bundle93533fef63fab541^ff1f47ef63fab541^---0#0#0#-19%DVTDocumentLocation2@124"file://localhost/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/Capture.bundle000000000080d041^704"CpResource GWTGap/Resources/Capture.bundle cordova/../build/GWTGap.app/Capture.bundle    cd /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Resources/Capture.bundle /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app36"5D4D6869-315A-4E15-AB5C-3DD4D0D45F00-
-
-CCpResource GWTGap/Resources/icons/icon-72.png cordova/../build/GWTGap.app/icon-72.png
-s368731119.242012
-e368731119.246510
-r1
-xCpResource
-xGWTGap/Resources/icons/icon-72.png
-xcordova/../build/GWTGap.app/icon-72.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection44"Copy cordova/../build/GWTGap.app/icon-72.pnge10c3eef63fab541^ef1b3fef63fab541^---0#0#0#-19%DVTDocumentLocation2@121"file://localhost/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/icon-72.png000000000080d041^707"CpResource GWTGap/Resources/icons/icon-72.png cordova/../build/GWTGap.app/icon-72.png    cd /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Resources/icons/icon-72.png /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app36"9177DBF5-629A-432A-962E-A5CAA99314A4-
-
-CCpResource GWTGap/Resources/icons/icon.png cordova/../build/GWTGap.app/icon.png
-s368731119.245620
-e368731119.253613
-r1
-xCpResource
-xGWTGap/Resources/icons/icon.png
-xcordova/../build/GWTGap.app/icon.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"Copy cordova/../build/GWTGap.app/icon.pngef003fef63fab541^250641ef63fab541^---0#0#0#-19%DVTDocumentLocation2@118"file://localhost/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/icon.png000000000080d041^698"CpResource GWTGap/Resources/icons/icon.png cordova/../build/GWTGap.app/icon.png    cd /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Resources/icons/icon.png /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app36"B47A254B-4E07-4061-A8AF-7FB258CA8887-
-
-CCpResource GWTGap/Resources/icons/icon@2x.png cordova/../build/GWTGap.app/icon@2x.png
-s368731119.246930
-e368731119.276629
-r1
-xCpResource
-xGWTGap/Resources/icons/icon@2x.png
-xcordova/../build/GWTGap.app/icon@2x.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection44"Copy cordova/../build/GWTGap.app/icon@2x.png54563fef63fab541^831947ef63fab541^---0#0#0#-19%DVTDocumentLocation2@121"file://localhost/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/icon@2x.png000000000080d041^713"CpResource "GWTGap/Resources/icons/icon@2x.png" "cordova/../build/GWTGap.app/icon@2x.png"    cd /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Resources/icons/icon@2x.png" /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app36"C8ABBED0-FA38-42F0-980E-03CDF99E14C7-
-
-CCpResource GWTGap/Resources/splash/Default-Landscape@2x~ipad.png cordova/../build/GWTGap.app/Default-Landscape@2x~ipad.png
-s368731119.415799
-e368731119.423093
-r1
-xCpResource
-xGWTGap/Resources/splash/Default-Landscape@2x~ipad.png
-xcordova/../build/GWTGap.app/Default-Landscape@2x~ipad.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection62"Copy cordova/../build/GWTGap.app/Default-Landscape@2x~ipad.png09a66aef63fab541^97706cef63fab541^---0#0#0#-19%DVTDocumentLocation2@139"file://localhost/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/Default-Landscape@2x~ipad.png000000000080d041^769"CpResource "GWTGap/Resources/splash/Default-Landscape@2x~ipad.png" "cordova/../build/GWTGap.app/Default-Landscape@2x~ipad.png"    cd /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Resources/splash/Default-Landscape@2x~ipad.png" /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app36"CD11DA9A-B132-4FD6-8E92-4BD4CB1B5CB4-
-
-CCpResource GWTGap/Resources/splash/Default-Landscape~ipad.png cordova/../build/GWTGap.app/Default-Landscape~ipad.png
-s368731119.424657
-e368731119.428985
-r1
-xCpResource
-xGWTGap/Resources/splash/Default-Landscape~ipad.png
-xcordova/../build/GWTGap.app/Default-Landscape~ipad.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection59"Copy cordova/../build/GWTGap.app/Default-Landscape~ipad.png30d96cef63fab541^1ee06def63fab541^---0#0#0#-19%DVTDocumentLocation2@136"file://localhost/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/Default-Landscape~ipad.png000000000080d041^760"CpResource "GWTGap/Resources/splash/Default-Landscape~ipad.png" "cordova/../build/GWTGap.app/Default-Landscape~ipad.png"    cd /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Resources/splash/Default-Landscape~ipad.png" /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app36"0C50EF36-0F8B-48AC-856E-8083D4C65BC6-
-
-CCpResource GWTGap/Resources/splash/Default-Portrait@2x~ipad.png cordova/../build/GWTGap.app/Default-Portrait@2x~ipad.png
-s368731119.434660
-e368731119.445087
-r1
-xCpResource
-xGWTGap/Resources/splash/Default-Portrait@2x~ipad.png
-xcordova/../build/GWTGap.app/Default-Portrait@2x~ipad.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"Copy cordova/../build/GWTGap.app/Default-Portrait@2x~ipad.pngbc746fef63fab541^831672ef63fab541^---0#0#0#-19%DVTDocumentLocation2@138"file://localhost/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/Default-Portrait@2x~ipad.png000000000080d041^766"CpResource "GWTGap/Resources/splash/Default-Portrait@2x~ipad.png" "cordova/../build/GWTGap.app/Default-Portrait@2x~ipad.png"    cd /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Resources/splash/Default-Portrait@2x~ipad.png" /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app36"B7F94BD1-CD84-4D68-B066-8FDB16F05644-
-
-CCpResource GWTGap/Resources/splash/Default-Portrait~ipad.png cordova/../build/GWTGap.app/Default-Portrait~ipad.png
-s368731119.445432
-e368731119.449781
-r1
-xCpResource
-xGWTGap/Resources/splash/Default-Portrait~ipad.png
-xcordova/../build/GWTGap.app/Default-Portrait~ipad.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection58"Copy cordova/../build/GWTGap.app/Default-Portrait~ipad.png672c72ef63fab541^053273ef63fab541^---0#0#0#-19%DVTDocumentLocation2@135"file://localhost/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/Default-Portrait~ipad.png000000000080d041^757"CpResource "GWTGap/Resources/splash/Default-Portrait~ipad.png" "cordova/../build/GWTGap.app/Default-Portrait~ipad.png"    cd /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Resources/splash/Default-Portrait~ipad.png" /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app36"997CDAB3-F98E-486E-9698-72E8BFECCFCE-
-
-CCpResource GWTGap/Resources/splash/Default@2x~iphone.png cordova/../build/GWTGap.app/Default@2x~iphone.png
-s368731119.445786
-e368731119.450453
-r1
-xCpResource
-xGWTGap/Resources/splash/Default@2x~iphone.png
-xcordova/../build/GWTGap.app/Default@2x~iphone.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection54"Copy cordova/../build/GWTGap.app/Default@2x~iphone.png603972ef63fab541^f70574ef63fab541^---0#0#0#-19%DVTDocumentLocation2@131"file://localhost/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/Default@2x~iphone.png000000000080d041^745"CpResource "GWTGap/Resources/splash/Default@2x~iphone.png" "cordova/../build/GWTGap.app/Default@2x~iphone.png"    cd /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Resources/splash/Default@2x~iphone.png" /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app36"44D9D401-3083-4915-8A13-E3E9D4CDF3FB-
-
-CCpResource GWTGap/Resources/splash/Default~iphone.png cordova/../build/GWTGap.app/Default~iphone.png
-s368731119.456611
-e368731119.469186
-r1
-xCpResource
-xGWTGap/Resources/splash/Default~iphone.png
-xcordova/../build/GWTGap.app/Default~iphone.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Copy cordova/../build/GWTGap.app/Default~iphone.png7c0d75ef63fab541^ee2278ef63fab541^---0#0#0#-19%DVTDocumentLocation2@128"file://localhost/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/Default~iphone.png000000000080d041^736"CpResource "GWTGap/Resources/splash/Default~iphone.png" "cordova/../build/GWTGap.app/Default~iphone.png"    cd /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/Resources/splash/Default~iphone.png" /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app36"D9BD548E-585A-4A6A-8D9B-27D0D6021044-
-
-CCpResource www cordova/../build/GWTGap.app/www
-s368731119.241806
-e368731119.480439
-r1
-xCpResource
-xwww
-xcordova/../build/GWTGap.app/www
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"Copy cordova/../build/GWTGap.app/wwwfa253eef63fab541^f20b7bef63fab541^---0#0#0#-19%DVTDocumentLocation2@113"file://localhost/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/www000000000080d041^637"CpResource www cordova/../build/GWTGap.app/www    cd /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/www /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app36"2A30E0F9-648F-4C6E-8CBD-C02B9361017A-
-
-CGenerateDSYMFile /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app.dSYM /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/GWTGap
-s368731120.129699
-e368731120.252359
-r1
-xGenerateDSYMFile
-x/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app.dSYM
-x/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/GWTGap
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection109"Generating /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app.dSYM715521f063fab541^b79b40f063fab541^---0#0#0#-19%DVTDocumentLocation2@114"file://localhost/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app.dSYM000000000080d041^702"GenerateDSYMFile cordova/../build/GWTGap.app.dSYM cordova/../build/GWTGap.app/GWTGap    cd /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/GWTGap -o /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app.dSYM36"0E648CB7-143C-4FCA-9B72-79036641F2EC-
-
-CLd /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/GWTGap normal i386
-s368731120.012716
-e368731120.122960
-r1
-xLd
-x/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/GWTGap
-xnormal
-xi386
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Link /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/GWTGap9b7003f063fab541^747d1ff063fab541^---0#0#0#--1807"Ld cordova/../build/GWTGap.app/GWTGap normal i386    cd /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -L/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build -F/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build -filelist /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/Objects-normal/i386/GWTGap.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -weak_framework CoreFoundation -weak_framework UIKit -weak_framework AVFoundation -weak_framework CoreMedia -weak-lSystem -all_load -Obj-C -fobjc-link-runtime -Xlinker -no_implicit_dylibs -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/libCordova.a -framework Foundation -weak_framework UIKit -framework CoreGraphics -framework AddressBook -framework AddressBookUI -framework AudioToolbox -weak_framework AVFoundation -framework CFNetwork -framework CoreLocation -framework MediaPlayer -framework QuartzCore -framework SystemConfiguration -framework MobileCoreServices -weak_framework CoreMedia -o /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/GWTGap36"0BEE12DC-36CA-4328-B8B1-3C464B7B8413-
-
-CPhaseScriptExecution "Touch www folder" /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/Script-304B58A110DAC018002A0835.sh
-s368731119.208143
-e368731119.233820
-r1
-xPhaseScriptExecution
-xTouch www folder
-x/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/Script-304B58A110DAC018002A0835.sh
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection42"Run custom shell script 'Touch www folder'700736ef63fab541^687a3def63fab541^---0#0#0#--20964"PhaseScriptExecution "Touch www folder" build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/Script-304B58A110DAC018002A0835.sh    cd /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1    setenv ACTION build    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER kurt    setenv ALWAYS_SEARCH_USER_PATHS NO    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD_32_BIT i386    setenv ARCHS_UNIVERSAL_IPHONE_OS i386    setenv AVAILABLE_PLATFORMS "iphonesimulator macosx iphoneos"    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build    setenv BUILD_ROOT /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build    setenv BUILD_STYLE     setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build    setenv CACHE_ROOT /var/folders/9c/4qdzbqq96vx6x4fldqx5_4bh0000gn/C/com.apple.Xcode.501    setenv CCHROOT /var/folders/9c/4qdzbqq96vx6x4fldqx5_4bh0000gn/C/com.apple.Xcode.501    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/9c/4qdzbqq96vx6x4fldqx5_4bh0000gn/C/com.apple.Xcode.501/CompositeSDKs    setenv COMPRESS_PNG_FILES YES    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build    setenv CONFIGURATION_TEMP_DIR /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator    setenv CONTENTS_FOLDER_PATH GWTGap.app    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CORDOVALIB /Users/kurt/Documents/CordovaLib    setenv CP /bin/cp    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING NO    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf-with-dsym    setenv DEFAULT_COMPILER com.apple.compilers.llvm.clang.1_0    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/DerivedSources    setenv DERIVED_FILE_DIR /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Applications/Xcode.app/Contents/Developer/Applications    setenv DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/usr/bin    setenv DEVELOPER_DIR /Applications/Xcode.app/Contents/Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Applications/Xcode.app/Contents/Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Applications/Xcode.app/Contents/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Applications/Xcode.app/Contents/Developer/Library    setenv DEVELOPER_SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Applications/Xcode.app/Contents/Developer/Tools    setenv DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH GWTGap.app/English.lproj/Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/GWTGap.dst    setenv DT_TOOLCHAIN_DIR /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain    setenv DWARF_DSYM_FILE_NAME GWTGap.app.dSYM    setenv DWARF_DSYM_FILE_SHOULD_ACCOMPANY_PRODUCT NO    setenv DWARF_DSYM_FOLDER_PATH /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build    setenv EFFECTIVE_PLATFORM_NAME -iphonesimulator    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".DS_Store .svn .git .hg CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH GWTGap.app/Executables    setenv EXECUTABLE_FOLDER_PATH GWTGap.app    setenv EXECUTABLE_NAME GWTGap    setenv EXECUTABLE_PATH GWTGap.app/GWTGap    setenv FILE_LIST /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/FixedFiles    setenv FRAMEWORKS_FOLDER_PATH GWTGap.app/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build\" "    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME GWTGap.app    setenv GCC3_VERSION 3.3    setenv GCC_C_LANGUAGE_STANDARD c99    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_OBJC_LEGACY_DISPATCH YES    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER GWTGap/GWTGap-Prefix.pch    setenv GCC_SYMBOLS_PRIVATE_EXTERN YES    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION com.apple.compilers.llvm.clang.1_0    setenv GCC_VERSION_IDENTIFIER com_apple_compilers_llvm_clang_1_0    setenv GCC_WARN_ABOUT_RETURN_TYPE YES    setenv GCC_WARN_UNUSED_VARIABLE YES    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "\"/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/include\" \"/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/usr/local/lib/include\" \"/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/UninstalledProducts/include\" \"/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build\""    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE GWTGap/GWTGap-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT binary    setenv INFOPLIST_PATH GWTGap.app/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH GWTGap.app/English.lproj/InfoPlist.strings    setenv INSTALL_DIR /tmp/GWTGap.dst/Applications    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER kurt    setenv INSTALL_PATH /Applications    setenv INSTALL_ROOT /tmp/GWTGap.dst    setenv IPHONEOS_DEPLOYMENT_TARGET 4.2    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH GWTGap.app/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/GWTGap-LinkMap-normal-i386.txt    setenv LD_NO_PIE NO    setenv LEGACY_DEVELOPER_DIR /Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer    setenv LEX lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build\" "    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/Objects-normal/i386/GWTGap.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCALIZED_RESOURCES_FOLDER_PATH GWTGap.app/English.lproj    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv MAC_OS_X_PRODUCT_BUILD_VERSION 12B19    setenv MAC_OS_X_VERSION_ACTUAL 1081    setenv MAC_OS_X_VERSION_MAJOR 1080    setenv MAC_OS_X_VERSION_MINOR 0801    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJC_ABI_VERSION 2    setenv OBJECT_FILE_DIR /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/Objects    setenv OBJECT_FILE_DIR_normal /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/Objects-normal    setenv OBJROOT /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build    setenv ONLY_ACTIVE_ARCH NO    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_LDFLAGS "-weak_framework CoreFoundation -weak_framework UIKit -weak_framework AVFoundation -weak_framework CoreMedia -weak-lSystem -all_load -Obj-C"    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application    setenv PASCAL_STRINGS YES    setenv PATH "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Applications/Xcode.app/Contents/Developer/Headers /Applications/Xcode.app/Contents/Developer/SDKs /Applications/Xcode.app/Contents/Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH GWTGap.app/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS objective-c    setenv PKGINFO_FILE_PATH /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/PkgInfo    setenv PKGINFO_PATH GWTGap.app/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr    setenv PLATFORM_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform    setenv PLATFORM_NAME iphonesimulator    setenv PLATFORM_PREFERRED_ARCH i386    setenv PLATFORM_VERSION_AVAILABILITY_H_FORMAT 50100    setenv PLIST_FILE_OUTPUT_FORMAT binary    setenv PLUGINS_FOLDER_PATH GWTGap.app/PlugIns    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH GWTGap.app/PrivateHeaders    setenv PRODUCT_NAME GWTGap    setenv PRODUCT_SETTINGS_PATH /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/GWTGap-Info.plist    setenv PRODUCT_TYPE com.apple.product-type.application    setenv PROFILING_CODE NO    setenv PROJECT GWTGap    setenv PROJECT_DERIVED_FILE_DIR /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/DerivedSources    setenv PROJECT_DIR /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1    setenv PROJECT_FILE_PATH /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap.xcodeproj    setenv PROJECT_NAME GWTGap    setenv PROJECT_TEMP_DIR /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build    setenv PUBLIC_HEADERS_FOLDER_PATH GWTGap.app/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_GIT_FROM_RESOURCES YES    setenv REMOVE_HG_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/ResourceManagerResources    setenv REZ_OBJECTS_DIR /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "\"/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH GWTGap.app/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk    setenv SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk    setenv SDK_NAME iphonesimulator5.1    setenv SDK_PRODUCT_BUILD_VERSION 9B176    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHALLOW_BUNDLE YES    setenv SHARED_DERIVED_FILE_DIR /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH GWTGap.app/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/9c/4qdzbqq96vx6x4fldqx5_4bh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH GWTGap.app/SharedSupport    setenv SKIP_INSTALL NO    setenv SOURCE_ROOT /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1    setenv SRCROOT /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1    setenv STRINGS_FILE_OUTPUT_ENCODING binary    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE all    setenv SUPPORTED_DEVICE_FAMILIES "1 2"    setenv SUPPORTED_PLATFORMS "iphonesimulator iphoneos"    setenv SYMROOT /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Applications/Xcode.app/Contents/Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Applications/Xcode.app/Contents/Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Applications/Xcode.app/Contents/Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Applications/Xcode.app/Contents/Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETED_DEVICE_FAMILY 1,2    setenv TARGETNAME GWTGap    setenv TARGET_BUILD_DIR /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build    setenv TARGET_NAME GWTGap    setenv TARGET_TEMP_DIR /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build    setenv TEMP_DIR /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build    setenv TEMP_FILES_DIR /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build    setenv TEMP_FILE_DIR /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build    setenv TEMP_ROOT /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build    setenv TEST_AFTER_BUILD NO    setenv TOOLCHAINS com.apple.dt.toolchain.XcodeDefault    setenv UID 501    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH GWTGap.app    setenv UNSTRIPPED_PRODUCT NO    setenv USER kurt    setenv USER_APPS_DIR /Users/kurt/Applications    setenv USER_LIBRARY_DIR /Users/kurt/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS i386    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH GWTGap.app/version.plist    setenv VERSION_INFO_BUILDER kurt    setenv VERSION_INFO_FILE GWTGap_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:GWTGap  PROJECT:GWTGap-\""    setenv WRAPPER_EXTENSION app    setenv WRAPPER_NAME GWTGap.app    setenv WRAPPER_SUFFIX .app    setenv XCODE_APP_SUPPORT_DIR /Applications/Xcode.app/Contents/Developer/Library/Xcode    setenv XCODE_PRODUCT_BUILD_VERSION 4F1003    setenv XCODE_VERSION_ACTUAL 0441    setenv XCODE_VERSION_MAJOR 0400    setenv XCODE_VERSION_MINOR 0440    setenv YACC yacc    /bin/sh -c /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/Script-304B58A110DAC018002A0835.sh36"540EFE47-8F14-4454-AA17-10576A0A2BA1-
-
-CProcessInfoPlistFile /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/Info.plist GWTGap/GWTGap-Info.plist
-s368731119.180563
-e368731119.200041
-r1
-xProcessInfoPlistFile
-x/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/Info.plist
-xGWTGap/GWTGap-Info.plist
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection32"Process GWTGap/GWTGap-Info.plista9692fef63fab541^848133ef63fab541^---0#0#0#-19%DVTDocumentLocation2@106"file://localhost/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/GWTGap-Info.plist0000000000000000^737"ProcessInfoPlistFile cordova/../build/GWTGap.app/Info.plist GWTGap/GWTGap-Info.plist    cd /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-infoPlistUtility GWTGap/GWTGap-Info.plist -genpkginfo /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app/Info.plist36"A59CA6C8-96E3-4EA5-BD4C-776371C0930D-
-
-CProcessPCH /var/folders/9c/4qdzbqq96vx6x4fldqx5_4bh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GWTGap-Prefix-hbtfvzaupsgaclheitgsytprjrem/GWTGap-Prefix.pch.pth GWTGap/GWTGap-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s368731119.488052
-e368731119.860345
-r1
-xProcessPCH
-x/var/folders/9c/4qdzbqq96vx6x4fldqx5_4bh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GWTGap-Prefix-hbtfvzaupsgaclheitgsytprjrem/GWTGap-Prefix.pch.pth
-xGWTGap/GWTGap-Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection35"Precompile GWTGap/GWTGap-Prefix.pch5f277def63fab541^703fdcef63fab541^---0#0#0#-19%DVTDocumentLocation2@106"file://localhost/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/GWTGap-Prefix.pch0000000000000000^3833"ProcessPCH /var/folders/9c/4qdzbqq96vx6x4fldqx5_4bh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GWTGap-Prefix-hbtfvzaupsgaclheitgsytprjrem/GWTGap-Prefix.pch.pth GWTGap/GWTGap-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/GWTGap-generated-files.hmap -I/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/GWTGap-own-target-headers.hmap -I/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/GWTGap-all-target-headers.hmap -iquote /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/GWTGap-project-headers.hmap -I/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/include -I/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/usr/local/lib/include -I/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/UninstalledProducts/include -I/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build -I/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/DerivedSources/i386 -I/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/build/GWTGap.build/Debug-iphonesimulator/GWTGap.build/DerivedSources -F/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build --serialize-diagnostics /var/folders/9c/4qdzbqq96vx6x4fldqx5_4bh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GWTGap-Prefix-hbtfvzaupsgaclheitgsytprjrem/GWTGap-Prefix.pch.dia -c /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/GWTGap/GWTGap-Prefix.pch -o /var/folders/9c/4qdzbqq96vx6x4fldqx5_4bh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GWTGap-Prefix-hbtfvzaupsgaclheitgsytprjrem/GWTGap-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/9c/4qdzbqq96vx6x4fldqx5_4bh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/GWTGap-Prefix-hbtfvzaupsgaclheitgsytprjrem/GWTGap-Prefix.pch.d36"34C2F7DF-D8B9-4FF1-BA70-ACA4DA19267F-
-
-CTouch /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app
-s368731120.260537
-e368731120.272059
-r1
-xTouch
-x/Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"Touch /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app70d042f063fab541^63b945f063fab541^---0#0#0#--464"Touch cordova/../build/GWTGap.app    cd /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /usr/bin/touch -c /Users/kurt/Documents/workspace-mgwt/gwt-phonegap.showcase/xcode1/cordova/../build/GWTGap.app36"6A6A8F3C-5CC9-4CAA-ABBE-49F29F20F7FD-
-
