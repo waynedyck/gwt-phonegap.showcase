@@ -28,4 +28,4 @@ You can build the GWT source code by going into the **gwt-phonegap-showcase/gwt/
 
 ```mvn package```
 
-When the build process finishes you will have in the **gwt-phonegap.showcase/gwt/target/gwtphonegap-showcase-gwt-3.4.0.0-SNAPSHOT/** directory another directory called **showcase** that contains all the compiled JavaScript permutations for the project. Delete the old **showcase* directory located in the **gwt-phonegap.showcase/showcase/www/** directory and copy the new one in its place. Once you have done that you can run the ```cordova build``` command to rebuild the Cordova project.
+When the build process finishes you will have in the **gwt-phonegap.showcase/gwt/target/gwtphonegap-showcase-gwt-3.4.0.0-SNAPSHOT/** directory another directory called **showcase** that contains all the compiled JavaScript permutations for the project. Delete the old **showcase** directory located in the **gwt-phonegap.showcase/showcase/www/** directory and copy the new one in its place. Once you have done that you can run the ```cordova build``` command to rebuild the Cordova project.
