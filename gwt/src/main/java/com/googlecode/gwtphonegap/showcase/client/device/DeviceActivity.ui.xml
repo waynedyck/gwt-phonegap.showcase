@@ -34,6 +34,22 @@
 						<g:HTML>UUID: &nbsp;</g:HTML>
 						<g:HTML ui:field="uuid"></g:HTML>
 					</g:HorizontalPanel>
+					<g:HorizontalPanel>
+						<g:HTML>UUID: &nbsp;</g:HTML>
+						<g:HTML ui:field="model"></g:HTML>
+					</g:HorizontalPanel>
+					<g:HorizontalPanel>
+						<g:HTML>UUID: &nbsp;</g:HTML>
+						<g:HTML ui:field="manufacturer"></g:HTML>
+					</g:HorizontalPanel>
+					<g:HorizontalPanel>
+						<g:HTML>UUID: &nbsp;</g:HTML>
+						<g:HTML ui:field="isVirtual"></g:HTML>
+					</g:HorizontalPanel>
+					<g:HorizontalPanel>
+						<g:HTML>UUID: &nbsp;</g:HTML>
+						<g:HTML ui:field="serial"></g:HTML>
+					</g:HorizontalPanel>
 				</mgwt:list.widgetlist.WidgetList>
 			</g:FlowPanel>
 		</mgwt:panel.scroll.ScrollPanel>
