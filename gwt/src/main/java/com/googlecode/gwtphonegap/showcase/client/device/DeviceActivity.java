@@ -69,6 +69,18 @@ public class DeviceActivity extends MGWTAbstractActivity {
   @UiField
   HTML uuid;
 
+  @UiField
+  HTML model;
+
+  @UiField
+  HTML manufacturer;
+
+  @UiField
+  HTML serial;
+  
+  @UiField
+  HTML isVirtual;
+  
   public DeviceActivity(ClientFactory clientFactory) {
     placeController = clientFactory.getPlaceController();
     rootWidget = BINDER.createAndBindUi(this);
@@ -82,7 +94,10 @@ public class DeviceActivity extends MGWTAbstractActivity {
     pversion.setHTML(phoneGap.getDevice().getPhoneGapVersion());
     platform.setHTML(phoneGap.getDevice().getPlatform());
     uuid.setHTML(phoneGap.getDevice().getUuid());
-
+    isVirtual.setHTML(String.valueOf(phoneGap.getDevice().isVirtual()));
+    serial.setHTML(phoneGap.getDevice().getSerial());
+    manufacturer.setHTML(phoneGap.getDevice().getManufacturer());
+    model.setHTML(phoneGap.getDevice().getModel());
     panel.setWidget(rootWidget);
   }
 
